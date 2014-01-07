@@ -8,3 +8,4 @@
 admin:
   email: admin@example.com
   encrypted_password: <%= Admin.new.send(:password_digest, 'password') %>
+  role: admin
