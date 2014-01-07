@@ -1,0 +1,12 @@
+<article id="<%= dom_id(post) %>">
+    <span class="post-title"><%= post.title %></span>
+    <time datetime="DD-MM-YYYY"><%=  l post.created_at, format: :short  %></time>
+  <p>
+    <%= post.body %>
+  </p>
+  <nav>
+    <%= link_to 'Show', post %>
+    <%= link_to 'Edit', edit_post_path(post) %>
+    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </nav>
+</article>
