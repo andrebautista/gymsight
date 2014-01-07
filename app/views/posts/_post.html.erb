@@ -5,8 +5,12 @@
     <%= post.body %>
   </p>
   <nav>
-    <%= link_to 'Show', post %>
-    <%= link_to 'Edit', edit_post_path(post) %>
-    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% if current_admin.nil? %>
+      <%= link_to 'Show', post %>
+    <% else %>
+      <%= link_to 'Show', post %>
+      <%= link_to 'Edit', edit_post_path(post) %>
+      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
   </nav>
 </article>

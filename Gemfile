@@ -26,3 +26,5 @@ end
 group :doc do
   gem 'sdoc', require: false
 end
+
+gem 'simplecov', :require => false, :group => :test

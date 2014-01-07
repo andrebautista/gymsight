@@ -7,6 +7,7 @@ feature "Edit a post" do
     click_on 'Edit'
     fill_in 'Title', with: posts(:post_edit).title
     fill_in 'Body', with: posts(:post_edit).body
+    check('Published')
     click_on 'Update Post'
     page.text.must_include posts(:post_edit).title
     page.text.must_include posts(:post_edit).body

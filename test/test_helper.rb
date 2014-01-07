@@ -7,6 +7,8 @@ require "capybara/webkit"
 
 #colorful test output
 require "minitest/pride"
+require 'simplecov'
+SimpleCov.start
 
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.
