@@ -3,6 +3,7 @@ require "test_helper"
 feature "Creating a new post" do
   scenario "post created successfully" do
     #given we're on the new posts page
+    sign_in
     visit new_post_path
     #when I fill out and submit a post form
     fill_in "Title", with: posts(:one).title
