@@ -10,12 +10,16 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
+group :development do
+  gem 'pry'
+end
 
 group :development, :test do
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
   gem 'launchy'
-  gem 'pry-rails'
+  gem 'capybara-webkit'
+  gem 'turn'
 end
 
 
