@@ -1,0 +1,12 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: Post 1
+  body: test body 1
+  published: true
+
+two:
+  title: Post 2
+  body: test body 2
+  published: true
