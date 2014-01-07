@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Gymsight::Application.config.secret_key_base = '7b4478f6af3f6088cdd26548972467ecf1b7fee3d3e09717f4ff77c71989cf5627850faafe29d2e8e4761452735622077be10ed3299f0a24134e3ce12a2c2e3f'
+Gymsight::Application.config.secret_key_base = ENV['RAILS_SECRET_TOKEN']

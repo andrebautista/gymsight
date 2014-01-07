@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 1.2'
 
 group :development do
   gem 'pry'
+  gem 'brakeman', :require => false
 end
 
 group :development, :test do
