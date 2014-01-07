@@ -3,6 +3,9 @@ require File.expand_path("../../config/environment", __FILE__)
 require "rails/test_help"
 require "minitest/rails"
 require "minitest/rails/capybara"
+require "capybara/webkit"
+
+#colorful test output
 require "minitest/pride"
 
 class ActiveSupport::TestCase

@@ -6,7 +6,12 @@ one:
   body: test body 1
   published: true
 
-two:
-  title: Post 2
+unpublished:
+  title: Unpublished
   body: test body 2
-  published: true
+  published: false
+
+post_edit:
+  title: edited title
+  body: edited body
+  published:
