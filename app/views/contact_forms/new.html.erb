@@ -1,2 +1,18 @@
-<h1>ContactForms#new</h1>
-<p>Find me in app/views/contact_forms/new.html.erb</p>
+<%= form_for @contact_form, :url => contact_path do |form| %>
+  <fieldset class="fields">
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+    <div
+    <div class="field">
+      <%= form.label :email %>
+      <%= form.text_field :email %>
+    </div>
+    <div class="field">
+      <%= options_for_select(:training_program, [['Personal Training', 1], ['Group Training', 2]]) %>
+    </div>
+    <fieldset class="actions">
+    <%= form.submit "Send" %>
+  </fieldset>
+<% end %>
