@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140108065524) do
+ActiveRecord::Schema.define(version: 20140108102701) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20140108065524) do
   create_table "contact_forms", force: true do |t|
     t.string   "name"
     t.string   "email"
-    t.integer  "age"
+    t.string   "age"
     t.string   "training_program"
     t.text     "goals"
     t.text     "availability"

@@ -10,7 +10,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'postmark-rails'
-gem 'active_attr'
+gem 'mail_form'
+
 group :development do
   gem 'pry'
   gem 'brakeman', :require => false

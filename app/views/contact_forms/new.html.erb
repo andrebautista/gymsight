@@ -10,7 +10,12 @@
       <%= form.text_field :email %>
     </div>
     <div class="field">
-      <%= options_for_select(:training_program, [['Personal Training', 1], ['Group Training', 2]]) %>
+      <%= form.label :age %>
+      <%= form.text_field :age, maxlength: 2 %>
+    </div>
+
+    <div class="field">
+      <%= select_tag(:training_program, options_for_select([['Personal Training',1], ['Group Training', 2]])) %>
     </div>
     <fieldset class="actions">
     <%= form.submit "Send" %>
