@@ -1,5 +1,6 @@
 Gymsight::Application.routes.draw do
 
+  get "contact_forms/new"
   devise_for :admins
   resources :posts
   get "static_pages/home"
