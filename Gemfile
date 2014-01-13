@@ -16,7 +16,6 @@ gem 'zurb-foundation'
 group :development do
   gem 'pry'
   gem 'brakeman', :require => false
-  gem 'sqlite3'
 end
 
 group :development, :test do
@@ -25,6 +24,7 @@ group :development, :test do
   gem 'launchy'
   gem 'capybara-webkit'
   gem 'turn'
+  gem 'sqlite3'
 end
 
 
