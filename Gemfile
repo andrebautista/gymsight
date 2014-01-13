@@ -32,4 +32,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
+
 gem 'simplecov', :require => false, :group => :test
