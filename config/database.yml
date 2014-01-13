@@ -23,5 +23,3 @@ production:
   encoding: unicode
   database: gymsight_production
   pool: 5
-  username:
-  password:
