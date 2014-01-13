@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 gem 'rails', '4.0.1'
-gem 'sqlite3'
 gem 'devise'
 gem 'figaro'
 gem 'sass-rails', '~> 4.0.0'
@@ -17,6 +16,7 @@ gem 'zurb-foundation'
 group :development do
   gem 'pry'
   gem 'brakeman', :require => false
+  gem 'sqlite3'
 end
 
 group :development, :test do
