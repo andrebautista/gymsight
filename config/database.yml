@@ -21,5 +21,5 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: gymsight_production
+  database: myapp_production
   pool: 5
