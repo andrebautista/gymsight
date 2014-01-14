@@ -22,12 +22,8 @@
   </head>
 
   <body>
-    <figure>
-      <%= image_tag 'Background_Wedge.png', alt: 'corner-picture' %>
-    </figure>
+    <%= image_tag 'Background_Wedge.png', alt: 'corner-picture', id:"corner-picture" %>
     <%= yield %>
-
-
     <%= javascript_include_tag "application" %>
   </body>
 </html>
