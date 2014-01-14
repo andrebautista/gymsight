@@ -24,6 +24,7 @@ group :development, :test do
   gem 'launchy'
   gem 'capybara-webkit'
   gem 'turn'
+  gem 'sqlite3'
 end
 
 
