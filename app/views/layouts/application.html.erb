@@ -22,7 +22,14 @@
   </head>
 
   <body>
-    <%= image_tag 'Background_Wedge.png', alt: 'corner-picture', id:"corner-picture" %>
+    <div class="row">
+      <div class="large-10 small-centered columns">
+        <header>
+          <%= link_to image_tag("site_wide/Logo_Top.png", alt: "Logo"), root_path %>
+          <%= image_tag @banner, alt:"picture behind logo" %>
+        </header>
+      </div>
+    </div>
     <%= yield %>
     <%= javascript_include_tag "application" %>
   </body>
