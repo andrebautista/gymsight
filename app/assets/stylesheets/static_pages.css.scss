@@ -1,6 +1,6 @@
 body  {
   font-size: 1.152em;
-  background-image: url(site_wide/black_twill/black_twill.png)
+  background-image: asset-url("site_wide/black_twill/black_twill.png", image);
 }
 
 body:before {
@@ -11,7 +11,7 @@ body:before {
   z-index: -1;
   top: 0;
   left: 0;
-  background: url(site_wide/Background_Bottom_Gradient.png);
+  background-image: asset-url("site_wide/Background_Bottom_Gradient.png", image);
 }
 
 body header {
