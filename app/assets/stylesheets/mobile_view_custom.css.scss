@@ -11,10 +11,3 @@
   }
 }
 
-@media
-  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ration: 1.5) {
-    body  {
-        background-image: asset-url("site_wide/black_twill/black_twill_@2X.png", image);
-    }
-}
