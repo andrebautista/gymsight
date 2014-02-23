@@ -14,7 +14,7 @@ body:before {
   background-image: asset-url("site_wide/Background_Bottom_Gradient.png", image);
 }
 
-body header {
+header {
   text-align: center;
   padding-bottom: .7em;
   a {
@@ -32,6 +32,7 @@ body header {
   }
 }
 
+//image_tag("site_wide/Logo_Top.png", alt: "Logo")
 
 .home-banner  {
   margin-top: 20px;
@@ -40,4 +41,12 @@ body header {
 
 figure  {
   margin: 0px;
+}
+
+.stretch-image  {
+  width: 100%;
+}
+
+.mobile-hidden  {
+  display: visible;
 }

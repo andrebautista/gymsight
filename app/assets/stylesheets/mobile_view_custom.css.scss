@@ -1,0 +1,12 @@
+@media screen and (max-width: 675px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  body header a {
+    position: static;
+    img {
+      margin-top: .7em;
+    }
+  }
+}
