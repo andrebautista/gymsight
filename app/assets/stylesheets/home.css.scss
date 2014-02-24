@@ -23,6 +23,12 @@
   .image-title {
     background-color: rgba(255,163,0,1);
   }
+  li {
+    color: rgba(255,163,0,1);
+    &:hover  {
+      color: white;
+    }
+  }
 }
 
 .nav-image  {
@@ -34,10 +40,14 @@
   position:absolute;
   bottom: 0;
   width: 100%;
-
     ul {
       max-height: 0;
       margin-bottom: 0px;
+      padding-left: 25px;
+      list-style: none;
+      li {
+        padding-top: 5px;
+      }
     }
 }
 
