@@ -1,20 +1,9 @@
-<ul data-orbit>
-  <li>
-    <%= image_tag("Homepage/Homepage_Header_Image_1.png", alt: "banner image 1", class:"stretch-image") %>
-    <div class="orbit-caption">
-      Caption One.
-    </div>
-  </li>
-  <li>
-    <img src="" alt="slide 2" />
-    <div class="orbit-caption">
-      Caption Two.
-    </div>
-  </li>
-  <li>
-    <img src="" alt="slide 3" />
-    <div class="orbit-caption">
-      Caption Three.
-    </div>
-  </li>
-</ul>
+<div id="slideShow">
+   <!-- FIRST SLIDE -->
+   <div data-in="left:-100;opacity:.2;duration:500" data-out="top:1000;opacity:0;">
+      <%= image_tag("Homepage/Homepage_Header_Image_1.png", alt: "banner image 1") %>
+      <div data-in="top:-100;delay:1550;duration:550">
+        <h1>hello world</h1>
+      </div>
+  </div>
+</div>

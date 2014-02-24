@@ -1,2 +1,42 @@
+.triangle {
+  width:9px;
+  height: 11px;
+  background-image: asset-url("site_wide/Triangle_Black.png", image);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: top;
+  margin: 0 5px 2px 10px;
+}
 
+.nav-tile  {
+  position:relative;
+  display: block;
+  overflow:hidden;
+  margin-right: 10px;
+}
 
+.nav-tile:hover .nav-details  {
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+}
+
+.nav-image  {
+  display:block;
+  width: 100%;
+}
+
+.nav-details  {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+
+    ul {
+      max-height: 0;
+      margin-bottom: 0px;
+    }
+}
+
+.image-title  {
+  margin-bottom: 0px;
+  background-color: rgba(216,216,216,.95);
+}

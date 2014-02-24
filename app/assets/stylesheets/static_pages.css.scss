@@ -25,11 +25,14 @@ body:before {
 header {
   text-align: center;
   padding-bottom: .7em;
+  position: relative;
+  display: block;
+  overflow: hidden;
   a {
     position: absolute;
     right: 0;
     left:0;
-    top: 20px;
+    bottom: 30px;
     &:hover {
       background-color: transparent;
     }
@@ -37,6 +40,8 @@ header {
   }
   image {
     z-index: -1;
+    width: 100%;
+    display: block;
   }
 }
 
