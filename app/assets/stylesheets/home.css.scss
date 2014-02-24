@@ -15,9 +15,14 @@
   margin-right: 10px;
 }
 
-.nav-tile:hover .nav-details  {
-  height: 100%;
-  background-color: rgba(0,0,0,.8);
+.nav-tile:hover {
+  .nav-details  {
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+  }
+  .image-title {
+    background-color: rgba(255,163,0,1);
+  }
 }
 
 .nav-image  {
