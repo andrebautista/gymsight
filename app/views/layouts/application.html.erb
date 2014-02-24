@@ -29,14 +29,5 @@
     </div>
     <%= yield %>
     <%= javascript_include_tag "application" %>
-    <script>
-$(document).ready(function(){
-    $('#slideShow').ayaSlider({
-       easeIn : 'easeOutBack',
-       easeOut : 'linear',
-       delay : 4000
-    });
-});
-</script>
   </body>
 </html>
