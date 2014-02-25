@@ -13,7 +13,6 @@
   display: block;
   overflow:hidden;
   margin-right: 10px;
-  transition: background-color .2s ease-out;
   .image-title {
     background-color: rgba(216,216,216,.95);
     transition: background-color .4s ease-out;
@@ -30,7 +29,7 @@
       list-style: none;
       li {
         padding-top: 5px;
-        transition: color .4s ease-out;
+        transition: color .2s ease-out;
       }
     }
   }

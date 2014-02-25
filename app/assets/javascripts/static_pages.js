@@ -9,13 +9,14 @@ $(".nav-tile").hover(
     function() {
      var tileHeight = $(".nav-tile").height();
     $(this).children(".nav-details").animate({
-      height: tileHeight + 1  }, 200
+      height: tileHeight + 1  }, 300
       );
   }, function() {
     var captionHeight = $(".image-title").height();
-    $(this).children("nav-details").animate({
-      height: captionHeight }, 200
+    $(this).children(".nav-details").animate({
+      height: captionHeight }, 300
     );
   }
 );
+
 
