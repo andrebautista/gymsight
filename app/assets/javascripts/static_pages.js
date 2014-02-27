@@ -19,4 +19,11 @@ $(".nav-tile").hover(
   }
 );
 
+$(window).resize(function() {
+  if ($(window).width() < 652)  {
+    var picHeight = $(".banner-image").height();
+    $("#slideShow").css("height", picHeight);
+  }
+});
+
 
