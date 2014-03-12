@@ -15,7 +15,6 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   	<title><%= content_for?(:title) ? yield(:title) : "Gymsight" %></title>
-
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
@@ -23,7 +22,7 @@
 
   <body>
     <div class="row">
-      <div class="small-12 large-10 large-centered columns">
+      <div class="small-12 large-12 large-centered columns">
         <%= render 'layouts/header' %>
       </div>
     </div>

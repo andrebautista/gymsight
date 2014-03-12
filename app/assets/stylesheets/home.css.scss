@@ -29,14 +29,17 @@
   position:relative;
   display: block;
   overflow:hidden;
+  height: 200px;
   .image-title {
     background-color: rgba(216,216,216,.95);
     transition: background-color .4s ease-out;
+    height: 30px;
   }
   .nav-details  {
-    transition: background-color .4s ease-out;
+    transition: all .4s ease-out;
     position:absolute;
     bottom: 0;
+    height:30px;
     width: 100%;
     ul {
       max-height: 0;
@@ -53,6 +56,7 @@
 
 .nav-tile:hover {
   .nav-details {
+    height: 200px;
     background-color: rgba(0,0,0,0.8);
   }
   .image-title {
@@ -68,8 +72,9 @@
 
 .nav-image  {
   display:block;
-  width: 100%;
+  width: auto;
   z-index: -1;
+  height: 100%;
 }
 
 .nav-tile h5  {
