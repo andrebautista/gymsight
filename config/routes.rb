@@ -1,9 +1,12 @@
 Gymsight::Application.routes.draw do
 
+  resources :images
+  get '/about', to: 'static_pages#about'
+  get '/about/gallery', to: 'static_pages#gallery'
   get "contact_forms/new"
+
   devise_for :admins
   resources :posts
-  get "static_pages/home"
   root 'static_pages#home'
   match '/contact', to: 'contact_forms#new', via: :get
   match '/contact', to: 'contact_forms#create', via: :post

@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.0'
 gem 'rails', '4.0.1'
 gem 'devise'
 gem 'figaro'
@@ -12,7 +12,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'postmark-rails'
 gem 'mail_form'
 gem 'zurb-foundation'
-
+gem 'carrierwave'
+gem 'rmagick', :require => 'RMagick'
 
 group :development do
   gem 'pry'
