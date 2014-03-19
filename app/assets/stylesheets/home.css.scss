@@ -1,3 +1,19 @@
+#slideShow  {
+  height: 250px;
+  width: 100%;
+  margin-bottom: .7em;
+  overflow: hidden;
+}
+
+
+$nav-title-height: 40px;
+
+$image-tileX-xl: 323px;
+$image-tileY-xl: 180px;
+
+$image-tileX-l: 325px;
+$image-tileY-l: 180px;
+
 .triangle {
   width:9px;
   height: 11px;
@@ -6,42 +22,33 @@
   display: inline-block;
   background-position: top;
   margin: 0 5px 2px 10px;
-
   -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
-
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
-
     overflow:hidden;
-}
-
-.nav-tile:hover .triangle{
-    -webkit-transform:rotate(90deg);
-    -moz-transform:rotate(90deg);
-    -o-transform:rotate(90deg);
 }
 
 .nav-tile  {
   position:relative;
   display: block;
   overflow:hidden;
-  height: 200px;
   .image-title {
     background-color: rgba(216,216,216,.95);
     transition: background-color .4s ease-out;
-    height: 30px;
+    height: $nav-title-height;
   }
   .nav-details  {
     transition: all .4s ease-out;
-    position:absolute;
+    position: absolute;
     bottom: 0;
-    height:30px;
+    height:$nav-title-height;
     width: 100%;
     ul {
+      margin-top: $nav-title-height + 5px;
       max-height: 0;
       margin-bottom: 0px;
       padding-left: 25px;
@@ -56,7 +63,6 @@
 
 .nav-tile:hover {
   .nav-details {
-    height: 200px;
     background-color: rgba(0,0,0,0.8);
   }
   .image-title {
@@ -68,6 +74,11 @@
       color: white;
     }
   }
+  .triangle{
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+  }
 }
 
 .nav-image  {
@@ -77,15 +88,45 @@
   height: 100%;
 }
 
-.nav-tile h5  {
-  margin-bottom: 0px;
-  margin-top: 0px;
-  background-color: rgba(216,216,216,.95);
+.image-title  {
+  width: 100%;
+  position: absolute;
+  height: $nav-title-height;
+  line-height: $nav-title-height;
 }
 
-#slideShow  {
-  height: 250px;
-  width: 100%;
-  margin-bottom: .7em;
-  overflow: hidden;
+/* M Screens: min-width 641px */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
 }
+
+/* L Screens: min-width 1025px*/
+@media only screen and (min-width: 64.063em) {
+  .nav-tile  {
+    width: $image-tileX-l;
+    height: $image-tileY-l;
+  }
+
+  .nav-tile:hover {
+    .nav-details {
+      height: $image-tileY-l;
+    }
+  }
+}
+
+/* XL Screens: min-width 1441px */
+@media only screen and (min-width: 90.063em) {
+  .nav-tile  {
+    width: $image-tileX-xl;
+    height: $image-tileY-xl;
+  }
+
+  .nav-tile:hover {
+    .nav-details {
+      height: $image-tileY-xl;
+    }
+  }
+}
+
+/* XXL Screens: min-width: 1921px */
+@media only screen and (min-width: 120.063em) { }

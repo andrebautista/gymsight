@@ -11,7 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'postmark-rails'
 gem 'mail_form'
-gem 'zurb-foundation'
+gem 'foundation-rails'
 gem 'carrierwave'
 gem 'rmagick', :require => 'RMagick'
 
