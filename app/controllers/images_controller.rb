@@ -6,7 +6,6 @@ class ImagesController < ApplicationController
   def index
     @images = Image.all
     @uploader = Image.new.image
-
   end
 
   # GET /images/1
@@ -71,6 +70,6 @@ class ImagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def image_params
-      params.require(:image).permit(:title, :description, :image)
+      params.require(:image).permit(:title, :description, :image, :video)
     end
 end
