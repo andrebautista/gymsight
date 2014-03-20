@@ -14,6 +14,10 @@ $image-tileY-xl: 180px;
 $image-tileX-l: 325px;
 $image-tileY-l: 180px;
 
+$image-tileX-m: 325px;
+$image-tileY-m: 180px;
+
+
 .triangle {
   width:9px;
   height: 11px;
@@ -97,7 +101,16 @@ $image-tileY-l: 180px;
 
 /* M Screens: min-width 641px */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .nav-tile  {
+    width: $image-tileX-m;
+    height: $image-tileY-m;
+  }
 
+  .nav-tile:hover {
+    .nav-details {
+      height: $image-tileY-m;
+    }
+  }
 }
 
 /* L Screens: min-width 1025px*/
@@ -115,7 +128,7 @@ $image-tileY-l: 180px;
 }
 
 /* XL Screens: min-width 1441px */
-@media only screen and (min-width: 90.063em) {
+@media only screen and (min-width: 61.063em) {
   .nav-tile  {
     width: $image-tileX-xl;
     height: $image-tileY-xl;
