@@ -46,6 +46,7 @@ $image-tileY-m: 180px;
     height: $nav-title-height;
   }
   .nav-details  {
+    pointer-events: none;
     transition: all .4s ease-out;
     position: absolute;
     bottom: 0;
