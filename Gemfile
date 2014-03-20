@@ -14,7 +14,7 @@ gem 'mail_form'
 gem 'foundation-rails'
 gem 'carrierwave'
 gem 'rmagick', :require => 'RMagick'
-
+gem 'thread_safe-0.3.0'
 group :development do
   gem 'pry'
   gem 'brakeman', :require => false
