@@ -10,21 +10,26 @@ li.orbit-image-2  {
 }
 
 .orbit-container {
-    height: 100%;
+    height: 350px;
     width: 100%;
+    margin-bottom: .7em;
 }
 
 ul.orbit-ul, li.orbit-item {
   height: 350px;
+  overflow: hidden;
 }
 
-
-#slideShow  {
+.orbit-container:hover .orbit-timer > span {
+  display: none;
+}
+/*#slideShow  {
   height: 367px;
   width: 100%;
   margin-bottom: .7em;
   overflow: hidden;
-}
+}*/
+
 
 
 
@@ -182,7 +187,7 @@ $image-tileY-m: 180px;
   }
 
   ul.orbit-ul, li.orbit-item {
-    height:400px;
+    height:350px;
   }
 }
 
@@ -201,6 +206,10 @@ $image-tileY-m: 180px;
   .image-container  {
     height: $image-tileY-xl;
     width: $image-tileX-xl;
+  }
+  .orbit-container {
+    height:350px;
+    margin-bottom: .7em;
   }
 }
 
