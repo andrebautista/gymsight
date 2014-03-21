@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    @banner = "Homepage/Homepage_Header_Image.png"
+    @banner = "Homepage/Homepage_Header_Image_retina.jpg"
   end
 
   def contact
