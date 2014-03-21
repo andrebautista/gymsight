@@ -1,15 +1,31 @@
-<div id="slideShow">
-   <!-- FIRST SLIDE -->
-   <div data-in="left:-100;opacity:.2;duration:500" data-out="top:1000;opacity:0;">
+<!-- <div id="slideShow">
+
+   <div data-in="left:-1000;opacity:1;duration:800;" data-out="left:800;opacity:1;duration:800;">
       <%= image_tag("Homepage/Homepage_Banner_Image_ph_a_retina.jpg", alt: "banner image 1", class: "banner-image") %>
-      <div data-in="top:-100;delay:1550;duration:550">
-        <h1>hello world</h1>
+      <div data-in="left:-10;delay:6000;duration:1000;" data-out="left:1000;">
+        <h1>banner image a</h1>
       </div>
   </div>
-  <div data-in="left: -100;opacity:.2;duration:500" data-out="top:1000;opacity:0;">
+  <div data-in="left: -1000;opacity:1;duration:800;" data-out="left:800;opacity:1;duration:800;">
     <%= image_tag("Homepage/Homepage_Banner_Image_ph_b_Retina.jpg", alt: "banner image 2", class: "banner-image") %>
-    <div data-in="top:-100;delay:1550;duration:550">
-      <h1>hello world</h1>
+    <div style="position:absolute;top:0;left:-400;" data-in="left:200;delay:6000;duration:550;">
+      <h1>banner image b</h1>
     </div>
   </div>
 </div>
+<div class="_ayaSlider_timer" style="position: absolute; z-index: 4; width: 1146px; height: 5px; background-color: rgb(0, 0, 0); left: 0px; margin: 0px; padding: 0px; opacity: 0.5; top: 550px; background-position: initial initial; background-repeat: initial initial;"></div>
+ -->
+<ul class="orbit-ul" data-orbit>
+  <li data-orbit-slide="headline-1" class="orbit-item orbit-image-1">
+    <div>
+      <h2>Headline 1</h2>
+      <h3>Subheadline</h3>
+    </div>
+  </li>
+  <li data-orbit-slide="headline-2" class="orbit-item orbit-image-2">
+    <div>
+      <h2>Headline 2</h2>
+      <h3>Subheadline</h3>
+    </div>
+  </li>
+</ul>

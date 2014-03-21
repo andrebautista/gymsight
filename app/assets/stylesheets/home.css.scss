@@ -1,9 +1,31 @@
+/* Orbit Styles */
+
+li.orbit-image-1 {
+  background-image: asset-url("Homepage/Homepage_Banner_Image_ph_a_retina.jpg", image);
+  background-size: cover;
+}
+li.orbit-image-2  {
+  background-image: asset-url("Homepage/Homepage_Banner_Image_ph_b_Retina.jpg", image);
+  background-size: cover;
+}
+
+.orbit-container {
+    height: 100%;
+    width: 100%;
+}
+
+ul.orbit-ul, li.orbit-item {
+  height: 350px;
+}
+
+
 #slideShow  {
-  height: 250px;
+  height: 367px;
   width: 100%;
   margin-bottom: .7em;
   overflow: hidden;
 }
+
 
 
 $nav-title-height: 40px;
@@ -100,6 +122,26 @@ $image-tileY-m: 180px;
   line-height: $nav-title-height;
 }
 
+.image-container {
+  -ms-background-position-x: center;
+  -ms-background-position-y: bottom;
+  background-position: center bottom;
+  /* scale bg image proportionately */
+  background-size: cover;
+}
+
+.who-we-are-home  {
+  background-image: asset-url("Homepage/Homepage_Image_Who_We_Are_ph_retina.jpg", image);
+}
+
+.what-we-offer-home  {
+  background-image: asset-url("Homepage/Homepage_Image_What_We_Offer_ph_Retina.jpg", image);
+}
+
+.get-started-home  {
+  background-image: asset-url("Homepage/Homepage_Image_Get_Started_p_retina.jpg", image);
+}
+
 /* M Screens: min-width 641px */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .nav-tile  {
@@ -111,6 +153,14 @@ $image-tileY-m: 180px;
     .nav-details {
       height: $image-tileY-m;
     }
+  }
+  .image-container  {
+    width: $image-tileX-m;
+    height: $image-tileY-m;
+  }
+
+  ul.orbit-ul, li.orbit-item {
+  height: 300px;
   }
 }
 
@@ -126,6 +176,14 @@ $image-tileY-m: 180px;
       height: $image-tileY-l;
     }
   }
+  .image-container  {
+    height: $image-tileY-l;
+    width: $image-tileX-l;
+  }
+
+  ul.orbit-ul, li.orbit-item {
+    height:400px;
+  }
 }
 
 /* XL Screens: min-width 1441px */
@@ -139,6 +197,10 @@ $image-tileY-m: 180px;
     .nav-details {
       height: $image-tileY-xl;
     }
+  }
+  .image-container  {
+    height: $image-tileY-xl;
+    width: $image-tileX-xl;
   }
 }
 

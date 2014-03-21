@@ -1,8 +1,8 @@
-$('#slideShow').ayaSlider({
-     easeIn : 'easeOutBack',
-     easeOut : 'linear',
-     delay : 4000
-  });
+// $('#slideShow').ayaSlider({
+//      easeIn : 'linear',
+//      easeOut : 'linear',
+//      delay : 5000
+//   });
 
 
 // $(".nav-tile").hover(
