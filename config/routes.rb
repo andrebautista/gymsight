@@ -2,6 +2,7 @@ Gymsight::Application.routes.draw do
 
   resources :images
   get '/about', to: 'static_pages#about'
+  get '/offerings', to: 'static_pages#offerings'
   get '/about/gallery', to: 'static_pages#gallery'
   get "contact_forms/new"
 

@@ -10,7 +10,7 @@ li.orbit-image-2  {
 }
 
 .orbit-container {
-    height: 350px;
+    height: 100%;
     width: 100%;
     margin-bottom: .7em;
 }
@@ -29,8 +29,6 @@ ul.orbit-ul, li.orbit-item {
   margin-bottom: .7em;
   overflow: hidden;
 }*/
-
-
 
 
 $nav-title-height: 40px;
@@ -192,7 +190,7 @@ $image-tileY-m: 180px;
 }
 
 /* XL Screens: min-width 1441px */
-@media only screen and (min-width: 61.063em) {
+@media only screen and (min-width: 90.063em) {
   .nav-tile  {
     width: $image-tileX-xl;
     height: $image-tileY-xl;
@@ -206,10 +204,6 @@ $image-tileY-m: 180px;
   .image-container  {
     height: $image-tileY-xl;
     width: $image-tileX-xl;
-  }
-  .orbit-container {
-    height:350px;
-    margin-bottom: .7em;
   }
 }
 

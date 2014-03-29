@@ -1,12 +1,16 @@
 class StaticPagesController < ApplicationController
   def home
-    @banner = "Homepage/Homepage_Header_Image_retina.jpg"
   end
 
   def contact
   end
 
   def about
+    @banner = 'Interior_Banner_Images/wwa_banner.jpg'
+    @banner_text = 'who we are'
+  end
+
+  def offerings
 
   end
 
