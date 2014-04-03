@@ -1,4 +1,4 @@
-.about-navigation {
+/*.about-navigation {
   margin: 1em 0;
   font-size: 0.8em;
   ul  {
@@ -28,26 +28,104 @@
   h3{
     color: rgba(255,255,255,.8);
   }
+}*/
+
+.tab-wrapper  {
+  .text-content  {
+    float: left;
+    width: 75%;
+  }
+  .image-content  {
+    float: right;
+    width: 25%;
+  }
 }
 
 
 
+//small screens
+@media only screen {
+  .tabs  {
+    margin: .75em 0 !important;
+  }
+  .tabs dd > a  {
+    padding: .3em 2em;
+    margin-right: .50em;
+    font-size: 0.75em;
+  }
+  .tabs dd.active a  {
+    color: #222222;
+  }
+  .text-content  {
+    h3  {
+      color: rgba(255,255,255,.8);
+    }
+    padding: .25em .75em 1em .75em;
+    background-color: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.8);
+  }
+  .tabs-content > .content  {
+    padding-top: 0px;
+  }
+
+  #about-us  {
+    margin-bottom: .75em;
+  }
+
+  .asset-content  {
+    img  {
+      width: 100%;
+    }
+    figcaption {
+      margin: .50em 0;
+      font-size: .75em;
+    }
+  }
+
+  .age  {
+    float: left;
+  }
+  .hometown  {
+    float: right;
+  }
+  .hobbies  {
+    display: block;
+    clear: both;
+  }
+  .image-caption  {
+    span  {
+      color: #ffa300;
+    }
+  }
+
+}
 
 /* M Screens: min-width 641px */
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+@media only screen and (min-width: 40.063em) {
+  .text-content  {
+    padding: .50em 1.25em 2em 1.25em;
+  }
 
+  .tabs dd > a  {
+    padding: .3em 2.75em;
+    margin-right: .75em;
+    font-size: 1em;
+  }
+
+  .tabs  {
+    margin: 1em 0 !important;
+  }
+
+  #about-us  {
+    margin-bottom: 1em;
+  }
 }
-
 
 /* L Screens: min-width 1025px*/
-@media only screen and (min-width: 64.063em) {
-
-}
+@media only screen and (min-width: 64.063em) { }
 
 /* XL Screens: min-width 1441px */
-@media only screen and (min-width: 90.063em) {
-
-}
+@media only screen and (min-width: 90.063em) { }
 
 /* XXL Screens */
 @media only screen and (min-width: 120.063em) { }
