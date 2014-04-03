@@ -30,6 +30,15 @@
   }
 }*/
 
+.bio-content  {
+  width: 70%;
+  margin-right: 2em;
+  float: left;
+}
+
+.bio-asset  {
+  width: 25%;
+}
 
 
 
@@ -73,7 +82,14 @@
     }
   }
 
-  .age  {
+  #gymowner-headshot  {
+    margin-top: .75em;
+  }
+
+  .center-image  {
+    text-align: center;
+  }
+/*  .age  {
     float: left;
   }
   .hometown  {
@@ -87,7 +103,7 @@
     span  {
       color: #ffa300;
     }
-  }
+  }*/
 
 }
 
@@ -113,6 +129,7 @@
 
   #gymowner-headshot  {
     width: 100%;
+    margin-top: 0;
   }
 
 }
