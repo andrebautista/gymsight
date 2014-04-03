@@ -6,7 +6,7 @@ class StaticPagesController < ApplicationController
   end
 
   def about
-    @banner = 'Interior_Banner_Images/wwa_banner.jpg'
+    @banner = 'Interior_Banner_Images/wwa_banner_embedded_type.jpg'
     @banner_text = 'who we are'
   end
 

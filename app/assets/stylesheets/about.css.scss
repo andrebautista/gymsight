@@ -48,14 +48,22 @@
   .tabs  {
     margin: .75em 0 !important;
   }
+
   .tabs dd > a  {
-    padding: .3em 2em;
+
     margin-right: .50em;
     font-size: 0.75em;
+    width: 95px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0px;
+    text-align:center;
   }
+
   .tabs dd.active a  {
     color: #222222;
   }
+
   .text-content  {
     h3  {
       color: rgba(255,255,255,.8);
@@ -64,6 +72,7 @@
     background-color: rgba(255,255,255,.1);
     color: rgba(255,255,255,.8);
   }
+
   .tabs-content > .content  {
     padding-top: 0px;
   }
@@ -114,9 +123,14 @@
   }
 
   .tabs dd > a  {
-    padding: .3em 2.75em;
+    //padding: .3em 2.75em;
     margin-right: .75em;
     font-size: 1em;
+    width: 150px;
+    text-align:center;
+    padding: 0;
+    height: 35px;
+    line-height: 35px;
   }
 
   .tabs  {
