@@ -1,6 +1,7 @@
 <header>
+  <%= image_tag "Homepage/Homepage_Header_Image_retina.jpg", alt:"picture behind logo", class:"stretch-image #{'hidden' unless current_page?(root_path)}" %>
   <%= link_to image_tag("site_wide/Logo_Top.png", alt: "Logo"), root_path %>
-  <div class="row" <%= 'hidden' if current_page?(root_path)%>>
+  <div class="row <%= 'hidden' if current_page?(root_path)%>">
   <div class="centeredmenu">
     <ul>
       <li><%= link_to 'who we are', about_path, class:"#{'active' if current_page?(about_path)}" %></li>
@@ -9,6 +10,3 @@
     </ul>
   </div>
 </header>
-
-<!--
-<%= image_tag "Homepage/Homepage_Header_Image_retina.jpg", alt:"picture behind logo", class:"stretch-image mobile-hidden" %> -->
