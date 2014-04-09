@@ -24,7 +24,6 @@ body:before {
   overflow: hidden;
 }
 
-
 figure  {
   margin: 0px;
 }
@@ -36,22 +35,6 @@ figure  {
 .mobile-hidden  {
   display: inline-block;
 }
-
-header {
-
-   a {
-     img {
-
-       }
-
-   }  image {
-     z-index: -1;
-     width: 100%;
-     display: block;
-   }
- }
-
-
 
 .centeredmenu {
   float:left;
@@ -98,8 +81,6 @@ header {
    color: white;
 }
 
-
-
 // Small screens
 @media only screen {
   .home-hidden {
@@ -136,9 +117,8 @@ header {
       &:hover {
         background-color: transparent;
       }
-
     }
-}
+  }
   .nav-tile {
     margin-bottom: 10px;
   }
