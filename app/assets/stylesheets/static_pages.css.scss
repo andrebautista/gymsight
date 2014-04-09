@@ -6,7 +6,7 @@ body:before {
   content: " ";
   width: 100%;
   height: 100%;
-  position: fixed;
+ position: fixed;
   z-index: -1;
   top: 0;
   left: 0;
@@ -34,8 +34,24 @@ figure  {
 }
 
 .mobile-hidden  {
-  display: inline;
+  display: inline-block;
 }
+
+header {
+
+   a {
+     img {
+
+       }
+
+   }  image {
+     z-index: -1;
+     width: 100%;
+     display: block;
+   }
+ }
+
+
 
 .centeredmenu {
   float:left;
@@ -98,8 +114,12 @@ figure  {
     position: relative;
   }
 
-  .relative-logo  {
-    position: relative;
+
+  .absolute  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 
   header {
@@ -110,23 +130,20 @@ figure  {
   overflow: hidden;
   min-height: 95px;
   a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    &:hover {
-      background-color: transparent;
+      img {
+       margin: 1em 3em 1em 3em;
+      }
+      &:hover {
+        background-color: transparent;
+      }
+
     }
-    img {
-        margin: 1em 3em 1em 3em;;
-    }
-  }
 }
   .nav-tile {
     margin-bottom: 10px;
   }
 
-   .centeredmenu ul {
+  .centeredmenu ul {
     font-size: .65em;
   }
 
