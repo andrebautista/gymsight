@@ -51,13 +51,17 @@
 
   .tabs dd > a  {
 
-    margin-right: .50em;
+    margin-right: 1.0em;
     font-size: 0.75em;
-    width: 95px;
+    width: 93px;
     height: 26px;
     line-height: 26px;
     padding: 0px;
     text-align:center;
+  }
+
+  #last-tab  {
+    margin-right: 0;
   }
 
   .tabs dd.active a  {
@@ -124,7 +128,7 @@
 
   .tabs dd > a  {
     //padding: .3em 2.75em;
-    margin-right: .75em;
+    margin-right: 1em;
     font-size: 1em;
     width: 150px;
     text-align:center;
