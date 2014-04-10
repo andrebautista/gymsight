@@ -95,7 +95,6 @@ figure  {
     position: relative;
   }
 
-
   .absolute  {
     position: absolute;
     top: 0;
@@ -105,10 +104,8 @@ figure  {
 
   header {
   text-align: center;
-  padding-bottom: .7em;
+  padding-bottom: 0.9375rem;
   position: relative;
-  display: block;
-  overflow: hidden;
   min-height: 95px;
   a {
       img {
@@ -119,12 +116,9 @@ figure  {
       }
     }
   }
-  .nav-tile {
-    margin-bottom: 10px;
-  }
 
   .centeredmenu ul {
-    font-size: .65em;
+    font-size: .67em;
   }
 
   .centeredmenu{
