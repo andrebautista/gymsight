@@ -61,7 +61,7 @@ li.orbit-image-2  {
     /* scale bg image proportionately */
     ul  {
       opacity: 0;
-      transition: opacity .3s ease-out;
+      transition: opacity .3s ease-in .1s;
       z-index: 1;
       padding-top: $nav-title-height + 5px;
       max-height: 0;
@@ -151,7 +151,7 @@ li.orbit-image-2  {
   .nav-tile  {
     width: $image-tileX-l;
     height: $image-tileY-l;
-    transition: background-color .4s ease-out;
+    transition: background-color .4s linear;
     margin-bottom: 0;
     &:hover {
       .nav-wrapper {
@@ -179,7 +179,7 @@ li.orbit-image-2  {
 
   .nav-wrapper {
     height: $nav-title-height;
-    transition: all .4s ease-out;
+    transition: all .4s linear;
   }
 
   .nav-title  {
