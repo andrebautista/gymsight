@@ -1,9 +1,3 @@
-// $('#slideShow').ayaSlider({
-//      easeIn : 'linear',
-//      easeOut : 'linear',
-//      delay : 5000
-//   });
-
 
 // $(".nav-tile").hover(
 //     function() {
@@ -26,4 +20,11 @@
 //   }
 // });
 
-
+$(document).foundation({
+  orbit: {
+    next_on_click: false,
+    pause_on_hover: false,
+    bullets: false,
+    slide_number: false
+  }
+});

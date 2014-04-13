@@ -25,12 +25,6 @@ li.orbit-image-2  {
 .orbit-container:hover .orbit-timer > span {
   display: none;
 }
-/*#slideShow  {
-  height: 367px;
-  width: 100%;
-  margin-bottom: .7em;
-  overflow: hidden;
-}*/
 
 .who-we-are-home  {
   background-image: asset-url("Homepage/Homepage_Image_Who_We_Are_ph_retina.jpg", image);
@@ -56,6 +50,7 @@ li.orbit-image-2  {
   .nav-tile  {
     background-size: cover;
     position:relative;
+    z-index: 1;
     display: block;
     width: $image-tileX-sm;
     height: $image-tileY-sm;
@@ -65,6 +60,9 @@ li.orbit-image-2  {
     background-position: center bottom;
     /* scale bg image proportionately */
     ul  {
+      opacity: 0;
+      transition: opacity .3s ease-out;
+      z-index: 1;
       padding-top: $nav-title-height + 5px;
       max-height: 0;
       margin-bottom: 0px;
@@ -83,6 +81,7 @@ li.orbit-image-2  {
 
   .nav-wrapper {
     color: #222222;
+    z-index: -1;
     height: $image-tileY-sm;
     background-color: rgba(0,0,0,0.8);
     position: absolute;
@@ -96,7 +95,7 @@ li.orbit-image-2  {
   }
 
   ul.orbit-ul, li.orbit-item {
-  height: 200px;
+  height: 150px;
   }
 
   .orbit-container  {
@@ -119,6 +118,11 @@ li.orbit-image-2  {
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
     overflow:hidden;
+  }
+
+  /* Accordion Mobile Nav  */
+  .accordion dd  {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.8);
   }
 }
 
@@ -152,6 +156,9 @@ li.orbit-image-2  {
     &:hover {
       .nav-wrapper {
         height: $image-tileY-l;
+      }
+      ul  {
+        opacity: 1;
       }
     }
   }

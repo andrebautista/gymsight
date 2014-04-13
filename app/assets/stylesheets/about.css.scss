@@ -1,3 +1,5 @@
+$headshot-height-lg:  405px;
+
 //small screens
 @media only screen {
   .tabs  {
@@ -108,7 +110,11 @@
 }
 
 /* L Screens: min-width 1025px*/
-@media only screen and (min-width: 64.063em) { }
+@media only screen and (min-width: 64.063em) {
+  #gymowner-bio  {
+    height: $headshot-height-lg;
+  }
+}
 
 /* XL Screens: min-width 1441px */
 @media only screen and (min-width: 90.063em) { }

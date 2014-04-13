@@ -83,8 +83,12 @@ figure  {
 
 // Small screens
 @media only screen {
-  .home-hidden {
+  .small-hidden {
     display: none;
+  }
+
+  .small-show  {
+    display: block;
   }
 
   .hidden  {
@@ -131,8 +135,12 @@ figure  {
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
-  .home-hidden {
-    display: inline-block;
+  .small-hidden {
+    display: block;
+  }
+
+  .small-show  {
+    display: none;
   }
 
   .centeredmenu  {

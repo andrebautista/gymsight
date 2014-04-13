@@ -3,12 +3,37 @@
     <%= render 'static_pages/homepage_partials/homepage_slider' %>
   </div>
 </div>
-<div class="row">
+
+<div class="row small-show">
+  <div class="small-12 large-12 medium-12 large-centered columns">
+    <dl class="accordion" data-accordion>
+      <dd>
+        <a href="#panel1">Who We Are</a>
+        <div id="panel1" class="content">
+          hello world
+        </div>
+      </dd>
+      <dd>
+        <a href="#panel2">What We Offer</a>
+        <div id="panel2" class="content">
+          "Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.""
+        </div>
+      </dd>
+      <dd>
+        <a href="#panel3">Get Started</a>
+        <div id="panel3" class="content">
+      Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </dd>
+    </dl>
+  </div>
+</div>
+
+<div class="row small-hidden">
   <div class="small-12 large-12 medium-12 large-centered columns">
     <div class="row">
       <div class="small-12 large-4 medium-12 columns">
         <div class="nav-tile who-we-are-home">
-          <div class="image-container "></div>
           <div class="nav-wrapper">
             <span class="nav-title"><div class="triangle"></div>Who We Are</span>
           </div>
@@ -16,14 +41,14 @@
       </div>
       <div class="small-12 large-4 medium-12 columns">
         <div class="nav-tile what-we-offer-home">
+          <div class="nav-wrapper">
+            <span class="nav-title"><div class="triangle"></div>What We Offer</span>
+          </div>
           <ul class="nav-listings">
               <li>Gym Methodology</li>
               <li>Training Programs</li>
               <li>Frequently-Asked Questions</li>
           </ul>
-          <div class="nav-wrapper">
-            <span class="nav-title"><div class="triangle"></div>What We Offer</span>
-          </div>
         </div>
       </div>
       <div class="small-12 large-4 medium-12 columns">
