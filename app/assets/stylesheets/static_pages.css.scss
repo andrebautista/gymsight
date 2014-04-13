@@ -87,8 +87,12 @@ figure  {
     display: none;
   }
 
-  .small-show  {
+  .small-med-show  {
     display: block;
+  }
+
+  .small-med-hidden  {
+    display: none;
   }
 
   .hidden  {
@@ -139,10 +143,6 @@ figure  {
     display: block;
   }
 
-  .small-show  {
-    display: none;
-  }
-
   .centeredmenu  {
     margin-bottom: .5em;
     margin-top: .5em;
@@ -161,6 +161,13 @@ figure  {
 
 // Large screens
 @media only screen and (min-width: 64.063em) {
+  .small-med-show  {
+    display: none;
+  }
+
+  .small-med-hidden  {
+    display: block;
+  }
 
   .centeredmenu  {
     margin-bottom: 1em;
