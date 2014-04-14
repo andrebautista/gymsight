@@ -1,8 +1,8 @@
 $image-tileX-xl: 318.328px;
-$image-tileY-xl: 180px;
+$image-tileY-xl: 160px;
 
 $image-tileX-l: 318.328px;
-$image-tileY-l: 180px;
+$image-tileY-l: 160px;
 
 $image-tileX-m: 100%;
 $image-tileY-m: 200px;
@@ -10,7 +10,7 @@ $image-tileY-m: 200px;
 $image-tileX-sm: 100%;
 $image-tileY-sm: 150px;
 
-$nav-title-height: 40px;
+$nav-title-height: 35px;
 
 /* Orbit Styles */
 li.orbit-image-1 {
@@ -63,11 +63,12 @@ li.orbit-image-2  {
       opacity: 0;
       transition: opacity .3s ease-in .1s;
       z-index: 1;
-      padding-top: $nav-title-height + 5px;
-      max-height: 0;
-      margin-bottom: 0px;
+      padding-top: $nav-title-height + 10px;
       padding-left: 25px;
+      margin-left: 0;
       list-style: none;
+      font-size: .75em;
+      text-transform: uppercase;
     }
     li  {
       padding-top: 5px;
@@ -94,6 +95,7 @@ li.orbit-image-2  {
   }
 
   .nav-title {
+    text-transform: uppercase;
     background-color: rgba(255,163,0,1);
   }
 
