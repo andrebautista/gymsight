@@ -42,11 +42,16 @@ li.orbit-image-2  {
 @media only screen {
   .orbit-next, .orbit-prev  {
     content: asset-url("Homepage/Homepage_Banner_Next_Arrow_on_retina.png", image);
-    width: 36px !important;
+    width: 16px !important;
     height: 62px !important;
-    padding-right: 20px;
-
   }
+  .orbit-next  {
+    margin-right: 20px;
+  }
+  .orbit-prev  {
+    margin-left: 20px;
+  }
+
   .orbit-container .orbit-next:hover, .orbit-container .orbit-prev:hover   {
     content: asset-url("Homepage/Homepage_Banner_Next_Arrow_off_retina.png", image);
     background-color: transparent;
