@@ -38,6 +38,19 @@ li.orbit-image-2  {
   background-image: asset-url("Homepage/Homepage_Image_Get_Started_p_retina.jpg", image);
 }
 
+.orbit-timer  {
+  right: 0 !important;
+  width: 100% !important;
+  bottom: 0 !important;
+  height: 10px !important;
+  top: auto !important;
+  .orbit-progress {
+    bottom: 0 !important;
+    right: 0 !important;
+    height: 20px !important;
+  }
+}
+
 // Small screens
 @media only screen {
   .orbit-next, .orbit-prev  {
