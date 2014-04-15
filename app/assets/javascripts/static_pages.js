@@ -1,4 +1,13 @@
 
+$(document).foundation({
+  orbit: {
+    next_on_click: false,
+    pause_on_hover: false,
+    bullets: false,
+    slide_number: false
+  }
+});
+
 // $(".nav-tile").hover(
 //     function() {
 //      var tileHeight = $(".nav-tile").height();
@@ -20,11 +29,4 @@
 //   }
 // });
 
-$(document).foundation({
-  orbit: {
-    next_on_click: false,
-    pause_on_hover: false,
-    bullets: false,
-    slide_number: false
-  }
-});
+
