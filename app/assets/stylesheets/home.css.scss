@@ -39,15 +39,16 @@ li.orbit-image-2  {
 }
 
 .orbit-timer  {
+  position: relative !important;
   right: 0 !important;
   width: 100% !important;
   bottom: 0 !important;
-  height: 10px !important;
+  height: 5px !important;
   top: auto !important;
   .orbit-progress {
-    bottom: 0 !important;
+    top: 0 !important;
     right: 0 !important;
-    height: 20px !important;
+    height: 5px !important;
   }
 }
 
