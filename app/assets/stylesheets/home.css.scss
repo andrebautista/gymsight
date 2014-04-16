@@ -12,6 +12,8 @@ $image-tileY-sm: 150px;
 
 $nav-title-height: 35px;
 
+$gymsight-orange: #ffa300;
+
 /* Orbit Styles */
 li.orbit-image-1 {
   background-image: asset-url("Homepage/Homepage_Banner_Image_ph_a_retina.jpg", image);
@@ -43,12 +45,12 @@ li.orbit-image-2  {
   right: 0 !important;
   width: 100% !important;
   bottom: 0 !important;
-  height: 5px !important;
+  height: 7px !important;
   top: auto !important;
   .orbit-progress {
     top: 0 !important;
     right: 0 !important;
-    height: 5px !important;
+    height: 7px !important;
   }
 }
 
@@ -64,6 +66,7 @@ li.orbit-image-2  {
   }
   .orbit-prev  {
     margin-left: 20px;
+    display: none;
   }
 
   .orbit-container .orbit-next:hover, .orbit-container .orbit-prev:hover   {
@@ -84,18 +87,85 @@ li.orbit-image-2  {
     line-height: $nav-title-height;
   }
 
+  .nav-wrapper {
+    color: #222222;
+    z-index: -1;
+    height: $image-tileY-sm;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    //pointer-events: none;
+  }
+
+  ul.orbit-ul, li.orbit-item {
+  height: 175px;
+  }
+
+  .orbit-container  {
+    margin-bottom: 0.9375rem - 0.438rem;
+  }
+
+  .triangle-black  {
+    background-image: asset-url("site_wide/Triangle_Black.png", image);
+    background-repeat: no-repeat;
+    display: inline-block;
+    overflow:hidden;
+    width: 10px;
+    height: 11px;
+  }
+
+  .triangle-orange  {
+    background-image: asset-url("site_wide/Triangle_Orange.png", image);
+    background-repeat: no-repeat;
+    display: inline-block;
+    overflow:hidden;
+    width: 10px;
+    height: 11px;
+  }
+
+  /* Accordion Mobile Nav  */
+  .accordion dd  {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* M Screens: min-width 641px */
+@media only screen and (min-width: 40.063em) {
+  .orbit-container  {
+    margin-top: 0;
+  }
+
+  ul.orbit-ul, li.orbit-item {
+  height: 300px;
+  }
+}
+
+/* L Screens: min-width 1025px*/
+@media only screen and (min-width: 64.063em) {
+  .nav-title {
+    text-transform: uppercase;
+    background-color: rgba(255,163,0,1);
+  }
+
+  .tile-triangle  {
+    margin: 12px 5px 2px 10px;
+    background-position: center;
+  }
+
   .nav-tile  {
     background-size: cover;
-    position:relative;
-    z-index: 1;
-    display: block;
-    width: $image-tileX-sm;
-    height: $image-tileY-sm;
-    margin-bottom: 0.9375rem;
     -ms-background-position-x: center;
     -ms-background-position-y: bottom;
     background-position: center bottom;
-    /* scale bg image proportionately */
+    position:relative;
+    z-index: 1;
+    display: block;
+    width: $image-tileX-l;
+    height: $image-tileY-l;
+    margin-bottom: 0.9375rem;
+    transition: background-color .4s linear;
+    margin-bottom: 0;
     ul  {
       opacity: 0;
       transition: opacity .3s ease-in .1s;
@@ -118,104 +188,31 @@ li.orbit-image-2  {
         }
       }
     }
-  }
-
-  .nav-wrapper {
-    color: #222222;
-    z-index: -1;
-    height: $image-tileY-sm;
-    background-color: rgba(0,0,0,0.8);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    //pointer-events: none;
-  }
-
-  .nav-title {
-    text-transform: uppercase;
-    background-color: rgba(255,163,0,1);
-  }
-
-  ul.orbit-ul, li.orbit-item {
-  height: 150px;
-  }
-
-  .orbit-container  {
-    margin: 0.9375rem 0;
-  }
-
-  .triangle  {
-    width:9px;
-    height: 11px;
-    background-image: asset-url("site_wide/Triangle_Black.png", image);
-    background-repeat: no-repeat;
-    display: inline-block;
-    background-position: top;
-    margin: 0 5px 2px 10px;
-    -webkit-transition-duration: 0.4s;
-    -moz-transition-duration: 0.4s;
-    -o-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    overflow:hidden;
-  }
-
-  /* Accordion Mobile Nav  */
-  .accordion dd  {
-    border-bottom: solid 1px rgba(0, 0, 0, 0.8);
-  }
-}
-
-/* M Screens: min-width 641px */
-@media only screen and (min-width: 40.063em) {
-  .nav-tile  {
-    width: $image-tileX-m;
-    height: $image-tileY-m;
-  }
-
-  .nav-wrapper {
-      height: $image-tileY-m;
-  }
-
-  .orbit-container  {
-    margin-top: 0;
-  }
-
-  ul.orbit-ul, li.orbit-item {
-  height: 300px;
-  }
-}
-
-/* L Screens: min-width 1025px*/
-@media only screen and (min-width: 64.063em) {
-  .nav-tile  {
-    width: $image-tileX-l;
-    height: $image-tileY-l;
-    transition: background-color .4s linear;
-    margin-bottom: 0;
+    .tile-triangle  {
+      -webkit-transition-duration: 0.4s;
+      -moz-transition-duration: 0.4s;
+      -o-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      -webkit-transition-property: -webkit-transform;
+      -moz-transition-property: -moz-transform;
+      -o-transition-property: -o-transform;
+    }
     &:hover {
       .nav-wrapper {
+        background-color: rgba(0,0,0,0.8);
         height: $image-tileY-l;
       }
       ul  {
         opacity: 1;
       }
-    }
-  }
-
-  .nav-tile:hover  {
-    .nav-wrapper {
-      background-color: rgba(0,0,0,0.8);
-    }
-    .nav-title {
-      background-color: rgba(255,163,0,1);
-    }
-    .triangle{
-    -webkit-transform:rotate(90deg);
-    -moz-transform:rotate(90deg);
-    -o-transform:rotate(90deg);
+      .nav-title  {
+        background-color: rgba(255,163,0,1);
+      }
+      .tile-triangle  {
+        -webkit-transform:rotate(90deg);
+        -moz-transform:rotate(90deg);
+        -o-transform:rotate(90deg);
+      }
     }
   }
 
@@ -230,6 +227,49 @@ li.orbit-image-2  {
 
   ul.orbit-ul, li.orbit-item {
     height:350px;
+  }
+
+  .orbit-ul .slide-caption  {
+    width: 600px;
+    height: 135px;
+    margin-left: 25px;
+    margin-top: 107.5px;
+    color: rgba(255,255,255,.85);
+    .slider-hl  {
+      font-size: 36px;
+      line-height: 1.2;
+      height: 82px;
+      margin-bottom: 20px;
+    }
+    .slider-link  {
+      position: absolute;
+      width: 230px;
+      height: 33px;
+      line-height: 33px;
+      font-size: 18px;
+      .banner-triangle  {
+        margin-right: 5px;
+        display:inline;
+        content: asset-url("site_wide/Triangle_Orange.png", image);
+      }
+      &:hover  {
+        background-color: $gymsight-orange;
+        .banner-triangle  {
+          content: asset-url("site_wide/Triangle_Black.png", image);
+        }
+      }
+      a  {
+        color: rgba(255,255,255,.85);
+        position: absolute;
+        width: 230px;
+        left: 0;
+        padding-left: 10px;
+        &:hover  {
+          background-color: transparent;
+          color: black;
+        }
+      }
+    }
   }
 }
 
