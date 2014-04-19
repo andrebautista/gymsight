@@ -55,7 +55,7 @@ li.orbit-image-2  {
 
 // Small screens
 @media only screen {
-  .orbit-next, .orbit-prev  {
+  .orbit-container .orbit-next, .orbit-container .orbit-prev  {
     content: asset-url("Homepage/Homepage_Banner_Next_Arrow_on_retina.png", image);
     width: 16px !important;
     height: 62px !important;
@@ -65,7 +65,7 @@ li.orbit-image-2  {
   }
   .orbit-prev  {
     margin-left: 20px;
-    display: none;
+    display: none !important;
   }
 
   .orbit-container .orbit-next:hover, .orbit-container .orbit-prev:hover   {
@@ -103,6 +103,7 @@ li.orbit-image-2  {
 
   .orbit-container  {
     margin-bottom: 0.9375rem - 0.438rem;
+    margin-top: 0.9375rem - 0.438rem;
   }
 
   .triangle-black  {
@@ -138,6 +139,52 @@ li.orbit-image-2  {
   ul.orbit-ul, li.orbit-item {
   height: 300px;
   }
+
+  .orbit-ul .slide-caption  {
+    width: 600px;
+    height: 120px;
+    margin-left: 25px;
+    margin-top: 90px;
+    color: rgba(255,255,255,.85);
+    .slider-hl  {
+      font-size: 30px;
+      line-height: 1.2;
+      height: 70px;
+      margin-bottom: 15px;
+    }
+    .slider-link  {
+      position: absolute;
+      line-height: 33px;
+      width: 210px;
+      height: 33px;
+      line-height: 33px;
+      font-size: 18px;
+      transition: all .3s linear;
+      .banner-triangle  {
+        margin-right: 5px;
+        display:inline;
+        content: asset-url("site_wide/Triangle_Orange.png", image);
+      }
+      &:hover  {
+        background-color: $gymsight-orange;
+        .banner-triangle  {
+          content: asset-url("site_wide/Triangle_Black.png", image);
+        }
+      }
+      a  {
+        color: rgba(255,255,255,.85);
+        position: absolute;
+        width: 230px;
+        left: 0;
+        padding-left: 10px;
+        &:hover  {
+          background-color: transparent;
+          color: black;
+        }
+      }
+    }
+  }
+
 }
 
 /* L Screens: min-width 1025px*/
@@ -229,34 +276,18 @@ li.orbit-image-2  {
   }
 
   .orbit-ul .slide-caption  {
-    width: 600px;
     height: 135px;
-    margin-left: 25px;
     margin-top: 107.5px;
-    color: rgba(255,255,255,.85);
     .slider-hl  {
       font-size: 36px;
-      line-height: 1.2;
       height: 82px;
       margin-bottom: 20px;
     }
     .slider-link  {
-      position: absolute;
       width: 230px;
       height: 33px;
-      line-height: 33px;
       font-size: 18px;
-      .banner-triangle  {
-        margin-right: 5px;
-        display:inline;
-        content: asset-url("site_wide/Triangle_Orange.png", image);
-      }
-      &:hover  {
-        background-color: $gymsight-orange;
-        .banner-triangle  {
-          content: asset-url("site_wide/Triangle_Black.png", image);
-        }
-      }
+
       a  {
         color: rgba(255,255,255,.85);
         position: absolute;
