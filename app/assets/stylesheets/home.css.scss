@@ -55,6 +55,10 @@ li.orbit-image-2  {
 
 // Small screens
 @media only screen {
+  .orbit-ul .slide-caption  {
+    display: none;
+  }
+
   .orbit-container .orbit-next, .orbit-container .orbit-prev  {
     content: asset-url("Homepage/Homepage_Banner_Next_Arrow_on_retina.png", image);
     width: 16px !important;
@@ -141,6 +145,7 @@ li.orbit-image-2  {
   }
 
   .orbit-ul .slide-caption  {
+    display: block;
     width: 600px;
     height: 120px;
     margin-left: 25px;
@@ -174,7 +179,7 @@ li.orbit-image-2  {
       a  {
         color: rgba(255,255,255,.85);
         position: absolute;
-        width: 230px;
+        width: 210px;
         left: 0;
         padding-left: 10px;
         &:hover  {
