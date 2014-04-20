@@ -1,14 +1,8 @@
 $image-tileX-xl: 318.328px;
-$image-tileY-xl: 160px;
+$image-tileY-xl: 140px;
 
 $image-tileX-l: 318.328px;
-$image-tileY-l: 160px;
-
-$image-tileX-m: 100%;
-$image-tileY-m: 200px;
-
-$image-tileX-sm: 100%;
-$image-tileY-sm: 150px;
+$image-tileY-l: 140px;
 
 $nav-title-height: 35px;
 
@@ -151,6 +145,20 @@ li.orbit-image-2  {
     }
     .content > ul > li:nth-child(3)  {
       border-bottom: none;
+    }
+  }
+  .home-footer  {
+    margin-top: 0.9375rem;
+    text-align: right;
+    div  {
+      font-size: 10px;
+      display: inline-block;
+      height: 29px;
+      line-height: 29px;
+      vertical-align: top;
+    }
+    .social-link {
+      margin-left:5px;
     }
   }
 }
