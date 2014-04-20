@@ -127,14 +127,18 @@ li.orbit-image-2  {
       border-left: solid 4px rgba(255,163,0, .7);
     }
     li  {
+      height: 39px;
+      line-height: 39px;
       border-bottom: solid 1px rgba(0, 0, 0, 0.8);
-      padding: 10px;
       transition: background-color .15s linear;
       &:hover  {
         background-color: rgba(255,163,0, .7);
       }
-    }
-    a  {
+      a  {
+      position: absolute;
+      width: 100%;
+      height: 39px;
+      padding-left: 10px;
       color: rgba(255, 255, 255, 0.8);
       font-size: .9rem;
       &:visited  {
@@ -143,6 +147,7 @@ li.orbit-image-2  {
       &:hover  {
         color: rgba(255, 255, 255, 0.8);
       }
+    }
     }
     .content > ul > li:nth-child(3)  {
       border-bottom: none;
