@@ -15,7 +15,9 @@ body:before {
   background-image: asset-url("site_wide/Background_Bottom_Gradient.png", image);
 }
 
-//image_tag("site_wide/Logo_Top.png", alt: "Logo")
+a:hover  {
+  background-color: transparent;
+}
 
 .home-banner  {
   margin-top: 20px;
@@ -137,7 +139,11 @@ figure  {
 
 } /* Define mobile styles */
 
-@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+  .columns  {
+    padding: 0;
+  }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
