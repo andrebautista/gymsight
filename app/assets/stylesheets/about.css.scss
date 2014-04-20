@@ -7,7 +7,6 @@ $headshot-height-lg:  405px;
   }
 
   .tabs dd > a  {
-
     margin-right: 1.0em;
     font-size: 0.75em;
     width: 93px;
@@ -15,6 +14,11 @@ $headshot-height-lg:  405px;
     line-height: 26px;
     padding: 0px;
     text-align:center;
+    transition: all .2s linear;
+    &:hover  {
+      background-color: #ffa300;
+      color: #222222;
+    }
   }
 
   #last-tab  {
