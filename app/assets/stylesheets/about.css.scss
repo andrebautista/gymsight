@@ -2,6 +2,10 @@ $headshot-height-lg:  405px;
 
 //small screens
 @media only screen {
+  .who-we-are-banner  {
+    background-image: asset-url("Interior_Banner_Images/wwa_banner.jpg", image);
+  }
+
   .tabs  {
     margin: .75em 0 !important;
   }

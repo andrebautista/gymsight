@@ -19,20 +19,6 @@ a:hover  {
   background-color: transparent;
 }
 
-.banner-container  {
-  max-height: 220px;
-  overflow: hidden;
-  .banner-text  {
-    position: absolute;
-    top: 0;
-    margin-left: 25px;
-    font-size: 36px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    height: 86px;
-  }
-}
-
 figure  {
   margin: 0px;
 }
@@ -43,6 +29,25 @@ figure  {
 
 // Small screens
 @media only screen {
+  .banner-container  {
+    height: 115px;
+    overflow: hidden;
+    background-size: cover;
+    -ms-background-position-x: center;
+    -ms-background-position-y: top;
+    background-position: center top;
+  }
+
+  .banner-text  {
+      position: absolute;
+      top: 0;
+      margin-left: 25px;
+      padding-top: 30px;
+      font-size: 24px;
+      line-height: 1.2;
+      text-transform: uppercase;
+  }
+
   .centeredmenu {
     float:left;
     width:100%;
@@ -149,7 +154,7 @@ figure  {
 
 @media only screen and (max-width: 40em) {
   .columns  {
-    padding: 0;
+    //padding: 0;
   }
 
   .twitter  {
@@ -159,6 +164,15 @@ figure  {
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
+  .banner-container  {
+    height: 160px;
+  }
+
+  .banner-text  {
+      padding-top: 47px;
+      font-size: 28px;
+  }
+
   .small-hidden {
     display: block;
   }
@@ -182,6 +196,15 @@ figure  {
 
 // Large screens
 @media only screen and (min-width: 64.063em) {
+  .banner-container  {
+    height: 220px;
+  }
+
+  .banner-text  {
+      padding-top: 67px;
+      font-size: 36px;
+  }
+
   .small-med-show  {
     display: none;
   }

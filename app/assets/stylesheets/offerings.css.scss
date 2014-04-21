@@ -1,0 +1,58 @@
+// Small screens
+@media only screen {
+ .what-we-offer-banner  {
+    background-image: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
+  }
+
+  .index-wrapper  {
+    height: 172.5px;
+    position:relative;
+  }
+
+} /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+  //80px = half of med
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+  .what-we-offer-banner  {
+    .banner-text {
+      padding-top: 39.5px;
+    }
+  }
+  .index-wrapper  {
+    height: 275px;
+  }
+
+  .offerings-nav  {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    nav  {
+      height: 110px; /* For Safari 5.1 to 6.0 */
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0,1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, .1) 100%);
+      background: -moz-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .1));
+      background: -o-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .1));
+      background: linear-gradient(top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, .1) 100%);
+      background-position: 50% 50%;
+    }
+  }
+  //110px = half of lg
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
