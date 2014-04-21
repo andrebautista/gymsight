@@ -5,8 +5,35 @@
   }
 
   .index-wrapper  {
-    height: 172.5px;
+    height: 144px;
     position:relative;
+  }
+
+  .offerings-nav  {
+    position: absolute;
+    width: 100%;
+    nav  {
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0,1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, .1) 100%);
+      background: -moz-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .1));
+      background: -o-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .1));
+      background: linear-gradient(top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, .1) 100%);
+      background-position: 50% 50%;
+      max-height: 250;
+    }
+    ul  {
+      list-style: none;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      margin: 1em 0 0 1em;
+    }
+    a  {
+      color: #ffa300;
+      transition: color .1s linear;
+    }
+  }
+
+  .nav-heading  {
+    color: white;
   }
 
 } /* Define mobile styles */
@@ -15,7 +42,15 @@
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
-  //80px = half of med
+  .index-wrapper  {
+    height: 200px;
+  }
+  .offerings-nav  {
+    bottom: 0;
+    nav  {
+      height: 80px;
+    }
+  }
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
@@ -32,16 +67,8 @@
   }
 
   .offerings-nav  {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     nav  {
-      height: 110px; /* For Safari 5.1 to 6.0 */
-      background: -webkit-linear-gradient(top, rgba(0, 0, 0,1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, .1) 100%);
-      background: -moz-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .1));
-      background: -o-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .1));
-      background: linear-gradient(top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, .1) 100%);
-      background-position: 50% 50%;
+      height: 110px;
     }
   }
   //110px = half of lg
