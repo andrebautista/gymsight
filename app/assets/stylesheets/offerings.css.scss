@@ -1,3 +1,5 @@
+@import "variables";
+
 // Small screens
 @media only screen {
  .what-we-offer-banner  {
@@ -5,7 +7,7 @@
   }
 
   .index-wrapper  {
-    height: 144px;
+    min-height: 375px;
     position:relative;
   }
 
@@ -13,22 +15,23 @@
     position: absolute;
     width: 100%;
     nav  {
-      background: -webkit-linear-gradient(top, rgba(0, 0, 0,1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, .1) 100%);
-      background: -moz-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .1));
-      background: -o-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .1));
-      background: linear-gradient(top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, .1) 100%);
-      background-position: 50% 50%;
-      max-height: 250;
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0,1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
+      background: -moz-linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
+      background: -o-linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
+      background: linear-gradient(top, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
     }
     ul  {
       list-style: none;
       margin-bottom: 0;
       text-transform: uppercase;
-      margin: 1em 0 0 1em;
+      margin: 1.5em 0 0 1.5em;
     }
     a  {
       color: #ffa300;
       transition: color .1s linear;
+    }
+    span  {
+      color: #ffa300;
     }
   }
 
@@ -43,12 +46,16 @@
 // Medium screens
 @media only screen and (min-width: 40.063em) {
   .index-wrapper  {
-    height: 200px;
+    min-height: 260px;
   }
+
   .offerings-nav  {
-    bottom: 0;
+    top: $banner-container-md*3/4;
     nav  {
-      height: 80px;
+
+    }
+    ul  {
+      margin: 25px 0 25px 25px;
     }
   }
 } /* min-width 641px, medium screens */
@@ -63,13 +70,17 @@
     }
   }
   .index-wrapper  {
-    height: 275px;
+    min-height: 287px;
   }
 
   .offerings-nav  {
+    top: $banner-container-lg*3/4;
     nav  {
-      height: 110px;
+
     }
+  ul  {
+    margin: 25px 0 25px 25px;
+  }
   }
   //110px = half of lg
 } /* min-width 1025px, large screens */
