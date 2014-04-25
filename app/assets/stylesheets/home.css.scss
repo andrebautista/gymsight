@@ -10,11 +10,11 @@ $nav-title-height: 35px;
 
 /* Orbit Styles */
 li.orbit-image-1 {
-  background-image: asset-url("Homepage/Homepage_Banner_Image_ph_a_retina.jpg", image);
+  background-image: asset-url("Homepage/homepage_banner_1.jpg", image);
   background-size: cover;
 }
 li.orbit-image-2  {
-  background-image: asset-url("Homepage/Homepage_Banner_Image_ph_b_Retina.jpg", image);
+  background-image: asset-url("Homepage/homepage_banner_2.jpg", image);
   background-size: cover;
 }
 
@@ -23,15 +23,15 @@ li.orbit-image-2  {
 }
 
 .who-we-are-home  {
-  background-image: asset-url("Homepage/Homepage_Image_Who_We_Are_ph_retina.jpg", image);
+  background-image: asset-url("Homepage/homepage_who_we_are.jpg", image);
 }
 
 .what-we-offer-home  {
-  background-image: asset-url("Homepage/Homepage_Image_What_We_Offer_ph_Retina.jpg", image);
+  background-image: asset-url("Homepage/homepage_what_we_offer.jpg", image);
 }
 
 .get-started-home  {
-  background-image: asset-url("Homepage/Homepage_Image_Get_Started_p_retina.jpg", image);
+  background-image: asset-url("Homepage/homepage_about_us.jpg", image);
 }
 
 .orbit-container .orbit-timer  {

@@ -1,5 +1,5 @@
 <header>
-  <%= image_tag "Homepage/Homepage_Header_Image_retina.jpg", alt:"picture behind logo", class:"stretch-image #{'hidden' unless current_page?(root_path)} #{'small-hidden' if current_page?(root_path)}" %>
+  <%= image_tag "Homepage/homepage_header.jpg", alt:"picture behind logo", class:"stretch-image #{'hidden' unless current_page?(root_path)} #{'small-hidden' if current_page?(root_path)}" %>
   <%= link_to image_tag("site_wide/Logo_Top.png", alt: "Logo"), root_path, class:"#{'absolute' if current_page?(root_path)}" %>
   <div class="row <%= 'hidden' if current_page?(root_path)%>">
     <div class="centeredmenu">
