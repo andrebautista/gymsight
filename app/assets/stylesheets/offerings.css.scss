@@ -131,28 +131,38 @@
     margin-bottom: 10px;
   }
 
-  .training-program  {
-    height: 180px;
-    a {
-      background-color: rgba(255, 255, 255, 0.4);
-      color: $gymsight-white;
-      height: 30px;
-      line-height: 30px;
-      position: absolute;
-      text-transform: uppercase;
-      width: 220px;
+  .offerings-link  {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: $gymsight-white;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-transform: uppercase;
+    width: 220px;
+    transition: all .1s linear;
+    &:before  {
+      content: asset-url("site_wide/Triangle_Orange.png", image);
+      margin: 0 10px;
+    }
+    &:hover  {
+      background-color: $gymsight-orange;
+      color: black;
       &:before  {
-        content: asset-url("site_wide/Triangle_Orange.png", image);
-        margin: 0 10px;
-      }
-      &:hover  {
-        background-color: $gymsight-orange;
-        color: black;
-        &:before  {
-          content: asset-url("site_wide/Triangle_Black.png", image);
-        }
+        content: asset-url("site_wide/Triangle_Black.png", image);
       }
     }
+  }
+
+  .back-to-offerings  {
+    top: -40px;
+  }
+
+  #program-banner-text  {
+    padding-top: 20px;
+  }
+
+  .training-program  {
+    height: 180px;
   }
   .program-copy  {
     height: 85px;

@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="small-12 large-12 medium-12 large-centered columns">
+    <div class="index-wrapper" id="program-page">
+      <div class="banner-container <%= @banner_image %>" id="program-banner-container">
+        <div class="banner-text" id="program-banner-text"><%= @banner_text_l1 %><br><%= @banner_text_l2 %></div>
+      </div>
+      <%= render 'static_pages/offerings_partials/offerings_nav' %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 large-12 medium-12 large-centered columns">
+    <%= yield %>
+  </div>
+</div>
