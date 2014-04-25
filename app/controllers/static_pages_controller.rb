@@ -11,6 +11,9 @@ class StaticPagesController < ApplicationController
   def offerings
   end
 
+  def gap
+  end
+
   def gallery
     @images = Image.all
   end
