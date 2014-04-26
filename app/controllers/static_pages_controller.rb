@@ -17,6 +17,7 @@ class StaticPagesController < ApplicationController
     @banner_text_l2 = "Athletic Program"
     @banner_image = "what-we-offer-banner"
     @link_class = "back-to-offerings"
+    @active = "active"
   end
 
   def gallery
