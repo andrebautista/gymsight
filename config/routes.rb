@@ -2,9 +2,11 @@ Gymsight::Application.routes.draw do
 
   resources :images
   get '/about', to: 'static_pages#about'
+  get '/about/gallery', to: 'static_pages#gallery'
+
   get '/offerings', to: 'static_pages#offerings'
   get '/offerings/general-athletic-program', to: 'static_pages#gap'
-  get '/about/gallery', to: 'static_pages#gallery'
+  get '/offerings/big-mountain-program', to: 'static_pages#bmp'
   get "contact_forms/new"
 
   devise_for :admins

@@ -1,8 +1,20 @@
+@import "variables";
+
 body  {
+  height: auto;
+  min-height: 100%;
   background-image: asset-url("site_wide/black_twill/black_twill.png", image);
 }
 
-body:before {
+.content-wrapper  {
+  background: -webkit-linear-gradient(top, rgba(51, 51, 51,.05) 33%, rgba(51, 51, 51, .7) 70%, rgba(51, 51, 51, 1) 80%);
+  background: -moz-linear-gradient(rgba(51, 51, 51, .05) 33%, rgba(51, 51, 51, .7) 61%, rgba(51, 51, 51, 1) 80%);
+  background: -o-linear-gradient(rgba(51, 51, 51, .05) 33%, rgba(51, 51, 51, .7) 61%, rgba(51, 51, 51, 1) 80%);
+  background: linear-gradient(top, rgba(51, 51, 51, .05) 33%, rgba(51, 51, 51, .7) 61%, rgba(51, 51, 51, 1) 80%);
+  padding-bottom: 3em;
+}
+
+/*body:before {
   content: " ";
   width: 100%;
   height: 100%;
@@ -11,6 +23,14 @@ body:before {
   top: 0;
   left: 0;
   background-image: asset-url("site_wide/Background_Bottom_Gradient.png", image);
+}*/
+
+.interior-footer  {
+ width: 100%;
+ height: 150px;
+ background-image: asset-url("site_wide/global_footer.jpg", image);
+ background-size: cover;
+ border-top: solid 2px $gymsight-orange;
 }
 
 a:hover  {
@@ -167,7 +187,7 @@ figure  {
   }
 
   .banner-text  {
-      padding-top: 35px;
+      padding-top: 47px;
       font-size: 28px;
   }
 

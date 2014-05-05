@@ -11,12 +11,15 @@
   </head>
 
   <body>
+    <div class="content-wrapper">
      <div class="row">
       <div class="small-12 large-12 medium-12 large-centered columns">
         <%= render 'layouts/header' %>
       </div>
     </div>
     <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
     <%= javascript_include_tag "application" %>
   </body>
 </html>
