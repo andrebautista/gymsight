@@ -5,8 +5,12 @@ Gymsight::Application.routes.draw do
   get '/about/gallery', to: 'static_pages#gallery'
 
   get '/offerings', to: 'static_pages#offerings'
-  get '/offerings/general-athletic-program', to: 'static_pages#gap'
-  get '/offerings/big-mountain-program', to: 'static_pages#bmp'
+  get '/offerings/big-mountain-program', to: 'static_pages#bmp', as: 'bmp'
+  get '/offerings/general-athletic-program', to: 'static_pages#gap', as: 'gap'
+  get '/offerings/rock-and-ice-program', to: 'static_pages#rip', as: 'rip'
+  get '/offerings/personal-training', to: 'static_pages#personalt', as: 'pt'
+  get '/offerings/semi-private-training', to: 'static_pages#semipersonalt', as: 'spt'
+  get '/offerings/essentials-pipeline', to: 'static_pages#essentials', as: 'essentials'
   get "contact_forms/new"
 
   devise_for :admins

@@ -8,6 +8,16 @@ $(document).foundation({
   }
 });
 
+$( document ).ready(function() {
+  $(".offerings-active").closest("li").siblings(".nav-heading").addClass("offering-heading-active");
+});
+
+
+
+// $(".offerings-active").on("click", function(){
+//     $(this).closest("li").siblings(".nav-heading").addClass("offering-heading-active");
+//   });
+
 // $(".nav-tile").hover(
 //     function() {
 //      var tileHeight = $(".nav-tile").height();

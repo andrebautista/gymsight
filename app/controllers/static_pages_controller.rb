@@ -20,7 +20,7 @@ class StaticPagesController < ApplicationController
     @banner_image = "what-we-offer-banner"
     @link_class = "back-to-offerings"
     @banner_id = "offerings";
-    @active = "active"
+    @offerings_active = "active"
   end
 
   def bmp
@@ -28,7 +28,7 @@ class StaticPagesController < ApplicationController
     @banner_text_l2 = "Program"
     @banner_image = "what-we-offer-banner"
     @link_class = "back-to-offerings"
-    @active = "active"
+    @offerings_active = "active"
   end
 
   def rip
@@ -36,7 +36,7 @@ class StaticPagesController < ApplicationController
     @banner_text_l2 = "Program"
     @banner_image = "what-we-offer-banner"
     @link_class = "back-to-offerings"
-    @active = "active"
+    @offerings_active = "active"
   end
 
   def personalt
@@ -44,12 +44,25 @@ class StaticPagesController < ApplicationController
     @banner_text_l2 = "Training"
     @banner_image = "what-we-offer-banner"
     @link_class = "back-to-offerings"
-    @active = "active"
+    @offerings_active = "active"
   end
 
-  def gallery
-
+  def semipersonalt
+    @banner_text_l1 = "Semi-Private"
+    @banner_text_l2 = "Training"
+    @banner_image = "what-we-offer-banner"
+    @link_class = "back-to-offerings"
+    @offerings_active = "active"
   end
+
+  def essentials
+    @banner_text_l1 = "Essentials"
+    @banner_text_l2 = "Pipeline"
+    @banner_image = "what-we-offer-banner"
+    @link_class = "back-to-offerings"
+    @offerings_active = "active"
+  end
+
 end
 
 

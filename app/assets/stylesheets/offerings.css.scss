@@ -72,14 +72,48 @@
     a  {
       color: $gymsight-orange;
       transition: color .1s linear;
+      &:hover  {
+        color: white;
+      }
     }
+
+    .offerings-active  {
+      color: white;
+    }
+
+    .offering-heading-active  {
+      color: white ;
+    }
+
     span  {
       color: $gymsight-orange;
     }
+
+    .offerings-button  {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: $gymsight-white;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-transform: uppercase;
+    width: 220px;
+    transition: all .1s linear;
+    &:before  {
+      content: asset-url("site_wide/Triangle_Orange.png", image);
+      margin: 0 10px;
+    }
+    &:hover  {
+      background-color: $gymsight-orange;
+      color: black;
+      &:before  {
+        content: asset-url("site_wide/Triangle_Black.png", image);
+      }
+    }
+  }
   }
 
   .nav-heading  {
-    color: white;
+    color: $gymsight-orange;
     &:after  {
       content: " /";
       color: $gymsight-orange;
@@ -156,28 +190,6 @@
   }
   .nav-heading  {
     margin-bottom: 10px;
-  }
-
-  .offerings-link  {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: $gymsight-white;
-    height: 30px;
-    line-height: 30px;
-    position: absolute;
-    text-transform: uppercase;
-    width: 220px;
-    transition: all .1s linear;
-    &:before  {
-      content: asset-url("site_wide/Triangle_Orange.png", image);
-      margin: 0 10px;
-    }
-    &:hover  {
-      background-color: $gymsight-orange;
-      color: black;
-      &:before  {
-        content: asset-url("site_wide/Triangle_Black.png", image);
-      }
-    }
   }
 
   .back-to-offerings  {
