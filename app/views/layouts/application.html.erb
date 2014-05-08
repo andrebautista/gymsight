@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <div class="content-wrapper">
+    <div class="content-wrapper <%= 'absolute-home' if current_page?(root_path)%>">
      <div class="row">
       <div class="small-12 large-12 medium-12 large-centered columns">
         <%= render 'layouts/header' %>
