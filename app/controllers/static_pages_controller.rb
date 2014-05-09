@@ -63,6 +63,12 @@ class StaticPagesController < ApplicationController
     @offerings_active = "active"
   end
 
+  def faq
+    @banner_text_l1 = "Frequently"
+    @banner_text_l2 = "Asked Questions"
+    @banner_image = "what-we-offer-banner"
+  end
+
 end
 
 

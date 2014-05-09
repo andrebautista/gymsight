@@ -1,21 +1,43 @@
 <footer class="interior-footer <%= 'hidden' if current_page?(root_path)%>">
   <div class="row">
     <div class="large-12 medium-12 small-12">
-      <div class="large-2 medium-2 small-12 columns">
-        <%= link_to image_tag("site_wide/Logo_Top.png", alt: "Logo", class:"footer-logo"), root_path %>
+      <div class="large-2 large-offset-1 medium-2 hide-for-small-only columns">
+        <%= link_to image_tag("site_wide/logo_footer.png", alt: "Logo", class:"footer-logo"), root_path %>
+        <%= link_to '', 'javascript:void(0)', class: 'facebook social-link' %>
+      <%= link_to '', 'javascript:void(0)', class: 'twitter social-link' %>
       </div>
-      <div class="large-10 medium-10 small-12 columns">
-        <div class="row">
-          <div class="large-4 medium-4 small-12 columns">
-            <h1>hello world</h1>
+      <div class="large-3 medium-3 small-4 columns">
+        <ul>
+          <li class="nav-heading"><%= link_to 'Who We Are', about_path %></li>
+          <div class="hide-for-small-only">
+            <li><%= link_to 'About Gymsight', "http://localhost:3000/about#about_us" %></li>
+            <li><%= link_to 'Trainer Bio', "http://localhost:3000/about#trainer_bio" %></li>
+            <li><%= link_to 'Gallery', "http://localhost:3000/about#gallery" %></li>
           </div>
-          <div class="large-4 medium-4 small-12 columns">
-            <h1>hello world</h1>
+        </ul>
+      </div>
+      <div class="large-3 medium-3 small-4 columns">
+        <ul>
+          <li class="nav-heading"><%= link_to 'What We Offer', offerings_path %></li>
+          <div class="hide-for-small-only">
+            <li><%= link_to 'Training Programs', offerings_path %></li>
+            <li><%= link_to 'Frequently Asked Questions', faq_path %></li>
           </div>
-          <div class="large-4 medium-4 small-12 columns">
-            <h1>hello world</h1>
+        </ul>
+      </div>
+      <div class="large-3 medium-3 small-4 columns">
+        <ul>
+          <li class="nav-heading"><%= link_to 'Get Started', contact_path %></li>
+          <div class="hide-for-small-only">
+            <li></li>
+            <li></li>
           </div>
-        </div>
+        </ul>
+      </div>
+      <div class="show-for-small-only small-12 columns">
+        <%= link_to image_tag("site_wide/logo_footer.png", alt: "Logo", class:"footer-logo"), root_path %>
+        <%= link_to '', 'javascript:void(0)', class: 'facebook social-link' %>
+      <%= link_to '', 'javascript:void(0)', class: 'twitter social-link' %>
       </div>
     </div>
   </div>
