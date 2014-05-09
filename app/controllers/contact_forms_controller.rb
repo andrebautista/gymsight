@@ -1,6 +1,7 @@
 class ContactFormsController < ApplicationController
   def new
     @contact_form = ContactForm.new(params[:contact_form])
+    @gs_active = "header-active"
   end
 
   def create

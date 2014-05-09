@@ -10,9 +10,16 @@ $(document).foundation({
 
 $( document ).ready(function() {
   $(".offerings-active").closest("li").siblings(".nav-heading").addClass("offering-heading-active");
+
+  var active = $("dd.active").attr('id');
+  $('.interior-footer').find("."+ active).addClass('active');
+
+  $("dl dd").on('click', function() {
+    $('.interior-footer').find(".active").removeClass('active');
+    var active = $(this).attr('id');
+    $('.interior-footer').find("."+ active).addClass('active');
+  });
 });
-
-
 
 // $(".offerings-active").on("click", function(){
 //     $(this).closest("li").siblings(".nav-heading").addClass("offering-heading-active");

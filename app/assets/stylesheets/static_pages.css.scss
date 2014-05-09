@@ -6,17 +6,6 @@ body  {
   background-image: asset-url("site_wide/black_twill/black_twill.png", image);
 }
 
-/*body:before {
-  content: " ";
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  background-image: asset-url("site_wide/Background_Bottom_Gradient.png", image);
-}*/
-
 a:hover  {
   background-color: transparent;
 }
@@ -41,6 +30,9 @@ figure  {
     .social-link  {
       margin-top: 10px;
     }
+    .twitter  {
+      margin-left: 5px;
+    }
     ul  {
       list-style: none;
       margin-top: 0px;
@@ -52,6 +44,12 @@ figure  {
       &:after  {
         font-size: .72em;
       }
+    }
+    .active  {
+      color: white;
+    }
+    .header-active  {
+      color: white;
     }
     a {
       font-size: .72em;

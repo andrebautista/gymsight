@@ -90,6 +90,7 @@
     }
 
     .offerings-button  {
+    display: none;
     background-color: rgba(255, 255, 255, 0.4);
     color: $gymsight-white;
     height: 30px;
@@ -102,14 +103,14 @@
       content: asset-url("site_wide/Triangle_Orange.png", image);
       margin: 0 10px;
     }
-    &:hover  {
-      background-color: $gymsight-orange;
-      color: black;
-      &:before  {
-        content: asset-url("site_wide/Triangle_Black.png", image);
+      &:hover  {
+        background-color: $gymsight-orange;
+        color: black;
+        &:before  {
+          content: asset-url("site_wide/Triangle_Black.png", image);
+        }
       }
     }
-  }
   }
 
   .nav-heading  {
@@ -149,6 +150,9 @@
     ul  {
       margin: 15px 0 25px 15px;
       line-height:1.6;
+    }
+    .offerings-button  {
+      display: inline-block;
     }
   }
   .nav-heading  {

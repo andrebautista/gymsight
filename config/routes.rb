@@ -1,9 +1,8 @@
 Gymsight::Application.routes.draw do
 
-  resources :images
+  root 'static_pages#home'
   get '/about', to: 'static_pages#about'
   get '/about/gallery', to: 'static_pages#gallery'
-
   get '/offerings', to: 'static_pages#offerings'
   get '/offerings/big-mountain-program', to: 'static_pages#bmp', as: 'bmp'
   get '/offerings/general-athletic-program', to: 'static_pages#gap', as: 'gap'
@@ -12,15 +11,12 @@ Gymsight::Application.routes.draw do
   get '/offerings/semi-private-training', to: 'static_pages#semipersonalt', as: 'spt'
   get '/offerings/essentials-pipeline', to: 'static_pages#essentials', as: 'essentials'
   get '/frequently-asked-questions', to: 'static_pages#faq', as: 'faq'
-  get "contact_forms/new"
-
-  devise_for :admins
-  resources :posts
-  root 'static_pages#home'
   match '/contact', to: 'contact_forms#new', via: :get
   match '/contact', to: 'contact_forms#create', via: :post
 
-
+  devise_for :admins
+  resources :posts
+  resources :images
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

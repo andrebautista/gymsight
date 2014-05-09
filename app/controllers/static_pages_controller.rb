@@ -2,16 +2,16 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def contact
-  end
-
   def about
     @banner_id = "about"
+    @about_active = "header-active"
   end
 
   def offerings
     @banner_id = "offerings";
     @link_class = "hidden"
+    @offerings_active = "header-active"
+    @program_active = "active"
   end
 
   def gap
@@ -20,7 +20,8 @@ class StaticPagesController < ApplicationController
     @banner_image = "what-we-offer-banner"
     @link_class = "back-to-offerings"
     @banner_id = "offerings";
-    @offerings_active = "active"
+    @program_active = "active"
+    @offerings_active = "header-active"
   end
 
   def bmp
@@ -28,7 +29,8 @@ class StaticPagesController < ApplicationController
     @banner_text_l2 = "Program"
     @banner_image = "what-we-offer-banner"
     @link_class = "back-to-offerings"
-    @offerings_active = "active"
+    @program_active = "active"
+    @offerings_active = "header-active"
   end
 
   def rip
@@ -36,7 +38,8 @@ class StaticPagesController < ApplicationController
     @banner_text_l2 = "Program"
     @banner_image = "what-we-offer-banner"
     @link_class = "back-to-offerings"
-    @offerings_active = "active"
+    @program_active = "active"
+    @offerings_active = "header-active"
   end
 
   def personalt
@@ -44,7 +47,8 @@ class StaticPagesController < ApplicationController
     @banner_text_l2 = "Training"
     @banner_image = "what-we-offer-banner"
     @link_class = "back-to-offerings"
-    @offerings_active = "active"
+    @program_active = "active"
+    @offerings_active = "header-active"
   end
 
   def semipersonalt
@@ -52,7 +56,8 @@ class StaticPagesController < ApplicationController
     @banner_text_l2 = "Training"
     @banner_image = "what-we-offer-banner"
     @link_class = "back-to-offerings"
-    @offerings_active = "active"
+    @program_active = "active"
+    @offerings_active = "header-active"
   end
 
   def essentials
@@ -60,13 +65,17 @@ class StaticPagesController < ApplicationController
     @banner_text_l2 = "Pipeline"
     @banner_image = "what-we-offer-banner"
     @link_class = "back-to-offerings"
-    @offerings_active = "active"
+    @essentials_active = "active"
+    @offerings_active = "header-active"
+    @program_active = "active"
   end
 
   def faq
     @banner_text_l1 = "Frequently"
     @banner_text_l2 = "Asked Questions"
     @banner_image = "what-we-offer-banner"
+    @faq_active = "active"
+    @offerings_active = "header-active"
   end
 
 end
