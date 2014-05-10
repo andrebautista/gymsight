@@ -12,6 +12,7 @@ class StaticPagesController < ApplicationController
     @link_class = "hidden"
     @offerings_active = "header-active"
     @program_active = "active"
+    @offerings_header_active = "active"
   end
 
   def gap
@@ -22,6 +23,7 @@ class StaticPagesController < ApplicationController
     @banner_id = "offerings";
     @program_active = "active"
     @offerings_active = "header-active"
+    @offerings_header_active = "active"
   end
 
   def bmp
@@ -31,6 +33,7 @@ class StaticPagesController < ApplicationController
     @link_class = "back-to-offerings"
     @program_active = "active"
     @offerings_active = "header-active"
+    @offerings_header_active = "active"
   end
 
   def rip
@@ -40,6 +43,7 @@ class StaticPagesController < ApplicationController
     @link_class = "back-to-offerings"
     @program_active = "active"
     @offerings_active = "header-active"
+    @offerings_header_active = "active"
   end
 
   def personalt
@@ -49,6 +53,7 @@ class StaticPagesController < ApplicationController
     @link_class = "back-to-offerings"
     @program_active = "active"
     @offerings_active = "header-active"
+    @offerings_header_active = "active"
   end
 
   def semipersonalt
@@ -58,6 +63,7 @@ class StaticPagesController < ApplicationController
     @link_class = "back-to-offerings"
     @program_active = "active"
     @offerings_active = "header-active"
+    @offerings_header_active = "active"
   end
 
   def essentials
@@ -68,6 +74,7 @@ class StaticPagesController < ApplicationController
     @essentials_active = "active"
     @offerings_active = "header-active"
     @program_active = "active"
+    @offerings_header_active = "active"
   end
 
   def faq
@@ -75,7 +82,8 @@ class StaticPagesController < ApplicationController
     @banner_text_l2 = "Asked Questions"
     @banner_image = "what-we-offer-banner"
     @faq_active = "active"
-    @offerings_active = "header-active"
+    @offerings_active = "active"
+    @gs_header_active = "active"
   end
 
 end

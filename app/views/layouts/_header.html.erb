@@ -5,8 +5,8 @@
     <div class="centeredmenu">
     <ul>
       <li><%= link_to 'who we are', about_path, class:"#{'active' if current_page?(about_path)}" %></li>
-      <li><%= link_to 'what we offer', offerings_path, class:"#{'active' if current_page?(offerings_path)} #{@offerings_active}"%></li>
-      <li><%= link_to 'get started', contact_path, class:"#{@gs_active}" %></li>
+      <li><%= link_to 'what we offer', offerings_path, class:"#{'active' if current_page?(offerings_path)} #{@offerings_header_active}"%></li>
+      <li><%= link_to 'get started', contact_path, class:"#{@gs_header_active}" %></li>
     </ul>
   </div>
 </header>

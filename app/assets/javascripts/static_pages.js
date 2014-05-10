@@ -18,7 +18,19 @@ $( document ).ready(function() {
     $('.interior-footer').find(".active").removeClass('active');
     var active = $(this).attr('id');
     $('.interior-footer').find("."+ active).addClass('active');
+
   });
+
+  $(".about-links a").on('click', function() {
+    $('.interior-footer').find(".active").removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $(".about-heading").on('click', function(){
+    $('.interior-footer').find(".active").removeClass('active');
+    $(".about_us").addClass('active');
+  });
+
 });
 
 // $(".offerings-active").on("click", function(){

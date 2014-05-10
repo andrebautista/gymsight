@@ -89,6 +89,10 @@
       color: $gymsight-orange;
     }
 
+    .hidden  {
+      display: none !important;
+    }
+
     .offerings-button  {
     display: none;
     background-color: rgba(255, 255, 255, 0.4);
@@ -151,7 +155,7 @@
       margin: 15px 0 25px 15px;
       line-height:1.6;
     }
-    .offerings-button  {
+    .offerings-button {
       display: inline-block;
     }
   }
