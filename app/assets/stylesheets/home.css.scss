@@ -166,10 +166,11 @@ li.orbit-image-2  {
     margin-top: 90px;
     color: rgba(255,255,255,.85);
     .slider-hl  {
-      font-size: 30px;
-      line-height: 1.2;
+      font-size: 36px;
+      line-height: 36px;
       height: 70px;
       margin-bottom: 15px;
+      font-family: stratum2-medium;
     }
     .slider-link  {
       position: absolute;
@@ -182,6 +183,7 @@ li.orbit-image-2  {
       .banner-triangle  {
         margin-right: 5px;
         display:inline;
+        font-family: stratum2-medium;
         content: asset-url("site_wide/Triangle_Orange.png", image);
       }
       &:hover  {

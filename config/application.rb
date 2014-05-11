@@ -27,6 +27,7 @@ module Gymsight
 
 
 
+
     config.generators do |g|
       g.test_framework :mini_test, :spec => true
       g.helper false
