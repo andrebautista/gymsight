@@ -20,6 +20,39 @@ figure  {
 
 // Small screens
 @media only screen {
+  body  {
+    text-transform: uppercase;
+  }
+
+  ul {
+    a {
+      color: $gymsight-orange;
+      transition: color .1s linear;
+      &:hover  {
+        color: white;
+      }
+    }
+  }
+
+  a:hover {
+    background-color: transparent;
+  }
+
+  .social-container  {
+    position: relative;
+    width: 68px;
+    height: 29px;
+    display: inline-block;
+    .facebook  {
+      position: absolute;
+      left: 0px;
+    }
+    .twitter  {
+      position: absolute;
+      left: 39px;
+    }
+  }
+
   .interior-footer  {
     padding-top: 20px;
     width: 100%;
@@ -27,12 +60,10 @@ figure  {
     background-image: asset-url("site_wide/global_footer.jpg", image);
     background-size: cover;
     border-top: solid 2px $gymsight-orange;
-    .social-link  {
+    .social-container  {
       margin-top: 10px;
     }
-    .twitter  {
-      margin-left: 5px;
-    }
+
     ul  {
       list-style: none;
       margin-top: 0px;
@@ -53,12 +84,9 @@ figure  {
     }
     a {
       font-size: .72em;
-      text-transform: uppercase;
-      color: $gymsight-orange;
-      transition: color .1s linear;
-      &:hover  {
-        color: white;
-      }
+
+
+
     }
   }
 
@@ -100,7 +128,7 @@ figure  {
       padding-top: 30px;
       font-size: 24px;
       line-height: 1.2;
-      text-transform: uppercase;
+
   }
 
   .centeredmenu {
@@ -119,7 +147,7 @@ figure  {
       position:relative;
       left:50%;
       text-align:center;
-      text-transform: uppercase;
+
       li {
         display:block;
         float:left;
@@ -206,6 +234,10 @@ figure  {
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
+  .absolute-home  {
+    position: static;
+  }
+
   .interior-footer  {
     height: 200px;
     ul  {
@@ -252,9 +284,6 @@ figure  {
 
 // Large screens
 @media only screen and (min-width: 64.063em) {
-  .absolute-home  {
-    position: static;
-  }
   .banner-container  {
     height: 220px;
   }

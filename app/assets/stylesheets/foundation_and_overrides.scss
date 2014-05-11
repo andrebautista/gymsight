@@ -36,12 +36,12 @@
 // $include-xl-html-grid-classes: false;
 
  $row-width: rem-calc(960);
- $column-gutter: rem-calc(0);
+ $column-gutter: rem-calc(20);
 // $total-columns: 12;
 
 // We use these to control various global styles
 // $body-bg: #fff;
- $body-font-color: rgba(255,255,255,.85);
+ $body-font-color: white;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;

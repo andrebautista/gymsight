@@ -41,6 +41,9 @@ li.orbit-image-2  {
 
 // Small screens
 @media only screen {
+  .accordion  {
+    text-transform: capitalize;
+  }
   .orbit-ul .slide-caption  {
     display: none;
   }
@@ -139,15 +142,13 @@ li.orbit-image-2  {
     margin-top: 20px;
     margin-bottom: 50px;
     text-align: right;
-    div  {
+    .footer-info  {
       font-size: 10px;
-      display: inline-block;
+      display: inline;
       height: 29px;
       line-height: 29px;
       vertical-align: top;
-    }
-    .social-link {
-      margin-left:10px;
+      margin-right: 10px;
     }
   }
 }
@@ -157,72 +158,80 @@ li.orbit-image-2  {
   ul.orbit-ul, li.orbit-item {
   height: 300px;
   }
-
-  .orbit-ul .slide-caption  {
+  .slide-caption-container  {
     display: block;
     width: 600px;
     height: 120px;
-    margin-left: 25px;
+    margin-left: 15px;
     margin-top: 90px;
-    color: rgba(255,255,255,.85);
-    .slider-hl  {
-      font-size: 36px;
-      line-height: 36px;
-      height: 70px;
-      margin-bottom: 15px;
-      font-family: stratum2-medium;
-    }
-    .slider-link  {
-      position: absolute;
-      line-height: 33px;
-      width: 210px;
-      height: 33px;
-      line-height: 33px;
-      font-size: 18px;
-      transition: all .3s linear;
+  }
+  .slider-hl  {
+    font-size: 36px * .85;
+    line-height: 1.2;
+    height: 70px;
+    margin-bottom: 20px;
+    font-family: stratum2-medium ;
+  }
+  .slider-link  {
+    color: white;
+    transition: all .3s linear;
+    background-color: rgba(255,255,255,.1);
+    font-family: stratum2-regular;
+    font-size: 18px * .85;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    width: 230px;
+    left: 25px;
+    &:hover  {
+      background-color: $gymsight-orange;
+      color: black;
       .banner-triangle  {
-        margin-right: 5px;
-        display:inline;
-        font-family: stratum2-medium;
-        content: asset-url("site_wide/Triangle_Orange.png", image);
+        content: asset-url("site_wide/Triangle_Black.png", image);
       }
-      &:hover  {
-        background-color: $gymsight-orange;
-        .banner-triangle  {
-          content: asset-url("site_wide/Triangle_Black.png", image);
-        }
-      }
-      a  {
-        color: rgba(255,255,255,.85);
-        position: absolute;
-        width: 210px;
-        left: 0;
-        padding-left: 10px;
-        &:hover  {
-          background-color: transparent;
-          color: black;
-        }
-      }
+    }
+    .banner-triangle  {
+      margin-left: 10px;
+      width: 10px;
+      height: 11px;
+      margin-right: 10px;
+      display:inline;
+      content: asset-url("site_wide/Triangle_Orange.png", image);
     }
   }
-
 }
 
 /* L Screens: min-width 1025px*/
 @media only screen and (min-width: 64.063em) {
+  /* Banner Styles */
+  ul.orbit-ul, li.orbit-item {
+    height:350px;
+  }
+
+  .slide-caption-container  {
+    height: 135px;
+    margin-top: 107.5px;
+    margin-left: 25px;
+  }
+  .slider-hl  {
+    font-size: 36px;
+    height: 78px;
+  }
+  .slider-link  {
+    font-size: 18px;
+  }
+
+  /* Tile Styles */
   .tile-triangle  {
     margin: 0px 5px 0px 10px;
     background-position: center;
   }
-
   .tile-column  {
     paddding-right: 0px;
   }
-
   #last-tile  {
     margin-right: 0px;
   }
-
   .nav-tile  {
     background-size: cover;
     -ms-background-position-x: center;
@@ -232,8 +241,8 @@ li.orbit-image-2  {
     z-index: 1;
     display: block;
     height: $image-tileY-l;
+    width: 300px;
     transition: background-color .4s linear;
-    margin-right: 20px;
     ul  {
       opacity: 0;
       transition: opacity .3s ease-in .1s;
@@ -242,17 +251,11 @@ li.orbit-image-2  {
       margin-left: 25px;
       list-style: none;
       font-size: .75em;
-      text-transform: uppercase;
     }
     li  {
       line-height: 20px;
       a {
         color: rgba(255,163,0,1);
-        transition: color .2s linear;
-        &:hover  {
-          color: white;
-          background-color: transparent;
-        }
       }
     }
     .tile-triangle  {
@@ -282,18 +285,16 @@ li.orbit-image-2  {
       }
     }
   }
-
   .nav-title {
+    background-color: rgba(217,217,217,1);
+    font-size: 18px;
+    font-family: stratum2-regular;
     width: 100%;
     position: absolute;
     height: $nav-title-height;
     line-height: $nav-title-height;
-    text-transform: uppercase;
-    background-color: rgba(255,163,0,1);
     transition: background-color .4s linear
   }
-
-
   .nav-wrapper {
     position: absolute;
     width: 100%;
@@ -303,41 +304,6 @@ li.orbit-image-2  {
     z-index: -1;
     height: $nav-title-height;
     transition: all .4s linear;
-  }
-
-  .nav-title  {
-    background-color: rgba(216,216,216,.95);
-  }
-
-  ul.orbit-ul, li.orbit-item {
-    height:350px;
-  }
-
-  .orbit-ul .slide-caption  {
-    height: 135px;
-    margin-top: 107.5px;
-    .slider-hl  {
-      font-size: 36px;
-      height: 82px;
-      margin-bottom: 20px;
-    }
-    .slider-link  {
-      width: 230px;
-      height: 33px;
-      font-size: 18px;
-
-      a  {
-        color: rgba(255,255,255,.85);
-        position: absolute;
-        width: 230px;
-        left: 0;
-        padding-left: 10px;
-        &:hover  {
-          background-color: transparent;
-          color: black;
-        }
-      }
-    }
   }
 }
 

@@ -1,3 +1,4 @@
+@import "variables";
 $headshot-height-lg:  405px;
 
 //small screens
@@ -20,7 +21,7 @@ $headshot-height-lg:  405px;
     text-align:center;
     transition: all .2s linear;
     &:hover  {
-      background-color: #ffa300;
+      background-color: $gymsight-orange;
       color: #222222;
     }
   }
