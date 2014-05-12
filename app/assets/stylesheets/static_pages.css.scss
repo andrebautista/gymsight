@@ -21,6 +21,8 @@
   }
 
   ul {
+    font-family: Open Sans;
+    font-weight: 400;
     a {
       color: $gymsight-orange;
       transition: color .1s linear;
@@ -66,7 +68,6 @@
     }
     ul  {
       font-size: 12px;
-      font-family: sans-regular;
       list-style: none;
       margin-top: 0px;
       margin-bottom: 0px;

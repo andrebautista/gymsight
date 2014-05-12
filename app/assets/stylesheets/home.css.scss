@@ -47,7 +47,8 @@ li.orbit-image-2  {
       font-family: stratum2-regular;
     }
     li > a  {
-      font-family: sans-regular;
+      font-family: Open Sans;
+      font-weight: 400;
     }
   }
   .slide-caption-container  {
@@ -151,7 +152,8 @@ li.orbit-image-2  {
     text-transform: uppercase;
     .footer-info  {
       color: rgb(217,217,217);
-      font-family: sans-bold;
+      font-family: 'Open Sans';
+      font-weight: 600;
       font-size: 10px;
       display: inline;
       height: 29px;
@@ -288,7 +290,6 @@ li.orbit-image-2  {
     li  {
       line-height: 20px;
       a {
-        font-family: sans-regular;
         color: rgba(255,163,0,1);
       }
     }

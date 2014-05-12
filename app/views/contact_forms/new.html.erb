@@ -1,23 +1,35 @@
-<%= form_for @contact_form, :url => contact_path do |form| %>
-  <fieldset class="fields">
-    <div class="field">
-      <%= form.label :name %>
-      <%= form.text_field :name %>
+<% provide(:title, 'About') %>
+<div class="row">
+  <div class="small-12 large-12 medium-12 large-centered columns">
+    <div class="banner-container who-we-are-banner">
+    <div class="banner-text">Get<br/>Started</div>
     </div>
-    <div
-    <div class="field">
-      <%= form.label :email %>
-      <%= form.text_field :email %>
-    </div>
-    <div class="field">
-      <%= form.label :age %>
-      <%= form.text_field :age, maxlength: 2 %>
-    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 large-12 medium-12 large-centered columns">
+  <%= form_for @contact_form, :url => contact_path do |form| %>
+    <fieldset class="fields">
+      <div class="field">
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+      </div>
+      <div
+      <div class="field">
+        <%= form.label :email %>
+        <%= form.text_field :email %>
+      </div>
+      <div class="field">
+        <%= form.label :age %>
+        <%= form.text_field :age, maxlength: 2 %>
+      </div>
 
-    <div class="field">
-      <%= select_tag(:training_program, options_for_select([['Personal Training',1], ['Group Training', 2]])) %>
-    </div>
-    <fieldset class="actions">
-    <%= form.submit "Send" %>
-  </fieldset>
-<% end %>
+      <div class="field">
+        <%= select_tag(:training_program, options_for_select([['Personal Training',1], ['Group Training', 2]])) %>
+      </div>
+      <fieldset class="actions">
+      <%= form.submit "Send" %>
+    </fieldset>
+  <% end %>
+  </div>
+</div>

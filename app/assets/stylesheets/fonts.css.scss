@@ -14,14 +14,7 @@
     src: font-url('Stratum/Stratum2-bold.otf') format('eot');
 }
 
-/* open sans */
-
-@font-face  {
-    font-family: 'sans-regular';
-    src: font-url('open-sans/OpenSans-Regular.ttf');
+@font-face {
+font-family: 'Open Sans', sans-serif;
 }
 
-@font-face  {
-    font-family: 'sans-bold';
-    src: font-url('open-sans/OpenSans-Bold.ttf');
-}
