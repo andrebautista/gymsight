@@ -54,6 +54,7 @@
   }
 
   .offerings-nav  {
+    text-transform: uppercase;
     position: absolute;
     width: 100%;
     nav  {
@@ -142,9 +143,6 @@
 
   .offerings-nav  {
     top: $banner-container-md*3/4;
-    nav  {
-
-    }
     ul  {
       margin: 15px 0 25px 15px;
       line-height:1.6;

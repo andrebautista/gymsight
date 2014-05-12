@@ -8,32 +8,28 @@
           <%= link_to '', 'javascript:void(0)', class: 'twitter social-link' %>
         </div>
       </div>
-      <div class="large-3 medium-3 small-12 columns">
+      <div class="large-3 medium-3 columns hide-for-small-only">
         <ul>
           <li class="nav-heading about-heading"><%= link_to 'Who We Are', about_path, class:"#{@about_active}" %></li>
-          <div class="hide-for-small-only about-links">
+          <div class="about-links">
             <li><%= link_to 'About Gymsight', "http://localhost:3000/about#about_us", class:"about_us" %></li>
             <li><%= link_to 'Trainer Bio', "http://localhost:3000/about#trainer_bio", class:"trainer_bio" %></li>
             <li><%= link_to 'Gallery', "http://localhost:3000/about#gallery", class:"gallery" %></li>
           </div>
         </ul>
       </div>
-      <div class="large-3 medium-3 small-12 columns">
+      <div class="large-3 medium-3 columns hide-for-small-only">
         <ul>
           <li class="nav-heading"><%= link_to 'What We Offer', offerings_path, class:"#{@offerings_active}" %></li>
-          <div class="hide-for-small-only">
-            <li><%= link_to 'Training Programs', offerings_path, class:"#{@program_active}" %></li>
-            <li><%= link_to 'Frequently Asked Questions', faq_path, class:"#{@faq_active}" %></li>
-          </div>
+          <li><%= link_to 'Training Programs', offerings_path, class:"#{@program_active}" %></li>
+          <li><%= link_to 'Frequently Asked Questions', faq_path, class:"#{@faq_active}" %></li>
         </ul>
       </div>
-      <div class="large-3 medium-3 small-12 columns" id="last-footer-nav">
+      <div class="large-3 medium-3 columns hide-for-small-only" id="last-footer-nav">
         <ul>
           <li class="nav-heading"><%= link_to 'Get Started', contact_path, class:"#{@gs_active}" %></li>
-          <div class="hide-for-small-only">
-            <li></li>
-            <li></li>
-          </div>
+          <li></li>
+          <li></li>
         </ul>
       </div>
       <div class="show-for-small-only small-12 columns">
