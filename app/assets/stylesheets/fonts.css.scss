@@ -1,3 +1,4 @@
+/* Stratum */
 @font-face  {
   font-family: 'stratum2-medium';
   src: url('/assets/Stratum/Stratum2-Medium.otf') format('eot');
@@ -9,3 +10,14 @@
 }
 
 
+/* open sans */
+
+@font-face  {
+    font-family: 'sans-regular';
+    src: url('/assets/open-sans/OpenSans-Regular.ttf');
+}
+
+@font-face  {
+    font-family: 'sans-bold';
+    src: url('/assets/open-sans/OpenSans-Bold.ttf');
+}

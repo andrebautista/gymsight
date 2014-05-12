@@ -225,7 +225,7 @@ $h3-font-size: rem-calc(27);
  $accordion-navigation-hover-bg-color: rgba(255, 255, 255, 0.12);
  $accordion-navigation-active-bg-color: rgba(255, 255, 255, 0.12);
  $accordion-navigation-font-color: rgba(255, 255, 255, 0.85);
-// $accordion-navigation-font-size: rem-calc(16);
+ $accordion-navigation-font-size: rem-calc(16);
 // $accordion-navigation-font-family: $body-font-family;
 
 // $accordion-content-padding: $column-gutter/2;
@@ -1067,10 +1067,10 @@ $h3-font-size: rem-calc(27);
 // $include-html-tabs-classes: $include-html-classes;
 
  //$tabs-navigation-padding: rem-calc(8,8);
- $tabs-navigation-bg-color: rgba(255,255,255,.1)  ;
- $tabs-navigation-active-bg-color: rgba(255,163,0,1);
-// $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);
- $tabs-navigation-font-color: rgba(255,255,255,.8);
+ $tabs-navigation-bg-color: rgba(51,51,51,1)  ;
+ $tabs-navigation-active-bg-color: rgb(255,164,0);
+ $tabs-navigation-hover-bg-color: rgb(255,164,0);
+ $tabs-navigation-font-color: white;
 // $tabs-navigation-font-size: rem-calc(16);
 // $tabs-navigation-font-family: $body-font-family;
 

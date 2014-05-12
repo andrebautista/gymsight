@@ -29,7 +29,7 @@ figure  {
       color: $gymsight-orange;
       transition: color .1s linear;
       &:hover  {
-        color: white;
+        color: rgb(217,217,217);
       }
     }
   }
@@ -84,9 +84,6 @@ figure  {
     }
     a {
       font-size: .72em;
-
-
-
     }
   }
 
@@ -147,31 +144,29 @@ figure  {
       position:relative;
       left:50%;
       text-align:center;
-
-      li {
-        display:block;
-        float:left;
-        list-style:none;
-        margin:0;
-        padding:0;
-        position:relative;
-        right:50%;
-        .active  {
-          border-bottom: 3px solid rgba(255,163,0,1);
+    }
+    li {
+      display:block;
+      float:left;
+      list-style:none;
+      margin:0;
+      padding:0;
+      position:relative;
+      right:50%;
+      .active  {
+        border-bottom: 3px solid rgba(255,164,0,1);
+        color: white;
+      }
+    }
+    a {
+      display:block;
+      padding-bottom: 8px;
+      color:rgba(191,191,191,1);
+      &:hover {
+        color: white;
+        background-color: transparent;
+        &.active  {
           color: white;
-        }
-        a {
-          display:block;
-          margin: .2em 1em;
-          padding-bottom: 3px;
-          text-decoration:none;
-          line-height:1.3em;
-          color:rgba(255,255,255,.8);
-          &:hover {
-
-            color:rgba(255,255,255,1);
-            background-color: transparent;
-          }
         }
       }
     }
@@ -266,9 +261,14 @@ figure  {
 
   .centeredmenu  {
     margin-bottom: .5em;
-    margin-top: .5em;
+    margin-top: 40px;
+    margin-bottom: 80px;
     ul  {
       font-size: .85em;
+    }
+    a  {
+      margin-left: 20px;
+      margin-right: 20px;
     }
   }
 
@@ -295,7 +295,7 @@ figure  {
 
   .centeredmenu  {
     ul  {
-      font-size: .9em;
+      font-size: 14px;
     }
   }
 } /* min-width 1025px, large screens */

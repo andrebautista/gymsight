@@ -35,7 +35,7 @@ li.orbit-image-2  {
     top: 0 ;
     right: 0 ;
     height: 5px ;
-    //background-color: rgba(216, 216, 216, 0.95) ;
+    background-color: rgba(217, 217, 217, 1) ;
   }
 }
 
@@ -43,8 +43,14 @@ li.orbit-image-2  {
 @media only screen {
   .accordion  {
     text-transform: capitalize;
+    dd > a  {
+      font-family: stratum2-regular;
+    }
+    li > a  {
+      font-family: sans-regular;
+    }
   }
-  .orbit-ul .slide-caption  {
+  .slide-caption-container  {
     display: none;
   }
 
@@ -143,6 +149,8 @@ li.orbit-image-2  {
     margin-bottom: 50px;
     text-align: right;
     .footer-info  {
+      color: rgb(217,217,217);
+      font-family: sans-bold;
       font-size: 10px;
       display: inline;
       height: 29px;
@@ -232,6 +240,28 @@ li.orbit-image-2  {
   #last-tile  {
     margin-right: 0px;
   }
+
+  .nav-title {
+    background-color: rgba(217,217,217,1);
+    font-size: 18px;
+    font-family: stratum2-regular;
+    width: 100%;
+    position: absolute;
+    height: $nav-title-height;
+    line-height: $nav-title-height;
+    transition: background-color .4s linear
+  }
+  .nav-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #222222;
+    background-color: rgba(0,0,0,0.75);
+    z-index: -1;
+    height: $nav-title-height;
+    transition: all .4s linear;
+  }
+
   .nav-tile  {
     background-size: cover;
     -ms-background-position-x: center;
@@ -255,6 +285,7 @@ li.orbit-image-2  {
     li  {
       line-height: 20px;
       a {
+        font-family: sans-regular;
         color: rgba(255,163,0,1);
       }
     }
@@ -269,7 +300,7 @@ li.orbit-image-2  {
     }
     &:hover {
       .nav-wrapper {
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0,0,0,0.75);
         height: $image-tileY-l;
       }
       ul  {
@@ -284,26 +315,6 @@ li.orbit-image-2  {
         -o-transform:rotate(90deg);
       }
     }
-  }
-  .nav-title {
-    background-color: rgba(217,217,217,1);
-    font-size: 18px;
-    font-family: stratum2-regular;
-    width: 100%;
-    position: absolute;
-    height: $nav-title-height;
-    line-height: $nav-title-height;
-    transition: background-color .4s linear
-  }
-  .nav-wrapper {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    color: #222222;
-    background-color: rgba(0,0,0,0.8);
-    z-index: -1;
-    height: $nav-title-height;
-    transition: all .4s linear;
   }
 }
 

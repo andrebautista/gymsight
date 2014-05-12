@@ -21,8 +21,7 @@ $headshot-height-lg:  405px;
     text-align:center;
     transition: all .2s linear;
     &:hover  {
-      background-color: $gymsight-orange;
-      color: #222222;
+      color: rgb(51,51,51);
     }
   }
 
@@ -31,7 +30,7 @@ $headshot-height-lg:  405px;
   }
 
   .tabs dd.active a  {
-    color: #222222;
+    color: rgb(51,51,51);
   }
 
   .text-content  {
@@ -95,12 +94,14 @@ $headshot-height-lg:  405px;
   .tabs dd > a  {
     //padding: .3em 2.75em;
     margin-right: 1em;
-    font-size: 1em;
-    width: 150px;
+    font-size: 18px;
+    font-family:  stratum2-medium;
+    text-transform: capitalize;
+    width: 140px;
     text-align:center;
     padding: 0;
-    height: 35px;
-    line-height: 35px;
+    height: 30px;
+    line-height: 30px;
   }
 
   .tabs  {
