@@ -174,7 +174,7 @@ li.orbit-image-2  {
   }
   .slide-caption-container  {
     display: block;
-    width: 600px;
+    width: 641px;
     height: 120px;
     margin-left: 15px;
     margin-top: 90px;
@@ -195,8 +195,7 @@ li.orbit-image-2  {
     height: 30px;
     line-height: 30px;
     position: absolute;
-    width: 230px;
-    left: 25px;
+    width: 200px;
     &:hover  {
       background-color: $gymsight-orange;
       color: black;
@@ -234,6 +233,7 @@ li.orbit-image-2  {
   }
   .slider-link  {
     font-size: 18px;
+    width: 230px;
   }
 
   /* Tile Styles */
