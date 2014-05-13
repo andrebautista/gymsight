@@ -9,7 +9,7 @@ $(document).foundation({
 });
 
 $( document ).ready(function() {
-  $(".offerings-active").closest("li").siblings(".nav-heading").addClass("offering-heading-active");
+  $(".offerings-active").closest("li").siblings(".nav-heading").addClass("active");
 
   var active = $("dd.active").attr('id');
   $('.interior-footer').find("."+ active).addClass('active');
