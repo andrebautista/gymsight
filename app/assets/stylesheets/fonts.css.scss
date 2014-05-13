@@ -1,20 +1,23 @@
 /* Stratum */
 @font-face  {
   font-family: 'stratum2-medium';
-  src: font-url('Stratum/Stratum2-Medium.otf') format('eot');
+  src: font-url('Stratum1WebMedium/Stratum1WebMedium_EOT/Stratum1WebMedium.eot') format('eot'),
+       font-url('Stratum1WebMedium/Stratum1WebMedium_WOFF/Stratum1WebMedium.woff') format('woff');
 }
 
 @font-face  {
     font-family: 'stratum2-regular';
-    src: font-url('Stratum/Stratum2-Regular.otf') format('eot');
+    src: font-url('Stratum1WebRegular/Stratum1WebRegular_EOT/Stratum1WebRegular.eot') format('eot'),
+        font-url('Stratum1WebRegular/Stratum1WebRegular_WOFF/Stratum1WebRegular.woff') format('woff');
 }
 
 @font-face  {
     font-family: 'stratum2-bold';
-    src: font-url('Stratum/Stratum2-bold.otf') format('eot');
+    src: font-url('Stratum1WebBold/Stratum1WebBold_EOT/Stratum1WebBold.eot') format('eot'),
+        font-url('Stratum1WebBold/Stratum1WebBold_WOFF/Stratum1WebBold.woff') format('woff');
 }
 
 @font-face {
-font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
