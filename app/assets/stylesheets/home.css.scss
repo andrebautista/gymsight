@@ -178,6 +178,9 @@ li.orbit-image-2  {
     height: 120px;
     margin-left: 15px;
     margin-top: 90px;
+    .offering-button  {
+      background-color: rgba(255,255,255,.1);
+    }
   }
   .slider-hl  {
     font-size: 36px * .85;
@@ -185,32 +188,7 @@ li.orbit-image-2  {
     height: 70px;
     margin-bottom: 20px;
     font-family: stratum2-medium ;
-  }
-  .slider-link  {
     color: white;
-    transition: all .3s linear;
-    background-color: rgba(255,255,255,.1);
-    font-family: stratum2-regular;
-    font-size: 18px * .85;
-    height: 30px;
-    line-height: 30px;
-    position: absolute;
-    width: 200px;
-    &:hover  {
-      background-color: $gymsight-orange;
-      color: black;
-      .banner-triangle  {
-        content: asset-url("site_wide/Triangle_Black.png", image);
-      }
-    }
-    .banner-triangle  {
-      margin-left: 10px;
-      width: 10px;
-      height: 11px;
-      margin-right: 10px;
-      display:inline;
-      content: asset-url("site_wide/Triangle_Orange.png", image);
-    }
   }
 }
 
@@ -230,10 +208,6 @@ li.orbit-image-2  {
   .slider-hl  {
     font-size: 36px;
     height: 78px;
-  }
-  .slider-link  {
-    font-size: 18px;
-    width: 230px;
   }
 
   /* Tile Styles */

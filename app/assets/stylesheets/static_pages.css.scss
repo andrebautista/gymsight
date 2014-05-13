@@ -135,13 +135,16 @@
 
   }
 
+  #header-logo  {
+    margin-top: 30px;
+  }
   .centeredmenu {
     text-transform: uppercase;
     float:left;
     width:100%;
     overflow:hidden;
     position:relative;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     margin-top: 20px;
     ul {
       font-size: .75em;
@@ -198,18 +201,12 @@
   }
 
   //Logo styling
+
+
   header {
   text-align: center;
   position: relative;
   min-height: 95px;
-  a {
-      img {
-       margin-top: 40px;
-      }
-      &:hover {
-        background-color: transparent;
-      }
-    }
   }
 
   .facebook  {
@@ -262,12 +259,12 @@
   .banner-text  {
       margin-left: 25px;
       padding-top: 23px;
-      font-size: 48px;
+      font-size: 36px;
   }
 
   .centeredmenu  {
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin-top: 30px;
+    margin-bottom: 60px;
     ul  {
       font-size: 14px;
     }
@@ -278,11 +275,38 @@
     }
   }
 
-  header > a > img {
-        margin-top: 60px;
+  #header-logo {
+    margin-top: 45px;
   }
   header > img  {
       height: 140px;
+  }
+
+  .offering-button  {
+    font-family: stratum2-regular;
+    font-size: 18px * .85;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    width: 200px;
+    transition: all .2s linear;
+    .button-triangle {
+      margin-left: 10px;
+      width: 10px;
+      height: 11px;
+      margin-right: 10px;
+      display:inline;
+      content: asset-url("site_wide/Triangle_Orange.png", image);
+    }
+    &:hover  {
+      background-color: $gymsight-orange;
+      color: black;
+      .button-triangle  {
+        content: asset-url("site_wide/Triangle_Black.png", image);
+      }
+    }
   }
 } /* min-width 641px, medium screens */
 
@@ -296,6 +320,21 @@
 
   .banner-text  {
       padding-top: 48px;
+      font-size: 48px;
+  }
+
+  .offering-button  {
+    width: 230px;
+    font-size: 18px;
+  }
+
+  #header-logo {
+        margin-top: 60px;
+  }
+
+  .centeredmenu  {
+    margin-top: 40px;
+    margin-bottom: 80px;
   }
 } /* min-width 1025px, large screens */
 

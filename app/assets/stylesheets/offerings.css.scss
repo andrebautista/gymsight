@@ -26,6 +26,10 @@
     background-image: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
   }
 
+  .offerings-banner  {
+    height: 115px;
+  }
+
   .program-details  {
     background-color: black;
     padding: 20px 10px;
@@ -60,7 +64,7 @@
   }
 
   .index-wrapper  {
-    min-height: 375px;
+    min-height: 405px;
     position:relative;
   }
 
@@ -90,33 +94,19 @@
     }
   }
 
-  .offerings-button  {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    height: 30px;
-    line-height: 30px;
-    position: absolute;
-    width: 220px;
-    transition: all .1s linear;
-    &:before  {
-      content: asset-url("site_wide/Triangle_Orange.png", image);
-      margin: 0 10px;
-    }
-      &:hover  {
-        background-color: $gymsight-orange;
-        color: black;
-        &:before  {
-          content: asset-url("site_wide/Triangle_Black.png", image);
-        }
-      }
-    }
-
   .training-program  {
     margin-bottom: 1em;
     background-size: cover;
     background-position: center top;
 
+  }
+
+  .nav-group  {
+    padding: 15px 10px 0px 10px;
+  }
+
+  .offering-button {
+      display: none;
   }
 
 } /* Define mobile styles */
@@ -125,6 +115,9 @@
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
+  .nav-group  {
+    padding: 0;
+  }
   .index-wrapper  {
     min-height: 260px;
     margin-bottom: 25px;
@@ -134,15 +127,22 @@
     padding: 25px;
   }
 
-  .what-we-offer-banner .banner-text{
-    padding-top: 35px;
+  .offerings-banner  {
+    height: 210px;
+  }
+
+  #WWO-text {
+    padding-top: 36px;
   }
 
   .offerings-nav  {
-    top: $banner-container-md*3/4;
-    .offerings-button {
-      display: inline-block;
+    top: 210px*3/4;
+    nav  {
+      padding: 19px;
     }
+  }
+  .offering-button {
+      display: inline-block;
   }
 
   .training-program  {
@@ -159,10 +159,8 @@
 
 // Large screens
 @media only screen and (min-width: 64.063em) {
-  .what-we-offer-banner  {
-    .banner-text {
-      padding-top: 39.5px;
-    }
+  #WWO-text  {
+      padding-top: 48px;
   }
   .offerings-banner  {
     height: 280px;
