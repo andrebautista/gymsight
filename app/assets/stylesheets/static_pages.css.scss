@@ -68,6 +68,7 @@
   }
 
   p  {
+    color: white;
     font-size: 14px;
   }
 
@@ -118,7 +119,8 @@
   }
 
   .footer-logo {
-    display: block;
+    display: inline-block;
+    width: 35%;
   }
 
   .absolute-home  {
@@ -237,6 +239,10 @@
     min-height: 140px;
   }
 
+  .footer-logo  {
+    width: 100%;
+  }
+
   .header-image  {
      background-image: image_url('Homepage/homepage_header.jpg');
      background-size: cover;
@@ -269,7 +275,7 @@
 
   .banner-text  {
       margin-left: 25px;
-      padding-top: 23px;
+      padding-top: 37px;
       font-size: 36px;
   }
 

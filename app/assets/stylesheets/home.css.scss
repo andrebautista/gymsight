@@ -262,17 +262,15 @@ li.orbit-image-2  {
       opacity: 0;
       transition: opacity .3s ease-in .1s;
       z-index: 1;
-      padding-top: $nav-title-height + 10px;
+      padding-top: 50px;
       margin-left: 25px;
       list-style: none;
       font-size: .75em;
     }
-    li  {
-      line-height: 20px;
-      a {
-        color: rgba(255,163,0,1);
-      }
+    a {
+      color: rgba(255,163,0,1);
     }
+
     .tile-triangle  {
       -webkit-transition-duration: 0.4s;
       -moz-transition-duration: 0.4s;
