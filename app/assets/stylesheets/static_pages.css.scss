@@ -12,16 +12,12 @@ html,body
 // Small screens
 @media only screen {
   body  {
-    height: auto;
-    min-height: 100%;
     background-color: black;
     background: -webkit-linear-gradient(top, rgba(51, 51, 51,.05) 33%, rgba(51, 51, 51, .7) 70%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
     background: -moz-linear-gradient(rgba(51, 51, 51, .05) 33%, rgba(51, 51, 51, .7) 61%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
     background: -o-linear-gradient(rgba(51, 51, 51, .05) 33%, rgba(51, 51, 51, .7) 61%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
     background: linear-gradient(top, rgba(51, 51, 51, .05) 33%, rgba(51, 51, 51, .7) 61%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
     background-attachment: fixed;
-    width: 100%;
-    height: 100%;
   }
 
   .credits  {
