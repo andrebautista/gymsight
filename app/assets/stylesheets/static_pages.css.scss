@@ -208,15 +208,15 @@
   }
 
   .facebook  {
-    content: asset-url("/assets/site_wide/social_facebook_off.png", image);
+    content: url("/assets/site_wide/social_facebook_off.png");
     &:hover  {
-      content: asset-url("/assets/site_wide/social_facebook_on.png", image);
+      content: url("/assets/site_wide/social_facebook_on.png");
     }
   }
   .twitter  {
-    content: asset-url("/assets/site_wide/social_twitter_off.png", image);
+    content: url("/assets/site_wide/social_twitter_off.png");
     &:hover  {
-      content: asset-url("/assets/site_wide/social_twitter_on.png", image);
+      content: url("/assets/site_wide/social_twitter_on.png");
     }
   }
 } /* Define mobile styles */
