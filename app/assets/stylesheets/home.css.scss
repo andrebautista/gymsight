@@ -41,20 +41,6 @@ li.orbit-image-2  {
 
 // Small screens
 @media only screen {
-  .accordion  {
-    text-transform: uppercase;
-    dd > a  {
-      font-family: stratum2-regular;
-    }
-    li {
-      margin-bottom: 0px;
-    }
-    a  {
-      font-family: Open Sans;
-      font-size: 12px;
-      font-weight: 400;
-    }
-  }
   .slide-caption-container  {
     display: none;
   }
@@ -113,41 +99,43 @@ li.orbit-image-2  {
 
   /* Accordion Mobile Nav  */
   .accordion  {
+    text-transform: uppercase;
     dd  {
       border-bottom: solid 1px rgba(0, 0, 0, 0.8);
       .content {
-
         padding: 0 0 0 5px;
       }
     }
     ul  {
+      font-family: Open Sans;
+      font-size: 12px;
+      font-weight: 400;
       list-style: none;
       margin-bottom: 0;
       margin-left: 0px;
       border-left: solid 4px rgba(255,163,0, 1);
     }
     li  {
+      border-bottom: solid 1px rgba(0, 0, 0, 0.8);
       height: 39px;
       line-height: 39px;
-      border-bottom: solid 1px rgba(0, 0, 0, 0.8);
+      margin-bottom: 0px;
+      position: relative;
       a  {
-      position: absolute;
-      width: 100%;
-      height: 39px;
-      padding-left: 10px;
-      color: rgba(255, 255, 255, 0.8);
-      transition: color .15s linear;
-      &:visited  {
-        color: white;
-      }
-      &:hover  {
+        color: #d9d9d9;
+        height: 39px;
+        padding-left: 10px;
+        position: absolute;
+        width: 100%;
+        transition: color .15s linear;
+        &:hover  {
         color: rgba(255,163,0, 1);
+        }
       }
     }
-    }
-    .last-accordion {
-      border-bottom: none;
-    }
+  }
+  .last-accordion {
+    border-bottom: none;
   }
   .home-footer  {
     margin-top: 20px;
