@@ -69,7 +69,7 @@
   }
 
   p  {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   a:hover {
@@ -236,6 +236,10 @@
 @media only screen and (min-width: 40.063em) {
   header  {
     min-height: 140px;
+  }
+
+  p  {
+    font-size: 14px;
   }
 
   .footer-logo  {

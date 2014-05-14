@@ -1,23 +1,23 @@
 @import "variables";
 
 .general-athletic  {
-  background-image: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
+  background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
 }
 
 .big-mountain  {
-  background-image: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
+  background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
 }
 
 .rock-and-ice  {
-  background-image: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
+  background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
 }
 
 .personal-training  {
-  background-image: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
+  background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
 }
 
 .semi-private  {
-  background-image: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
+  background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
 }
 
 // Small screens
@@ -94,11 +94,42 @@
     }
   }
 
-  .training-program  {
-    margin-bottom: 1em;
-    background-size: cover;
-    background-position: center top;
+  .hover-state  {
+    position: absolute;
+    width: 100%;
+    border-left: solid 5px rgba(255,164,0,0);
+    background-color: rgba(230,230,230,0.0);
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .2s linear;
+  }
 
+  .training-program  {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 15px 10px 15px 10px;
+    background-size: cover;
+    background-color: rgba(230,230,230,0.0);
+    background-position: center top;
+    transition: background-color .2s linear;
+    .offering-button  {
+      background-color: rgba(255,255,255,.1);
+    }
+    &:hover  {
+      background-color: rgba(230,230,230,0.5);
+      .hover-state  {
+        border-left: solid 5px rgba(255,164,0,1);
+        background-color: rgba(230,230,230,.30);
+      }
+      .offering-button  {
+        background-color: $gymsight-orange;
+        color: black;
+      }
+      .button-triangle  {
+          content: asset-url("site_wide/Triangle_Black.png", image);
+      }
+    }
   }
 
   .nav-group  {
@@ -182,7 +213,7 @@
   }
   .index-wrapper  {
     min-height: 369px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
 
   .offerings-nav  {
@@ -202,16 +233,14 @@
 
   .training-program  {
     height: 180px;
-  }
-  .program-copy  {
-    height: 85px;
+    padding: 25px;
     h1  {
-      margin-bottom: 8px;
-      margin-top: 0px;
+      font-size: 30px;
+      line-height: 30px;
     }
     p  {
       width: 60%;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
   }
 
