@@ -1,6 +1,5 @@
-<header>
-  <%= image_tag "Homepage/homepage_header.jpg", alt:"picture behind logo", class:"stretch-image #{'hidden' unless current_page?(root_path)} #{'hide-for-small-only' if current_page?(root_path)}" %>
-  <%= link_to image_tag("site_wide/Logo_Top.png", alt: "Logo", id:"header-logo"), root_path, class:"#{'absolute' if current_page?(root_path)}" %>
+<header class="<%= @header_image %>">
+  <%= link_to image_tag("site_wide/gymsight_logo.png", alt: "Logo", id:"header-logo"), root_path, class:"#{'absolute' if current_page?(root_path)}" %>
   <div class="row <%= 'hidden' if current_page?(root_path)%>">
     <div class="centeredmenu">
     <ul>

@@ -42,12 +42,16 @@ li.orbit-image-2  {
 // Small screens
 @media only screen {
   .accordion  {
-    text-transform: capitalize;
+    text-transform: uppercase;
     dd > a  {
       font-family: stratum2-regular;
     }
-    li > a  {
+    li {
+      margin-bottom: 0px;
+    }
+    a  {
       font-family: Open Sans;
+      font-size: 12px;
       font-weight: 400;
     }
   }
@@ -131,7 +135,6 @@ li.orbit-image-2  {
       height: 39px;
       padding-left: 10px;
       color: rgba(255, 255, 255, 0.8);
-      font-size: .9rem;
       transition: color .15s linear;
       &:visited  {
         color: white;

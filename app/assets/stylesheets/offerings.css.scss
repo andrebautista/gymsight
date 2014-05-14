@@ -64,7 +64,7 @@
   }
 
   .index-wrapper  {
-    min-height: 405px;
+    min-height: 386px;
     position:relative;
   }
 
@@ -109,6 +109,10 @@
       display: none;
   }
 
+  #last-nav-group  {
+    margin-bottom: 15px;
+  }
+
 } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -117,10 +121,13 @@
 @media only screen and (min-width: 40.063em) {
   .nav-group  {
     padding: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   .index-wrapper  {
-    min-height: 260px;
-    margin-bottom: 25px;
+    min-height: 300px;
+    margin-bottom: 19px;
   }
 
   .program-details  {
@@ -131,6 +138,10 @@
     height: 210px;
   }
 
+  #program-banner-text  {
+    padding-top: 14px;
+  }
+
   #WWO-text {
     padding-top: 36px;
   }
@@ -138,11 +149,15 @@
   .offerings-nav  {
     top: 210px*3/4;
     nav  {
-      padding: 19px;
+      padding: 19px 19px 38px 19px;
     }
   }
   .offering-button {
       display: inline-block;
+  }
+
+  .back-to-offerings  {
+    top: -44px;
   }
 
   .training-program  {
@@ -166,18 +181,19 @@
     height: 280px;
   }
   .index-wrapper  {
-    min-height: 350px;
+    min-height: 369px;
+    margin-bottom: 25px;
   }
 
   .offerings-nav  {
     top: 280px*3/4;
     nav  {
-      padding: 25px;
+      padding: 25px 25px 50px 25px;
     }
   }
 
   .back-to-offerings  {
-    top: -40px;
+    top: -55px;
   }
 
   #program-banner-text  {

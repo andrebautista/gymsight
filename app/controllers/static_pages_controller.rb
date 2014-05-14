@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+    @header_image  = "header-image"
   end
 
   def about
