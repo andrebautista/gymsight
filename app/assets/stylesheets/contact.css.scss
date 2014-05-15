@@ -1,24 +1,100 @@
+@import  "variables";
+
 // Small screens
 @media only screen {
   .faq-headline  {
     background-color: black;
-    padding: 20px 25px 25px 25px;
-    margin: 20px 0;
+    padding: 15px;
+    margin: 15px 0;
+    a  {
+      color: $gymsight-orange;
+      font-size: 14px;
+    }
+  }
+
+  .question-text  {
+    display: inline-block;
+    padding-left: 20px;
+  }
+
+  .accordion.faq  {
+    margin-bottom: 150px;
+    dd > a  {
+      padding: 0px;
+      position: relative;
+      color: white;
+      margin-top: 25px;
+    }
+    dd.active .button-triangle {
+      content: asset-url("site_wide/Triangle_Orange.png", image) ;
+      -webkit-transform:rotate(90deg);
+      -moz-transform:rotate(90deg);
+      -o-transform:rotate(90deg);
+    }
+    .button-triangle  {
+      top: 6px;
+      position: absolute;
+      display: inline-block;
+      margin-right: 8px;
+      width: 10px;
+      height: 11px;
+      content: asset-url("site_wide/Triangle_White.png", image);
+    }
+    dd.active a  {
+      background-color: transparent;
+    }
+    .content.active  {
+      font-family: 'Open Sans';
+      font-size: 14px;
+      background-color: transparent;
+      border-left: 4px solid $gymsight-orange;
+      margin-left: 25px;
+      margin-top: 15px;
+      padding: 0 0 0 25px;
+
+    }
+    a  {
+      font-size: 18px;
+      background-color: transparent;
+      &:hover  {
+        background-color: transparent;
+      }
+    }
+  }
+
+} /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+  .faq-headline  {
+    h1  {
+      font-size: 20px;
+    }
+  }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+  .faq-headline  {
     a  {
       font-size: 14px;
     }
   }
-} /* Define mobile styles */
+} /* min-width 641px, medium screens */
 
-@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-
-// Medium screens
-@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
-
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .faq-headline  {
+    h1  {
+      font-size: 20px;
+    }
+  }
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
-@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) {
+  .faq-headline  {
+    padding: 20px 25px 25px 25px;
+  }
+} /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
