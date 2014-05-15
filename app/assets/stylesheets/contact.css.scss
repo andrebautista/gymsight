@@ -3,6 +3,7 @@
 // Small screens
 @media only screen {
   .faq-headline  {
+    font-size: 20px;
     background-color: black;
     padding: 15px;
     margin: 15px 0;
@@ -14,6 +15,7 @@
 
   .question-text  {
     display: inline-block;
+    font-size: 16px;
     padding-left: 20px;
   }
 
@@ -23,7 +25,8 @@
       padding: 0px;
       position: relative;
       color: white;
-      margin-top: 25px;
+      margin-top: 15px;
+      margin-left: 15px;
     }
     dd.active .button-triangle {
       content: asset-url("site_wide/Triangle_Orange.png", image) ;
@@ -48,10 +51,9 @@
       font-size: 14px;
       background-color: transparent;
       border-left: 4px solid $gymsight-orange;
-      margin-left: 25px;
+      margin-left: 37px;
       margin-top: 15px;
-      padding: 0 0 0 25px;
-
+      padding: 0 0 0 15px;
     }
     a  {
       font-size: 18px;
@@ -64,33 +66,41 @@
 
 } /* Define mobile styles */
 
-@media only screen and (max-width: 40em) {
-  .faq-headline  {
-    h1  {
-      font-size: 20px;
-    }
-  }
-} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
   .faq-headline  {
+      font-size: 24px;
     a  {
       font-size: 14px;
     }
   }
+
+  .question-text  {
+    font-size: 18px;
+  }
+  .accordion.faq  {
+    .content.active  {
+      padding: 0 0 0 25px;
+    }
+    dd > a {
+      margin-left: 15px;
+    }
+
+  }
 } /* min-width 641px, medium screens */
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .faq-headline  {
-    h1  {
-      font-size: 20px;
-    }
-  }
-} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
 @media only screen and (min-width: 64.063em) {
+  .accordion.faq  {
+    dd > a  {
+      margin-top: 25px;
+      margin-left: 25px;
+    }
+  }
   .faq-headline  {
     padding: 20px 25px 25px 25px;
   }
