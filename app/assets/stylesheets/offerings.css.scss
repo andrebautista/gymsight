@@ -1,25 +1,5 @@
 @import "variables";
 
-.general-athletic:after  {
-    background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
-}
-
-.big-mountain:after  {
-  background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
-}
-
-.rock-and-ice:after  {
-  background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
-}
-
-.personal-training:after  {
-  background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
-}
-
-.semi-private:after  {
-  background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
-}
-
 // Small screens
 @media only screen {
  .what-we-offer-banner  {
@@ -36,9 +16,9 @@
     h1  {
       text-transform: uppercase;
       font-family: stratum2-bold;
-      font-size: 22px;
-      line-height: 24px;
-      margin-bottom: 18px;
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 12px;
       &:after  {
       content: "/";
       color: $gymsight-orange;
@@ -51,7 +31,7 @@
       font-size: 14px;
       line-height: 14px;
       color: $gymsight-orange;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
     span  {
       display: inline-block;
@@ -72,10 +52,7 @@
     position: absolute;
     width: 100%;
     nav  {
-      background: -webkit-linear-gradient(top, rgba(0, 0, 0,1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
-      background: -moz-linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
-      background: -o-linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
-      background: linear-gradient(top, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
+      background: black;
     }
   }
 
@@ -86,12 +63,6 @@
   //for jquery to find nav-heading that's active
   .offerings-active  {
       color: rgb(217,217,217);
-  }
-
-  .offerings-nav  {
-    span  {
-      color: $gymsight-orange;
-    }
   }
 
   .hover-border  {
@@ -112,6 +83,9 @@
     background-color: rgba(230,230,230,0.0);
     background-position: center top;
     transition: background-color .2s linear;
+    h1  {
+      font-size: 18px;
+    }
     .offering-button  {
       background-color: rgba(255,255,255,.1);
     }
@@ -158,10 +132,39 @@
 
 } /* Define mobile styles */
 
-@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+  .training-program  {
+    background-color: rgba(255,255,255,.1);
+    h1  {
+      margin-bottom: 8px;
+    }
+  }
+  .general-athletic  {
+    margin-top: 15px;
+  }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
+  .general-athletic:after  {
+    background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
+  }
+
+  .big-mountain:after  {
+    background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
+  }
+
+  .rock-and-ice:after  {
+    background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
+  }
+
+  .personal-training:after  {
+    background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
+  }
+
+  .semi-private:after  {
+    background: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
+  }
   .nav-group  {
     padding: 0;
     &:last-child {
@@ -175,8 +178,18 @@
 
   .program-details  {
     padding: 25px;
+    h1  {
+      font-size: 22px;
+      margin-bottom: 18px;
+      line-height: 24px;
+    }
+    h2  {
+      margin-bottom: 6px;
+    }
+    span  {
+      margin-bottom: 12px;
+    }
   }
-
   .offerings-banner  {
     height: 210px;
   }
@@ -193,6 +206,10 @@
     top: 210px*3/4;
     nav  {
       padding: 19px 19px 38px 19px;
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0,1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
+      background: -moz-linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
+      background: -o-linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
+      background: linear-gradient(top, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
     }
   }
   .offering-button {
