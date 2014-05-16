@@ -113,11 +113,16 @@
       }
     }
   }
-  .tabs-content  {
-    background-color: black !important;
+  #contact-tabs-content  {
     padding: 0 15px;
+    background-color: black;
   }
 
+  .contact-info  {
+    font-size: 18px;
+    padding: 15px;
+    background-color: rgba(0,0,0,.3);
+  }
 } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) {} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -153,8 +158,13 @@
       width: 200px;
     }
   }
-  .tabs-content  {
+  #contact-tabs-content  {
     padding: 0 25px;
+  }
+  .contact-info  {
+    padding: 25px;
+    margin-top: 75px;
+    height: 398px;
   }
 } /* min-width 641px, medium screens */
 
@@ -179,6 +189,9 @@
       width: 220px;
       height: 40px;
     }
+  }
+  .contact-info  {
+    margin-top: 80px;
   }
 } /* min-width 1025px, large screens */
 

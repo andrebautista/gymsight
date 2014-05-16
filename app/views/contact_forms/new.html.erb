@@ -6,13 +6,14 @@
     </div>
   </div>
 </div>
+<!-- add flash messages -->
 <div class="row">
   <div class="small-12 large-9 medium-9 columns">
     <dl class="tabs contact" data-tab>
       <dd class="active"><a href="#consultation_request">Request a Consultation</a></dd>
       <dd><a href="#question">Ask a Question</a></dd>
     </dl>
-    <div class="tabs-content">
+    <div class="tabs-content" id="contact-tabs-content">
       <div class="content active" id="consultation_request">
           <%= form_for @contact_form, :url => contact_path do |form| %>
             <div class="row">
@@ -107,7 +108,9 @@
 
   </div>
   <div class="small-12 large-3 medium-3 columns">
-      Map Goes here
+    <aside class="contact-info">
+      <h2>Location & Contact Info</h2>
+    </aside>
   </div>
 </div>
 
