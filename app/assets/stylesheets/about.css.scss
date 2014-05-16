@@ -7,11 +7,11 @@ $headshot-height-lg:  382px;
     background-image: asset-url("Interior_Banner_Images/wwa_banner.jpg", image);
   }
 
-  .tabs  {
+  .about  {
     margin: 10px 0 !important;
   }
 
-  .tabs dd > a  {
+  .about dd > a  {
     font-family: stratum2-medium;
     margin-right: 10px;
     font-size: 14px;
@@ -30,7 +30,7 @@ $headshot-height-lg:  382px;
     margin-right: 0;
   }
 
-  .tabs dd.active a  {
+  .tabs.about dd.active a, .tabs.contact dd.active a  {
     color: rgb(51,51,51);
   }
 
@@ -104,7 +104,7 @@ $headshot-height-lg:  382px;
     }
   }
 
-  .tabs dd > a  {
+  .about dd > a  {
     //padding: .3em 2.75em;
     margin-right: 15px;
     font-size: 18px;
@@ -115,7 +115,7 @@ $headshot-height-lg:  382px;
     line-height: 30px;
   }
 
-  .tabs  {
+  .about  {
     margin: 15px 0 !important;
   }
 
@@ -161,10 +161,10 @@ $headshot-height-lg:  382px;
     height: 471px;
   }
 
-  .tabs dd > a  {
+  .about dd > a  {
     margin-right: 20px;
   }
-  .tabs  {
+  .about  {
     margin: 20px 0 !important;
   }
 }

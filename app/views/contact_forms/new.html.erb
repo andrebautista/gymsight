@@ -7,29 +7,108 @@
   </div>
 </div>
 <div class="row">
-  <div class="small-12 large-12 medium-12 large-centered columns">
-  <%= form_for @contact_form, :url => contact_path do |form| %>
-    <fieldset class="fields">
-      <div class="field">
-        <%= form.label :name %>
-        <%= form.text_field :name %>
+  <div class="small-12 large-9 medium-9 columns">
+    <dl class="tabs contact" data-tab>
+      <dd class="active"><a href="#consultation_request">Request a Consultation</a></dd>
+      <dd><a href="#question">Ask a Question</a></dd>
+    </dl>
+    <div class="tabs-content">
+      <div class="content active" id="consultation_request">
+          <%= form_for @contact_form, :url => contact_path do |form| %>
+            <div class="row">
+              <div class="large-12 columns">
+                <h4 class="form-headline">Tell us about yourself</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-5 medium-5 columns">
+                <%= form.text_field :name, placeholder:"Name" %>
+              </div>
+              <div class="large-2 medium-2 small-4 columns">
+                <%= form.text_field :age, maxlength: 2, placeholder:"Age" %>
+              </div>
+              <div class="large-5 medium-5 columns">
+                <%= form.text_field :occupation, placeholder:"Occupation" %>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-5 medium-5 columns">
+                <%= form.text_field :email_consultation, placeholder:"Email" %>
+              </div>
+              <div class="large-4 medium-4 columns">
+                <%= form.text_field :phone_number, placeholder:"Phone Number" %>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <h4 class="form-headline">Which program are you interested in?</h4>
+                <a class="form-link" href="http://gymsight.herokuapp.com/offerings"> programs</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-5 medium-5 columns">
+                <div class="field">
+                  <%= select_tag(:training_program, options_for_select([['Personal Training',1], ['Group Training', 2], ['General Athletic', 3], ['Rock & Ice', 4], ['Big Mountain', 5]])) %>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                <h4 class="form-headline">Notes</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-12 columns">
+                  <%= form.text_area :notes, placeholder:"Enter text here" %>
+              </div>
+            </div>
+            <div class="actions">
+            <%= form.submit "Send" %>
+            </div>
+          <% end %>
       </div>
-      <div
-      <div class="field">
-        <%= form.label :email %>
-        <%= form.text_field :email %>
+      <div class="content" id="question">
+        <%= form_for @contact_form, :url => contact_path do |form| %>
+          <div class="row">
+            <div class="large-12 columns">
+              <h4 class="form-headline">Before asking a question, please check</h4>
+              <a href="http://gymsight.herokuapp.com/frequently-asked-questions" class="form-link"> frequently asked questions</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <h4 class="form-headline">Important contact details</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-5 medium-5 columns">
+              <%= form.text_field :name, placeholder:"Name" %>
+            </div>
+            <div class="large-5 medium-5 columns">
+              <%= form.text_field :email_question, placeholder:"Email" %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <h4 class="form-headline">Does your question relate to a specific program?</h4>
+              <a href="http://gymsight.herokuapp.com/frequently-asked-questions" class="form-link"> program</a>
+            </div>
+          </div>
+          <div class="row">
+              <div class="large-5 medium-5 columns">
+                <div class="field">
+                  <%= select_tag(:training_program, options_for_select([['Personal Training',1], ['Group Training', 2], ['General Athletic', 3], ['Rock & Ice', 4], ['Big Mountain', 5]])) %>
+                </div>
+              </div>
+            </div>
+        <% end %>
       </div>
-      <div class="field">
-        <%= form.label :age %>
-        <%= form.text_field :age, maxlength: 2 %>
-      </div>
+    </div>
 
-      <div class="field">
-        <%= select_tag(:training_program, options_for_select([['Personal Training',1], ['Group Training', 2]])) %>
-      </div>
-      <fieldset class="actions">
-      <%= form.submit "Send" %>
-    </fieldset>
-  <% end %>
+  </div>
+  <div class="small-12 large-3 medium-3 columns">
+      Map Goes here
   </div>
 </div>
+
+

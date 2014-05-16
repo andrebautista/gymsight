@@ -2,12 +2,38 @@
 
 // Small screens
 @media only screen {
+  form  {
+    margin-top: 20px;
+
+    [class*="column"] + [class*="column"]:last-child  {
+      float: left;
+    }
+  }
+
+  .form-link  {
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    color: $gymsight-orange;
+    &:hover  {
+      color: $gymsight-orange;
+    }
+  }
+
+  .form-headline  {
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Open Sans';
+  }
+
   .faq-headline  {
     font-size: 20px;
     background-color: black;
     padding: 15px;
     margin: 15px 0;
     a  {
+      font-family: 'Open Sans';
+      font-style: italic;
       color: $gymsight-orange;
       font-size: 14px;
     }
@@ -64,6 +90,34 @@
     }
   }
 
+  .contact  {
+    border-bottom: solid 4px $gymsight-orange;
+    margin-top: 30px;
+    dd > a {
+      color: rgb(217,217,217);
+      background-color: rgba(250,250,250,.10);
+      font-family: stratum2-regular;
+      font-size: 14px;
+      text-align: center;
+      padding: 0;
+      width: 135px;
+      margin-right: 15px;
+      height: 30px;
+      line-height: 32px;
+      &:hover  {
+        color: rgb(51,51,51);
+        background-color: $gymsight-orange
+      }
+     dd.active > a  {
+      background-color: $gymsight-orange;
+      }
+    }
+  }
+  .tabs-content  {
+    background-color: black !important;
+    padding: 0 15px;
+  }
+
 } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) {} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -87,7 +141,20 @@
     dd > a {
       margin-left: 15px;
     }
-
+  }
+  /* tabs styling */
+  .contact  {
+    margin-top: 40px;
+    dd > a {
+      font-size: 16px;
+      line-height: 38px;
+      padding: 0;
+      height: 35px;
+      width: 200px;
+    }
+  }
+  .tabs-content  {
+    padding: 0 25px;
   }
 } /* min-width 641px, medium screens */
 
@@ -103,6 +170,15 @@
   }
   .faq-headline  {
     padding: 20px 25px 25px 25px;
+  }
+
+  .contact  {
+    dd > a  {
+      font-size: 18px;
+      line-height: 42px;
+      width: 220px;
+      height: 40px;
+    }
   }
 } /* min-width 1025px, large screens */
 

@@ -9,16 +9,19 @@ class ContactFormsController < ApplicationController
     @contact_form = ContactForm.new(params[:contact_form])
     if @contact_form.valid?
       # TODO send message here
-      redirect_to root_url, notice: "Message sent! Thank you for contacting us."
+      @contact_form.deliver
+      respond_to do |format|
+        format.html  { redirect_to root_url,  notice: "Message sent! A gymsight trainer will respond shortly." }
+      end
     else
-      format.html { render action: 'new' }
+      render action: 'new', notice: "invalid input"
     end
   end
 
 
   private
     def post_params
-      params.require(:contact_form).permit(:name, :email, :age, :training_program,
-        :goals, :availability)
+      params.require(:contact_form).permit(:name, :age, :occupation, :email_consultation, :phone_number, :training_program,
+        :notes, :email_question)
     end
 end

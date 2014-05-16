@@ -1,10 +1,12 @@
 class ContactForm < MailForm::Base
-  attribute :name,      :validate => true
-  attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
-  attribute :training_program,   :validate => true
-  attribute :goals,  :validate => true
-  attribute :age
-  attribute :availability, :validate => true
+  attributes :name, :validate => true
+  attributes :age
+  attributes :occupation
+  attributes :email_consultation, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+  attributes :phone_number
+  attributes :training_program
+  attributes :notes,  :validate => true
+  attributes :email_question
   attribute :nickname,  :captcha  => true
 
 
