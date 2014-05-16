@@ -11,7 +11,7 @@ Gymsight::Application.routes.draw do
   get '/offerings/semi-private-training', to: 'static_pages#semipersonalt', as: 'spt'
   get '/offerings/essentials-pipeline', to: 'static_pages#essentials', as: 'essentials'
   get '/frequently-asked-questions', to: 'static_pages#faq', as: 'faq'
-  match '/contact', to: 'contact_forms#new', via: :get
+  match '/contact', to: 'contact_forms#new', via: :get, as: 'contact'
   match '/contact', to: 'contact_forms#create', via: :post
 
   devise_for :admins

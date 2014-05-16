@@ -11,7 +11,7 @@ class ContactFormsController < ApplicationController
       # TODO send message here
       @contact_form.deliver
       respond_to do |format|
-        format.html  { redirect_to controller: 'static_pages', action: 'contact',  notice: "Message sent! A gymsight trainer will respond shortly." }
+        format.html  { redirect_to contact_path, notice: "Message sent! A gymsight trainer will respond shortly." }
       end
     else
       render action: 'new', notice: "invalid input"
