@@ -9,6 +9,14 @@ html,body
     overflow-x: hidden;
 }
 
+a:focus  {
+  color: rgb(89,89,89);
+}
+
+:focus  {
+  outline-color: $gymsight-orange;
+}
+
 // Small screens
 @media only screen {
   body  {

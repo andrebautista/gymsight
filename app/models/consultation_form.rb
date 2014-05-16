@@ -1,4 +1,4 @@
-class ContactForm < MailForm::Base
+class ConsultationForm < MailForm::Base
   attributes :name, :validate => true
   attributes :age
   attributes :occupation
@@ -6,7 +6,6 @@ class ContactForm < MailForm::Base
   attributes :phone_number
   attributes :training_program
   attributes :notes,  :validate => true
-  attributes :email_question
   attribute :nickname,  :captcha  => true
 
 

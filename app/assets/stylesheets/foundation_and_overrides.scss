@@ -487,10 +487,10 @@ $h3-font-size: rem-calc(24);
 // $form-label-font-color: scale-color(#000, $lightness: 30%);
 // $form-label-bottom-margin: 0;
  $input-font-family: 'Open Sans';
- $input-font-color: rgba(89,89,89,1);
+//$input-font-color: rgb(89,89,89);
 // $input-font-size: rem-calc(14);
-// $input-bg-color: #fff;
-// $input-focus-bg-color: scale-color(#fff, $lightness: -2%);
+ $input-bg-color: rgb(217,217,217);
+ $input-focus-bg-color: scale-color(rgb(217,217,217), $lightness: 60%);
 // $input-border-color: scale-color(#fff, $lightness: -20%);
 // $input-focus-border-color: scale-color(#fff, $lightness: -40%);
 // $input-border-style: solid;
@@ -535,7 +535,7 @@ $h3-font-size: rem-calc(24);
 // $glowing-effect-color: $input-focus-border-color;
 
 // Select variables
-// $select-bg-color: #fafafa;
+ $select-bg-color: rgb(217,217,217);
 
 // Inline Lists
 

@@ -1,15 +1,18 @@
 class ContactFormsController < ApplicationController
   def new
-    @contact_form = ContactForm.new(params[:contact_form])
+    @consultation_form = ConsultationForm.new(params[:contact_form])
+    @question_form = QuestionForm.new(params[:contact_form])
     @gs_active = "header-active"
     @gs_header_active = "active"
   end
 
   def create
-    @contact_form = ContactForm.new(params[:contact_form])
-    if @contact_form.valid?
-      # TODO send message here
-      @contact_form.deliver
+    @consultation_form = ConsultationForm.new(params[:contact_form])
+    @question_form = QuestionForm.new(params[:contact_form])
+    if @consultation_form.valid?
+      @consultation_form.deliver
+    elsif @question_form.valid?
+      @question_form.deliver
       respond_to do |format|
         format.html  { redirect_to contact_path, notice: "Message sent! A gymsight trainer will respond shortly." }
       end
@@ -21,7 +24,7 @@ class ContactFormsController < ApplicationController
 
   private
     def post_params
-      params.require(:contact_form).permit(:name, :age, :occupation, :email_consultation, :phone_number, :training_program,
-        :notes, :email_question)
+      params.require(:contact_form).permit(:name, :age, :occupation, :email_consultation, :email_question, :phone_number, :training_program,
+        :notes, :nickname)
     end
 end
