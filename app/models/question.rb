@@ -1,4 +1,4 @@
-class QuestionForm < MailForm::Base
+class Question < MailForm::Base
   attributes :name, :validate => true
   attributes :email_question, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attributes :training_program
@@ -8,8 +8,8 @@ class QuestionForm < MailForm::Base
 
   def headers
     {
-      :from => "contact@gymsight.com",
-      :subject => "Contact",
+      :from => "#{email_question}>",
+      :subject => "#{name} - New Question",
       :to => "dewayne@gymsight.com"
     }
   end

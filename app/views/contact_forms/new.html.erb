@@ -6,7 +6,6 @@
     </div>
   </div>
 </div>
-<!-- add flash messages -->
 <div class="row">
   <div class="small-12 large-9 medium-9 columns">
     <dl class="tabs contact" data-tab data-options="deep_linking:true;scroll_to_content:false;">
@@ -15,7 +14,17 @@
     </dl>
     <div class="tabs-content" id="contact-tabs-content">
       <div class="content active" id="consultation_request">
-          <%= form_for @consultation_form, :url => contact_path do |form| %>
+          <%= form_for @consultation, url:consultation_path do |form| %>
+            <% flash.each do |key, value| %>
+              <div class="row">
+                <div class="small-12 large-12 medium-12 large-centered columns">
+                  <div data-alert class="alert-box">
+                      <%= value %>
+                      <a href="#" class="close">&times;</a>
+                  </div>
+                </div>
+              </div>
+            <% end %>
             <div class="row">
               <div class="large-12 columns">
                 <h4 class="form-headline">Tell us about yourself</h4>
@@ -47,7 +56,7 @@
             </div>
             <div class="row">
               <div class="large-5 medium-5 columns">
-                <%= select_tag(:training_program, options_for_select([['Personal Training',1], ['Group Training', 2], ['General Athletic Program', 3], ['Rock & Ice Program', 4], ['Big Mountain Program', 5]])) %>
+                <%= form.select(:training_program, options_for_select([['Personal Training'], ['Group Training'], ['General Athletic Program'], ['Rock & Ice Program'], ['Big Mountain Program']])) %>
               </div>
             </div>
             <div class="row">
@@ -61,12 +70,12 @@
               </div>
             </div>
             <div class="actions">
-              <%= form.submit "Send" %>
+              <%= form.submit "Submit", class:"submit-button" %>
             </div>
           <% end %>
       </div>
       <div class="content" id="question">
-        <%= form_for @question_form, :url => contact_path do |form| %>
+        <%= form_for @question, url: question_path do |form| %>
           <div class="row">
             <div class="large-12 columns">
               <h4 class="form-headline" id="question-reminder">Before asking a question, please check <a href="http://gymsight.herokuapp.com/frequently-asked-questions" class="form-link"> frequently asked questions</a></h4>
@@ -92,7 +101,7 @@
           </div>
           <div class="row">
             <div class="large-5 medium-5 columns">
-              <%= select_tag(:training_program, options_for_select([['No Program Selected', 1],['Personal Training',2], ['Group Training', 3], ['General Athletic Program', 4], ['Rock & Ice Program', 5], ['Big Mountain Program', 6]])) %>
+              <%= form.select(:training_program, options_for_select([['No Program Selected'],['Personal Training'], ['Group Training'], ['General Athletic Program'], ['Rock & Ice Program'], ['Big Mountain Program']])) %>
             </div>
           </div>
           <div class="row">
@@ -106,7 +115,7 @@
             </div>
           </div>
           <div class="actions">
-            <%= form.submit "Send" %>
+            <%= form.submit "Submit", class:"submit-button" %>
           </div>
         <% end %>
       </div>

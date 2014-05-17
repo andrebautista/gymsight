@@ -1,4 +1,4 @@
-class ConsultationForm < MailForm::Base
+class Consultation < MailForm::Base
   attributes :name, :validate => true
   attributes :age
   attributes :occupation
@@ -11,8 +11,8 @@ class ConsultationForm < MailForm::Base
 
   def headers
     {
-      :from => "contact@gymsight.com",
-      :subject => "Contact",
+      :from => "#{email_consultation}",
+      :subject => "#{name} - Consultation Request",
       :to => "dewayne@gymsight.com"
     }
   end
