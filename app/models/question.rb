@@ -1,8 +1,8 @@
 class Question < MailForm::Base
   attributes :name, :validate => true
-  attributes :email_question, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+  attributes :email_address, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attributes :training_program
-  attributes :notes,  :validate => true
+  attributes :question,  :validate => true
   attribute :nickname,  :captcha  => true
 
 
