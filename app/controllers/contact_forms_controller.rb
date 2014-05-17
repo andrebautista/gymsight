@@ -33,11 +33,11 @@ class ContactFormsController < ApplicationController
 
   private
     def consultation_params
-      params.require(:consultation).permit(:name, :age, :occupation, :email_consultation, :phone_number, :training_program,
+      params.require(:consultation).permit(:name, :age, :occupation, :email_address, :phone_number, :training_program,
         :notes)
     end
 
     def question_params
-      params.require(:question).permit(:name, :email_question, :training_program, :notes)
+      params.require(:question).permit(:name, :email_address, :training_program, :question)
     end
 end
