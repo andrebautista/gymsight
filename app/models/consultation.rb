@@ -11,7 +11,7 @@ class Consultation < MailForm::Base
 
   def headers
     {
-      :from => "#{email_consultation}",
+      :from => "contact@gymsight.com",
       :subject => "#{name} - Consultation Request",
       :to => "dewayne@gymsight.com"
     }

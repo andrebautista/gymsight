@@ -8,7 +8,7 @@ class Question < MailForm::Base
 
   def headers
     {
-      :from => "#{email_question}>",
+      :from => "contact@gymsight.com",
       :subject => "#{name} - New Question",
       :to => "dewayne@gymsight.com"
     }
