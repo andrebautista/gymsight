@@ -28,8 +28,10 @@
       <div class="large-3 medium-3 columns hide-for-small-only" id="last-footer-nav">
         <ul>
           <li class="nav-heading"><%= link_to 'Get Started', contact_path, class:"#{@gs_active}" %></li>
-          <li></li>
-          <li></li>
+          <div class="contact-links">
+            <li><%= link_to 'Request a Consultation', "http://localhost:3000/contact#consultation_request", class:"consultation_request" %></li>
+            <li><%= link_to 'Ask a Question', "http://localhost:3000/contact#question", class:"question" %></li>
+          </div>
         </ul>
       </div>
       <div class="show-for-small-only small-12 columns">

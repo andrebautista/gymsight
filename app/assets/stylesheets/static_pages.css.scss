@@ -66,7 +66,7 @@ a:focus  {
   }
 
   li  {
-    margin-bottom: 6px;
+    margin-bottom: 9px;
     line-height: 12px;
   }
 
@@ -322,7 +322,7 @@ a:focus  {
     height: 25px;
     line-height: 25px;
     position: absolute;
-    width: 200px;
+    width: 180px;
     transition: all .2s linear;
     .button-triangle {
       margin-left: 10px;
@@ -346,6 +346,9 @@ a:focus  {
 
 // Large screens
 @media only screen and (min-width: 64.063em) {
+  li  {
+    margin-bottom: 6px;
+  }
   .banner-container  {
     height: 210px;
   }

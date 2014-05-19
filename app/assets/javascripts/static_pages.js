@@ -10,7 +10,6 @@ $(document).foundation({
 
 $( document ).ready(function() {
   $(".offerings-active").closest("li").siblings(".nav-heading").addClass("active");
-
   var active = $("dd.active").attr('id');
   $('.interior-footer').find("."+ active).addClass('active');
 
@@ -21,16 +20,10 @@ $( document ).ready(function() {
 
   });
 
-  $(".about-links a").on('click', function() {
+  $(".about-links a, .contact-links a").on('click', function() {
     $('.interior-footer').find(".active").removeClass('active');
     $(this).addClass('active');
   });
-
-  $(".about-heading").on('click', function(){
-    $('.interior-footer').find(".active").removeClass('active');
-    $(".about_us").addClass('active');
-  });
-
 });
 
 // $(".offerings-active").on("click", function(){
