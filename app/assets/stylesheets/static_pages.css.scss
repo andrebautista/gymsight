@@ -2,11 +2,11 @@
 
 html,body
 {
-    width: 100%;
     height: 100%;
     margin: 0px;
-    padding: 0px;
     overflow-x: hidden;
+    padding: 0px;
+    width: 100%;
 }
 
 a:focus  {
@@ -21,18 +21,18 @@ a:focus  {
 @media only screen {
   body  {
     background-color: black;
-    background: -webkit-linear-gradient(top, rgba(51, 51, 51,.05) 33%, rgba(51, 51, 51, .7) 70%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
-    background: -moz-linear-gradient(rgba(51, 51, 51, .05) 33%, rgba(51, 51, 51, .7) 61%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
-    background: -o-linear-gradient(rgba(51, 51, 51, .05) 33%, rgba(51, 51, 51, .7) 61%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
-    background: linear-gradient(top, rgba(51, 51, 51, .05) 33%, rgba(51, 51, 51, .7) 61%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
+    background: -webkit-linear-gradient(top, rgba(51, 51, 51,.00) 35%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
+    background: -moz-linear-gradient(rgba(51, 51, 51, .05) 35%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
+    background: -o-linear-gradient(rgba(51, 51, 51, .05) 35%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
+    background: linear-gradient(top, rgba(51, 51, 51, .05) 35%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
     background-attachment: fixed;
   }
 
   .credits  {
-    margin: 20px 0 0 10px;
+    font-family: stratum2-bold;
     font-size: 10px;
     line-height: 12px;
-    font-family: stratum2-bold;
+    margin: 20px 0 0 10px;
     text-transform: uppercase;
   }
 

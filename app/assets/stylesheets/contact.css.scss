@@ -7,8 +7,8 @@
     border-color: rgb(255,164,0);
   }
   .contact-button  {
-    width: 170px;
-    height: 30px;
+    margin-bottom: 0 !important;
+    width: 100%;
     line-height: 30px;
     background-color: rgb(35,35,35);
     color: white;
@@ -162,17 +162,42 @@
   }
 
   #contact-tabs-content  {
-    padding: 0 15px;
+    padding: 0 15px 15px 15px;
     background-color: black;
     margin-bottom: 15px;
+
   }
 
-  .contact-info  {
-    font-size: 18px;
+  .contact-container  {
+    font-family: stratum2-regular;
+    line-height:24px;
     padding: 15px;
+    height: 250px;
     background-color: rgba(0,0,0,.3);
     background-image:  asset-url("Get_Started/gs_map.jpg", image);
     background-size: cover;
+    position: relative;
+    .contact-button  {
+      position:absolute;
+      bottom: 25px;
+      background-color:rgba(255, 255, 255, 0.1);
+      &:hover  {
+        background-color: #ffa400;
+      }
+    }
+    h3  {
+      margin-bottom: 12px;
+    }
+  }
+
+  .contact-details  {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .contact-caption  {
+    font-size: 14px;
+    margin-bottom: 12px;
   }
 
   .form-headline  {
@@ -181,10 +206,19 @@
   }
 } /* Define mobile styles */
 
-@media only screen and (max-width: 40em) {} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+#map-button  {
+  position: static;
+  }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
+  .contact-button  {
+    width: 170px;
+    height: 30px;
+  }
+
   textarea  {
     margin-bottom: 30px;
     height: 100px;
@@ -225,13 +259,13 @@
 
   #contact-tabs-content  {
     margin-bottom: 80px;
-    padding: 0 25px;
+    padding: 0 25px 25px 25px;
   }
 
-  .contact-info  {
-    padding: 25px;
+  .contact-container  {
+    padding: 15px;
     margin-top: 75px;
-    height: 441px;
+    height: 456px;
   }
 
   .form-headline  {
@@ -244,7 +278,12 @@
   }
 } /* min-width 641px, medium screens */
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  #map-button  {
+    width: 140px;
+  }
+
+  } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
 @media only screen and (min-width: 64.063em) {
@@ -271,7 +310,8 @@
     }
   }
 
-  .contact-info  {
+  .contact-container  {
+    padding: 25px;
     margin-top: 80px;
   }
 } /* min-width 1025px, large screens */
