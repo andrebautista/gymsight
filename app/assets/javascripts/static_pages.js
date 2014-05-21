@@ -26,10 +26,12 @@ $( document ).ready(function() {
   });
 
   $(".gallery-nav-button").on("click", function(){
+    $(this).addClass("active");
     if( $(".filters").is(":hidden") ) {
       $(".filters").slideDown("slow");
     } else {
-      $(".filters").hide();
+      $(".filters").slideUp("slow");
+      $(this).removeClass("active");
     }
   });
 });

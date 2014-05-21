@@ -1,12 +1,8 @@
 // Small screens
 @media only screen {
   .gallery-nav-button  {
-    background-image: asset-url("site_wide/Triangle_Black.png", image);
-    background-repeat: no-repeat;
-    background-position: center left;
-    background-position-x: 10px;
-    background-color: rgb(217,217,217);
     padding-left: 25px;
+    background-color: rgb(217,217,217);
     text-transform: uppercase;
     color: black;
     font-family: stratum2-medium;
@@ -15,8 +11,28 @@
     line-height: 28px;
     cursor: pointer;
     transition: all .2s linear;
+    &:before  {
+      position: absolute;
+      left: 10px;
+      content: asset-url("site_wide/Triangle_Black.png", image);
+      -webkit-transition: 0.4s all;
+      -moz-transition: 0.4s all;
+      -o-transition: 0.4s all;
+      transition: all 0.4s;
+    }
     &:hover  {
       background-color: rgb(255,164,0);
+    }
+  }
+
+  .gallery-nav-button.active  {
+    background-color: rgb(255,164,0);
+    &:before  {
+      position: absolute;
+      left: 10px;
+      -webkit-transform:rotate(90deg);
+      -moz-transform:rotate(90deg);
+      -o-transform:rotate(90deg);
     }
   }
 
@@ -34,8 +50,14 @@
     overflow: auto;
     padding: 20px 0 20px 25px;
     ul {
-
       float: left;
+    }
+    li  {
+      cursor: pointer;
+      transition: color .2s linear;
+      &:hover  {
+        color: rgb(217,217,217);
+      }
     }
   }
 
