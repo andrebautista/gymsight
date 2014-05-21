@@ -24,6 +24,14 @@ $( document ).ready(function() {
     $('.interior-footer').find(".active").removeClass('active');
     $(this).addClass('active');
   });
+
+  $(".gallery-nav-button").on("click", function(){
+    if( $(".filters").is(":hidden") ) {
+      $(".filters").slideDown("slow");
+    } else {
+      $(".filters").hide();
+    }
+  });
 });
 
 // $(".offerings-active").on("click", function(){

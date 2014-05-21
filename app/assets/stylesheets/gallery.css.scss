@@ -1,0 +1,92 @@
+// Small screens
+@media only screen {
+  .gallery-nav-button  {
+    background-image: asset-url("site_wide/Triangle_Black.png", image);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-position-x: 10px;
+    background-color: rgb(217,217,217);
+    padding-left: 25px;
+    text-transform: uppercase;
+    color: black;
+    font-family: stratum2-medium;
+    height: 26px;
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+    transition: all .2s linear;
+    &:hover  {
+      background-color: rgb(255,164,0);
+    }
+  }
+
+  .gallery-nav  {
+    width: 299px;
+    position: relative;
+  }
+
+  .filters {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    display: none;
+    background-color: rgba(0,0,0,.85);
+    overflow: auto;
+    padding: 20px 0 20px 25px;
+    ul {
+
+      float: left;
+    }
+  }
+
+  .tags  {
+
+  }
+  .media-type  {
+    margin-left: 80px;
+  }
+
+  .nav-header  {
+    color: rgb(217,217,217);
+    font-family: 'Open Sans';
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 18px;
+    &:after  {
+      padding-left: 5px;
+      content: "/";
+      color: rgb(255,164,0);
+    }
+  }
+
+} /* Define mobile styles */
+@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+  .gallery-nav-button  {
+    height: 30px;
+    line-height: 32px;
+  }
+
+  .gallery-nav  {
+    width: 450px;
+  }
+} /* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+  .gallery-nav-container  {
+    margin-top: -50px;
+  }
+} /* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
