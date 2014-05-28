@@ -1,5 +1,15 @@
 // Small screens
 @media only screen {
+  .item  {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #isotope-container  {
+    width: 100%;
+    min-height: 560px;
+  }
   .gallery-nav-button  {
     padding-left: 25px;
     background-color: rgb(217,217,217);
@@ -93,6 +103,10 @@
 
   .gallery-nav  {
     width: 450px;
+  }
+
+  .item  {
+    width: 25%;
   }
 } /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */

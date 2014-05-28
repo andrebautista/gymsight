@@ -4,6 +4,7 @@ class StaticPagesController < ApplicationController
   end
 
   def about
+    @images = Image.all
     @banner_id = "about"
     @about_active = "header-active"
   end

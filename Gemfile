@@ -13,6 +13,7 @@ gem 'postmark-rails'
 gem 'mail_form'
 gem 'foundation-rails'
 gem 'carrierwave'
+gem 'carrierwave-processing'
 gem 'rmagick', :require => 'RMagick'
 gem 'thread_safe', '0.2.0'
 

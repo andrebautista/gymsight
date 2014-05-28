@@ -1,4 +1,3 @@
-
 $(document).foundation({
   orbit: {
     next_on_click: false,
@@ -8,7 +7,16 @@ $(document).foundation({
   }
 });
 
+// $('#container').isotope({
+//     itemSelector: '.item',
+//     masonry: {
+//       columnWidth: 200,
+//       gutter: 20
+//     }
+//   });
+
 $( document ).ready(function() {
+
   $(".offerings-active").closest("li").siblings(".nav-heading").addClass("active");
   var active = $("dd.active").attr('id');
   $('.interior-footer').find("."+ active).addClass('active');

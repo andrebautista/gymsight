@@ -7,6 +7,7 @@
     border-color: rgb(255,164,0);
   }
   .contact-button  {
+    cursor: pointer;
     margin-bottom: 0 !important;
     width: 100%;
     line-height: 30px;
@@ -26,7 +27,7 @@
     &:hover  {
       background-image: asset-url("site_wide/Triangle_Black.png", image);
       background-color: $gymsight-orange;
-      color: black; //rgb(35,35,35)
+      color: black;
     }
   }
 

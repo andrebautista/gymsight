@@ -4,6 +4,8 @@ class ImagesController < ApplicationController
   # GET /images
   # GET /images.json
   def index
+    @banner_id = "about"
+    @about_active = "header-active"
     @images = Image.all
     @uploader = Image.new.image
 
