@@ -7,6 +7,7 @@ $(document).foundation({
   }
 });
 
+
 // $('#container').isotope({
 //     itemSelector: '.item',
 //     masonry: {
@@ -16,6 +17,12 @@ $(document).foundation({
 //   });
 
 $( document ).ready(function() {
+  var $container = $('#isotope-container').imagesLoaded( function() {
+    $container.isotope({
+      itemSelector: '.item',
+
+    });
+  });
 
   $(".offerings-active").closest("li").siblings(".nav-heading").addClass("active");
   var active = $("dd.active").attr('id');
@@ -36,9 +43,9 @@ $( document ).ready(function() {
   $(".gallery-nav-button").on("click", function(){
     $(this).addClass("active");
     if( $(".filters").is(":hidden") ) {
-      $(".filters").slideDown("slow");
+      $(".filters").slideDown("medium");
     } else {
-      $(".filters").slideUp("slow");
+      $(".filters").slideUp("medium");
       $(this).removeClass("active");
     }
   });
