@@ -1,0 +1,13 @@
+  <!--
+      # <td><%= image.description %></td>
+
+      #<td><%= link_to 'Edit', edit_image_path(image) %></td>
+
+      #<td><%= image.title %></td> -->
+
+      <%= link_to 'New Image', new_image_path %>
+
+      @admin = User.create(email: "dewayne@gymsight.com",
+                      password: "password",
+                      password_confirmation: "password",
+                      role: "admin")
