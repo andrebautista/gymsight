@@ -16,6 +16,7 @@ gem 'carrierwave'
 gem 'carrierwave-processing'
 gem 'rmagick', :require => 'RMagick'
 gem 'thread_safe', '0.2.0'
+gem 'acts-as-taggable-on'
 
 group :development do
   gem 'pry'

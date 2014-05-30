@@ -1,14 +1,27 @@
-<% @images.each do |image| %>
-  <div class="item">
-    <%= image_tag image.image_url(:thumb).to_s %>
+<% unless current_admin.nil? %>
+  <div class="row">
+    <div class="medium-12 large-12 columns">
+      <%= link_to 'New Image', new_image_path, class: "contact-button", style: "float:left;" %>
+      <%= link_to "Sign Out", destroy_admin_session_path, method: :delete, class:"contact-button" %>
+    </div>
   </div>
 <% end %>
-<div>
-<%= link_to 'New Image', new_image_path %>
+
+<div class="row">
+  <div class="medium-12 large-12 columns">
+    <div id="isotope-container" class="js-isotope" data-isotope-options='{ "itemSelector": ".item",
+     "masonry": { "columnWidth": 220, "gutter": 20 } }'>
+      <% @images.each do |image| %>
+        <div class="item <%= image.tag_list %>">
+          <%= image_tag image.image_url(:thumb).to_s %>
+          <% unless current_admin.nil? %>
+            <td><%= link_to 'Edit', edit_image_path(image) %></td>|
+            <td><%= link_to 'Show', image %></td>|
+            <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
-
-
-
-
-
 

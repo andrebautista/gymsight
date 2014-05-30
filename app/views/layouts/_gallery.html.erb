@@ -3,17 +3,17 @@
     <section class="gallery-nav">
       <div class="gallery-nav-button">All Content / All Media Types</div>
       <nav class="filters">
-        <ul class="tags">
-          <li class="nav-header">Filter by tag</li>
-          <li>All content</li>
-          <li>Workouts</li>
-          <li>Nutrition</li>
-          <li>Competitions</li>
-          <li>In the field</li>
+        <ul class="tags filter-group" data-filter-group="tag">
+          <h4 class="nav-header">Filter by tag</h4>
+          <li data-filter="">All content</li>
+          <li data-filter=".workouts">Workouts</li>
+          <li data-filter=".nutrition">Nutrition</li>
+          <li data-filter=".competitions">Competitions</li>
+          <li data-filter=".field">In the field</li>
         </ul>
-        <ul class="media-type">
-          <li class="nav-header">All media</li>
-          <li>Images</li>
+        <ul class="media-type filter-group" data-filter-group="type">
+          <li class="nav-header" data-filter="">All media</h4>
+          <li data-filter=".image">Images</li>
         </ul>
       </nav>
     </section>

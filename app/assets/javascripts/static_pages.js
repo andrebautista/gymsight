@@ -7,22 +7,30 @@ $(document).foundation({
   }
 });
 
-
-// $('#container').isotope({
-//     itemSelector: '.item',
-//     masonry: {
-//       columnWidth: 200,
-//       gutter: 20
-//     }
-//   });
-
 $( document ).ready(function() {
   var $container = $('#isotope-container').imagesLoaded( function() {
     $container.isotope({
       itemSelector: '.item',
-
     });
   });
+
+  var filters = {};
+
+$(".filters").on( 'click', 'li', function() {
+  var $this = $(this);
+  // get group key
+  var $buttonGroup = $this.parents('.filter-group');
+  var filterGroup = $buttonGroup.attr('data-filter-group');
+  // set filter for group
+  filters[ filterGroup ] = $this.attr('data-filter');
+  // combine filters
+  var filterValue = '';
+  for ( var prop in filters ) {
+    filterValue += filters[ prop ];
+  }
+  // set filter for Isotope
+  $container.isotope({ filter: filterValue });
+});
 
   $(".offerings-active").closest("li").siblings(".nav-heading").addClass("active");
   var active = $("dd.active").attr('id');

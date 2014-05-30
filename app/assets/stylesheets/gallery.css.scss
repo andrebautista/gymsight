@@ -4,7 +4,13 @@
     width: 100%;
     display: inline-block;
     text-align: center;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 220px;
+    height:280px;
+    img  {
+      max-width: 100%;
+      height: auto;
+    }
   }
   #isotope-container  {
     width: 100%;
@@ -82,6 +88,7 @@
     color: rgb(217,217,217);
     font-family: 'Open Sans';
     font-weight: 700;
+    font-size: 12px;
     margin-bottom: 12px;
     line-height: 18px;
     &:after  {
@@ -103,11 +110,9 @@
 
   .gallery-nav  {
     width: 450px;
+    margin-bottom: 20px;
   }
 
-  .item  {
-    width: 25%;
-  }
 } /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 

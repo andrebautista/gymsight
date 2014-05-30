@@ -34,6 +34,12 @@
   </div>
   <div class="row">
     <div class="large-6 medium-6 columns large-centered">
+      <%= f.label :tag_list, "Media Type & Tags (Separate with a single space)" %><br>
+      <%= f.text_field :tag_list %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 medium-6 columns large-centered">
       <div class="actions">
         <%= f.submit %>
       </div>

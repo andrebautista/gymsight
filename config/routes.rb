@@ -2,7 +2,6 @@ Gymsight::Application.routes.draw do
 
   root 'static_pages#home'
   get '/about', to: 'static_pages#about'
-  get '/about/gallery', to: 'static_pages#gallery'
   get '/offerings', to: 'static_pages#offerings'
   get '/offerings/big-mountain-program', to: 'static_pages#bmp', as: 'bmp'
   get '/offerings/general-athletic-program', to: 'static_pages#gap', as: 'gap'
@@ -16,8 +15,8 @@ Gymsight::Application.routes.draw do
   post '/consultation', to: 'contact_forms#consultation_request', as: 'consultation'
 
   devise_for :admins
-  resources :posts
   resources :images
+  # resources :posts
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
