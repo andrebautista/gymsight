@@ -8,11 +8,24 @@ $(document).foundation({
 });
 
 $( document ).ready(function() {
+//isotope behavior
   var $container = $('#isotope-container').imagesLoaded( function() {
     $container.isotope({
       itemSelector: '.item',
     });
   });
+
+  $("#gallery").on('click', function() {
+    var $container = $('#isotope-container').imagesLoaded( function() {
+    $container.isotope({
+      itemSelector: '.item',
+    });
+    $container.isotope('layout');
+  // $container.isotope( 'layoutItems', items, isStill );
+    });
+  });
+
+
 
   var filters = {};
 
@@ -32,6 +45,7 @@ $(".filters").on( 'click', 'li', function() {
   $container.isotope({ filter: filterValue });
 });
 
+//footer menu behavior
   $(".offerings-active").closest("li").siblings(".nav-heading").addClass("active");
   var active = $("dd.active").attr('id');
   $('.interior-footer').find("."+ active).addClass('active');
@@ -48,6 +62,7 @@ $(".filters").on( 'click', 'li', function() {
     $(this).addClass('active');
   });
 
+//gallery dropdown
   $(".gallery-nav-button").on("click", function(){
     $(this).addClass("active");
     if( $(".filters").is(":hidden") ) {
