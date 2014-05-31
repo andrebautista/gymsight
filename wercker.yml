@@ -35,7 +35,7 @@ build:
 deploy:
     steps:
     - add-to-known_hosts:
-        hostname: GYMSIGHT.COM
+        hostname: GYMSIGHT
     - mktemp:
         envvar: PRIVATEKEY_PATH
     - create-file:
@@ -46,13 +46,13 @@ deploy:
         hide-from-log: true
     - script:
         name: stop application
-        code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no GYMSIGHT.COM stop gocities
+        code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no GYMSIGHT stop gocities
     - script:
         name: transfer application
         code: |
             pwd
             ls -la
-            scp -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no digitalocean-test root@GYMSIGHT.COM:/var/local/www
+            scp -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no digitalocean-test root@GYMSIGHT:/var/local/www
     - script:
        name: start application
-       code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no GYMSIGHT.COM start gocities
+       code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no GYMSIGHT start gocities
