@@ -32,3 +32,27 @@ build:
         # - script:
         #        name: rspec
         #        code: bundle exec rspec
+deploy:
+    steps:
+  - add-to-known_hosts:
+    hostname: GYMSIGHT.COM
+       - mktemp:
+      envvar: PRIVATEKEY_PATH
+   - create-file:
+      name: write key
+      filename: $PRIVATEKEY_PATH
+      content: $FOO_PRIVATE
+      overwrite: true
+      hide-from-log: true
+   - script:
+      name: stop application
+      code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no GYMSIGHT.COM stop gocities
+   - script:
+      name: transfer application
+      code: |
+        pwd
+        ls -la
+        scp -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no digitalocean-test root@GYMSIGHT.COM:/var/local/www
+   - script:
+      name: start application
+      code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no GYMSIGHT.COM start gocities
