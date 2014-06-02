@@ -13,7 +13,6 @@ Gymsight::Application.routes.draw do
   get '/contact', to: 'contact_forms#new', as: 'contact'
   post '/question', to: 'contact_forms#question_request', as: 'question'
   post '/consultation', to: 'contact_forms#consultation_request', as: 'consultation'
-
   devise_for :admins
   resources :images
   # resources :posts

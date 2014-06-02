@@ -81,7 +81,7 @@ GEM
     figaro (0.7.0)
       bundler (~> 1.0)
       rails (>= 3, < 5)
-    foundation-rails (5.2.2.0)
+    foundation-rails (5.2.3.0)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
     haml (4.0.5)
@@ -130,7 +130,7 @@ GEM
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
     pg (0.17.1)
-    polyglot (0.3.4)
+    polyglot (0.3.5)
     postmark (1.2.1)
       json
       rake

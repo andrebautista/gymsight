@@ -1,13 +1,13 @@
-$(document).foundation({
-  orbit: {
-    next_on_click: false,
-    pause_on_hover: false,
-    bullets: false,
-    slide_number: false
-  }
-});
-
 $( document ).ready(function() {
+  //foundation JS
+  $(document).foundation({
+    orbit: {
+      next_on_click: false,
+      pause_on_hover: false,
+      bullets: false,
+      slide_number: false
+    }
+  });
 //isotope behavior
   var $container = $('#isotope-container').imagesLoaded( function() {
     $container.isotope({
@@ -21,31 +21,27 @@ $( document ).ready(function() {
       itemSelector: '.item',
     });
     $container.isotope('layout');
-  // $container.isotope( 'layoutItems', items, isStill );
     });
   });
 
-
-
   var filters = {};
+  $(".filters").on( 'click', 'li', function() {
+    var $this = $(this);
+    // get group key
+    var $buttonGroup = $this.parents('.filter-group');
+    var filterGroup = $buttonGroup.attr('data-filter-group');
+    // set filter for group
+    filters[ filterGroup ] = $this.attr('data-filter');
+    // combine filters
+    var filterValue = '';
+    for ( var prop in filters ) {
+      filterValue += filters[ prop ];
+    }
+    // set filter for Isotope
+    $container.isotope({ filter: filterValue });
+  });
 
-$(".filters").on( 'click', 'li', function() {
-  var $this = $(this);
-  // get group key
-  var $buttonGroup = $this.parents('.filter-group');
-  var filterGroup = $buttonGroup.attr('data-filter-group');
-  // set filter for group
-  filters[ filterGroup ] = $this.attr('data-filter');
-  // combine filters
-  var filterValue = '';
-  for ( var prop in filters ) {
-    filterValue += filters[ prop ];
-  }
-  // set filter for Isotope
-  $container.isotope({ filter: filterValue });
-});
-
-//footer menu behavior
+  //footer menu behavior
   $(".offerings-active").closest("li").siblings(".nav-heading").addClass("active");
   var active = $("dd.active").attr('id');
   $('.interior-footer').find("."+ active).addClass('active');
@@ -72,6 +68,7 @@ $(".filters").on( 'click', 'li', function() {
       $(this).removeClass("active");
     }
   });
+
 });
 
 // $(".offerings-active").on("click", function(){

@@ -1,9 +1,17 @@
 // Small screens
 @media only screen {
+  .about.fixed  {
+    position: fixed;
+  }
+
+  time  {
+    font-size: 12px;
+  }
+
   .item  {
-    width: 100%;
+    color: black;
+    font-family: stratum2-regular;
     display: inline-block;
-    text-align: center;
     margin-bottom: 20px;
     width: 220px;
     height:280px;
@@ -11,6 +19,34 @@
       max-width: 100%;
       height: auto;
     }
+    &:hover {
+      .overlay  {
+        opacity: 1;
+      }
+    }
+  }
+
+  .overlay  {
+    opacity: 0;
+    background-color: rgba(246,162,26,.85);
+    transition: all .2s linear;
+    position: absolute;
+    width: 220px;
+    height: 280px;
+    bottom: 0;
+     h2  {
+      color: black;
+      margin-bottom: 0px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+
+  .picture-details  {
+    width: 195px;
+    bottom: 0;
+    position: absolute;
+    margin: 0px 0px 25px 25px;
   }
   #isotope-container  {
     width: 100%;
@@ -103,6 +139,13 @@
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
+  .item:nth-child(even)  {
+    height: 220px;
+    overflow:hidden;
+    .overlay  {
+      height: 220px;
+    }
+  }
   .gallery-nav-button  {
     height: 30px;
     line-height: 32px;

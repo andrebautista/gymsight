@@ -9,11 +9,17 @@
 
 <div class="row">
   <div class="medium-12 large-12 columns">
-    <div id="isotope-container" class="js-isotope" data-isotope-options='{ "itemSelector": ".item",
+    <div class="js-isotope grid effect-1" id="isotope-container" data-isotope-options='{ "itemSelector": ".item",
      "masonry": { "columnWidth": 220, "gutter": 20 } }'>
       <% @images.each do |image| %>
         <div class="item <%= image.tag_list %>">
           <%= image_tag image.image_url(:thumb).to_s %>
+          <div class="overlay">
+            <div class="picture-details">
+              <time datetime="DD-MM-YYYY"><%= l image.created_at, format: :number %></time>
+              <h2><%= image.title %></h2>
+            </div>
+          </div>
           <% unless current_admin.nil? %>
             <td><%= link_to 'Edit', edit_image_path(image) %></td>|
             <td><%= link_to 'Show', image %></td>|
