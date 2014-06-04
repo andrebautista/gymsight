@@ -34,7 +34,6 @@ class ImageUploader < CarrierWave::Uploader::Base
   # end
 
    process :resize_to_fill => [800, 600]
-   process :quality => 70
 
 
 
