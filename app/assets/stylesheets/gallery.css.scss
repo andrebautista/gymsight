@@ -1,5 +1,23 @@
 // Small screens
 @media only screen {
+  .next-img  {
+    background-image: asset-url("Homepage/Homepage_Banner_Next_Arrow_on_retina.png", image);
+    width: 10px;
+    height: 32px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    &:hover  {
+      background-image: asset-url("Homepage/Homepage_Banner_Next_Arrow_off_retina.png", image);
+    }
+  }
+
+  .prev-img  {
+    @extend .next-img;
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); /* IE 9 */
+    -webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+  }
+
   .media.active, .tag.active  {
     color: white;
   }
@@ -17,6 +35,13 @@
 
   time  {
     font-size: 12px;
+  }
+
+  .photo-date  {
+    font-family: stratum2-regular;
+    font-size: 12px;
+    line-height: 36px;
+
   }
 
   .item  {

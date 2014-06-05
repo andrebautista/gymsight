@@ -1,5 +1,10 @@
 $( document ).ready(function() {
   $(".fancybox").fancybox({
+    beforeShow: function(){
+     this.title = $(this.element).next('.newTitle').text();
+     this.title += "<a class='prev-img' style='position:absolute;top:25px;right:35px;' href='javascript:void(0)'></a>"
+     this.title += "<a class='next-img' style='position:absolute;top:25px;right:0; href='javascript:void(0)'></a>"
+    },
     helpers : {
       overlay : {
             css : {
@@ -7,7 +12,22 @@ $( document ).ready(function() {
             }
       }
     },
+    // beforeShow: function () {
+    //         if (this.title) {
+    //             // Add tweet button
+    //             this.title += '<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="' + this.href + '">Tweet</a> ';
+
+    //             // Add FaceBook like button
+    //             this.title += '<iframe src="//www.facebook.com/plugins/like.php?href=' + this.href + '&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:23px;" allowTransparency="true"></iframe>';
+    //         }
+    //     },
     padding :[10,10,10,10]
+  });
+  $('body').on("click", ".next-img", function() {
+    $.fancybox.next();
+  });
+  $('body').on("click", ".prev-img", function() {
+    $.fancybox.prev();
   });
   //change filter on click
   $(".tag").on("click", function() {

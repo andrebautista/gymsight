@@ -12,8 +12,11 @@
      "masonry": { "columnWidth": 220, "gutter": 20 } }'>
       <% @images.each do |image| %>
         <div class="item <%= image.tag_list %>">
-          <a class="fancybox" href="<%= image.image_url.to_s %>", title="<%= image.title %>">
+          <a class="fancybox" rel="gymsight-gallery" href="<%= image.image_url.to_s %>">
           </a>
+          <div class="newTitle" style="display: none;">
+            <%= image.title + "<br/><time class='photo-date' datetime='DD-MM-YYYY'>" %> <%= l image.created_at, format: :number  %> </time>
+          </div>
           <%= image_tag image.image_url(:thumb).to_s %>
           <div class="overlay">
             <div class="picture-details">
