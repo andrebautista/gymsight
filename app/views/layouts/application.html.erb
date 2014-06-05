@@ -17,6 +17,15 @@
         <%= render 'layouts/header' %>
       </div>
     </div>
+    <% unless current_admin.nil? %>
+    <div class="row">
+      <div class="small-12 large-12 medium-12 large-centered columns">
+
+      <%= link_to "Sign Out", destroy_admin_session_path, method: :delete, class:"contact-button" %>
+
+      </div>
+    </div>
+    <% end %>
     <%= yield %>
     <%= render 'layouts/footer' %>
     <%= javascript_include_tag "application" %>

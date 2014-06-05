@@ -1,11 +1,24 @@
 $( document ).ready(function() {
-  $(".fancybox").fancybox();
+  $(".fancybox").fancybox({
+    helpers : {
+      overlay : {
+            css : {
+                'background' : 'rgba(0, 0, 0, 0.85)'
+            }
+      }
+    },
+    padding :[10,10,10,10]
+  });
   //change filter on click
   $(".tag").on("click", function() {
+    $('.tags').find(".active").removeClass('active');
+    $(this).addClass('active');
     var tag_text = $(this).text();
     $(".tag-type").replaceWith("<span class='tag-type'>" + tag_text + " </span>");
   });
   $(".media").on("click", function() {
+    $('.media-type').find(".active").removeClass('active');
+    $(this).addClass('active');
     var media_text = $(this).text();
     $(".media-nav-text").replaceWith("<span class='media-nav-text'>" + media_text + " </span>");
   });

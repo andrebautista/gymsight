@@ -1,8 +1,7 @@
 <% unless current_admin.nil? %>
   <div class="row">
     <div class="medium-12 large-12 columns">
-      <%= link_to 'New Image', new_image_path, class: "contact-button", style: "float:left;" %>
-      <%= link_to "Sign Out", destroy_admin_session_path, method: :delete, class:"contact-button" %>
+      <%= link_to 'New Image', new_image_path, class: "contact-button", style: "float:left; margin-bottom: 10px;" %>
     </div>
   </div>
 <% end %>
@@ -13,6 +12,8 @@
      "masonry": { "columnWidth": 220, "gutter": 20 } }'>
       <% @images.each do |image| %>
         <div class="item <%= image.tag_list %>">
+          <a class="fancybox" href="<%= image.image_url.to_s %>", title="<%= image.title %>">
+          </a>
           <%= image_tag image.image_url(:thumb).to_s %>
           <div class="overlay">
             <div class="picture-details">
@@ -21,9 +22,11 @@
             </div>
           </div>
           <% unless current_admin.nil? %>
-            <td><%= link_to 'Edit', edit_image_path(image) %></td>|
-            <td><%= link_to 'Show', image %></td>|
+          <nav>
+            <td><%= link_to 'Show', image %></td> |
+            <td><%= link_to 'Edit', edit_image_path(image) %></td> |
             <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </nav>
           <% end %>
         </div>
       <% end %>
