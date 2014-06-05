@@ -1,6 +1,15 @@
-
-
 $( document ).ready(function() {
+  $(".fancybox").fancybox();
+  //change filter on click
+  $(".tag").on("click", function() {
+    var tag_text = $(this).text();
+    $(".tag-type").replaceWith("<span class='tag-type'>" + tag_text + " </span>");
+  });
+  $(".media").on("click", function() {
+    var media_text = $(this).text();
+    $(".media-nav-text").replaceWith("<span class='media-nav-text'>" + media_text + " </span>");
+  });
+
   //foundation JS
   $(document).foundation({
     orbit: {
