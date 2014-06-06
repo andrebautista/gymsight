@@ -34,10 +34,19 @@
         <div class="row">
           <div class="small-12 large-12 medium-12 columns">
             <section class="gym-photos">
-              <figure>
+              <figure data-attr-about="1">
                 <%= image_tag 'Who_We_Are/wwa_insidegym.jpg', alt:'inside the gym' %>
-                <figcaption>Inside the Gymsight Space</figcaption>
+                <figcaption>Inside the Gymsight Space<a class='prev-img'></a><a class='next-img'></a></figcaption>
               </figure>
+              <figure data-attr-about="2" style="display:none;">
+                <%= image_tag 'What_We_Offer/wwo_offering_bmp_off.jpg', alt:'inside the gym' %>
+                <figcaption>second caption<a class='prev-img'></a><a class='next-img'></a></figcaption>
+              </figure>
+              <figure data-attr-about="3" style="display:none;">
+                <%= image_tag 'What_We_Offer/wwo_offering_bmp_on.jpg', alt:'inside the gym' %>
+                <figcaption>third caption<a class='prev-img'></a><a class='next-img'></a></figcaption>
+              </figure>
+
             </section>
           </div>
         </div>

@@ -1,14 +1,22 @@
-  <!--
-      # <td><%= image.description %></td>
+to do
 
-      #<td><%= link_to 'Edit', edit_image_path(image) %></td>
+* Add next/prev button to change about_us photo
+* Factor out hover events to disable during mobile
+* Disable interactions on scroll.
+* Upload to digital ocean using dokku and wercker for CI
+* GZip content using rack::deflater
+* Explore caching options
 
-      #<td><%= image.title %></td> -->
+when photography is ready
+ * Upload assets to s3
+ * Swap assets in code
+ * Pay bills for fancybox and isotope
 
-      <%= link_to 'New Image', new_image_path %>
 
-      @admin = User.create(email: "dewayne@gymsight.com",
-                      password: "password",
-                      password_confirmation: "password",
-                      role: "admin")
+
+How to create admin:
+@admin = User.create(email: "dewayne@gymsight.com",
+  password: "password",
+  password_confirmation: "password",
+  role: "admin")
 

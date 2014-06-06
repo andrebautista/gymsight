@@ -58,12 +58,21 @@ $headshot-height-lg:  382px;
 
   .gym-photos  {
     font-family: stratum2-regular;
+    position: relative;
     img  {
       width: 100%;
     }
     figcaption {
       margin: 15px 0;
       font-size: 18px;
+    }
+    .next-img  {
+      position: absolute;
+      right: 0px;
+    }
+    .prev-img  {
+      @extend .next-img;
+      right: 30px;
     }
   }
 
