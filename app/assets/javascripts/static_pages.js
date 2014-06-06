@@ -8,7 +8,6 @@ $( document ).ready(function() {
       next_image = parseInt(next_image) + 1;
       if (next_image > num_photos)  {
         next_image = 1;
-        console.log("we reached the end");
       }
       next_image = $('[data-attr-about=' + next_image + ']');
       $(this).closest('figure').hide();
@@ -18,10 +17,8 @@ $( document ).ready(function() {
       var prev_image = $(this).closest('figure').attr('data-attr-about');
       console.log(prev_image);
       prev_image = parseInt(prev_image) - 1;
-      console.log(prev_image);
       if (prev_image == 0)  {
         prev_image = num_photos;
-        console.log("loop back to end");
       }
       var prev_image = $('[data-attr-about=' + prev_image + ']');
       $(this).closest('figure').hide();
