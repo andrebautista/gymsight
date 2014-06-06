@@ -6,9 +6,6 @@
     height: 24px;
     background-size: 100%;
     background-repeat: no-repeat;
-    &:hover  {
-      background-image: asset-url("Homepage/Homepage_Banner_Next_Arrow_off_retina.png", image);
-    }
   }
 
   .prev-img  {
@@ -56,11 +53,6 @@
       max-width: 100%;
       height: auto;
     }
-    &:hover {
-      .overlay  {
-        opacity: 1;
-      }
-    }
     nav  {
       position: absolute;
       bottom: 0;
@@ -72,7 +64,6 @@
   .overlay  {
     opacity: 0;
     background-color: rgba(246,162,26,.85);
-    transition: all .2s linear;
     position: absolute;
     width: 220px;
     height: 280px;
@@ -105,7 +96,6 @@
     font-size: 18px;
     line-height: 28px;
     cursor: pointer;
-    transition: all .2s linear;
     margin-bottom: 10px;
     &:before  {
       position: absolute;
@@ -115,9 +105,6 @@
       -moz-transition: 0.4s all;
       -o-transition: 0.4s all;
       transition: all 0.4s;
-    }
-    &:hover  {
-      background-color: rgb(255,164,0);
     }
   }
 
@@ -150,10 +137,6 @@
     }
     li  {
       cursor: pointer;
-      transition: color .2s linear;
-      &:hover  {
-        color: rgb(217,217,217);
-      }
     }
   }
 

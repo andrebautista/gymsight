@@ -1,6 +1,6 @@
 to do
 
-* Add next/prev button to change about_us photo
+**** Add next/prev button to change about_us photo
 * Factor out hover events to disable during mobile
 * Disable interactions on scroll.
 * Upload to digital ocean using dokku and wercker for CI

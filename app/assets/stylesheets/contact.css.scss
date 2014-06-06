@@ -19,16 +19,10 @@
     border: none;
     text-align: left;
     padding-left: 25px;
-    transition: all .2s linear;
     background-image: asset-url("site_wide/Triangle_Orange.png", image);
     background-position: center;
     background-position-x: 10px;
     background-repeat: no-repeat;
-    &:hover  {
-      background-image: asset-url("site_wide/Triangle_Black.png", image);
-      background-color: $gymsight-orange;
-      color: black;
-    }
   }
 
   form  {
@@ -62,9 +56,7 @@
     font-size: 14px;
     font-family: 'Open Sans';
     color: $gymsight-orange;
-    &:hover  {
-      color: $gymsight-orange;
-    }
+
   }
 
   .form-headline  {
@@ -152,12 +144,8 @@
       height: 30px;
       line-height: 32px;
       transition: all .2s linear;
-      &:hover  {
-        color: rgb(51,51,51);
-        background-color: $gymsight-orange
-      }
-     dd.active > a  {
-      background-color: $gymsight-orange;
+      dd.active > a  {
+        background-color: $gymsight-orange;
       }
     }
   }
@@ -182,9 +170,6 @@
       position:absolute;
       bottom: 25px;
       background-color:rgba(255, 255, 255, 0.1);
-      &:hover  {
-        background-color: #ffa400;
-      }
     }
     h3  {
       margin-bottom: 12px;

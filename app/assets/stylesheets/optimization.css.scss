@@ -1,4 +1,145 @@
-.disable-hover,
-.disable-hover * {
-  pointer-events: none !important;
+@import  "variables";
+
+.no-touch {
+  //about page
+  .about dd > a {
+    transition: color .2s linear;
+    -webkit-transition: color .2s linear; /* For Safari 3.1 to 6.0 */
+    &:hover  {
+      color: rgb(51,51,51);
+    }
+  }
+
+  //contact page
+  .contact-button  {
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear; /* For Safari 3.1 to 6.0 */
+    &:hover  {
+      background-image: asset-url("site_wide/Triangle_Black.png", image);
+      background-color: $gymsight-orange;
+      color: black;
+    }
+  }
+
+  .form-link  {
+    &:hover  {
+      color: $gymsight-orange;
+    }
+  }
+
+  .contact dd > a {
+    transition: all .2s linear;
+    &:hover  {
+      color: rgb(51,51,51);
+      background-color: $gymsight-orange
+    }
+  }
+
+  .contact-container .contact-button  {
+    &:hover  {
+      background-color: #ffa400;
+    }
+  }
+
+  //gallery page
+  .next-img  {
+    &:hover  {
+      background-image: asset-url("Homepage/Homepage_Banner_Next_Arrow_off_retina.png", image);
+    }
+  }
+  .prev-img  {
+    @extend .next-img
+  }
+
+  .overlay  {
+    transition: opacity .2s linear;
+    -webkit-transition: opacity .2s linear;
+  }
+
+  .item:hover .overlay  {
+      opacity: 1;
+  }
+
+  .gallery-nav-button  {
+    transition: background-color .2s linear;
+    -webkit-transition: background-color .2s linear;
+    &:hover  {
+      background-color: rgb(255,164,0);
+    }
+  }
+
+  .filters li {
+    transition: color .2s linear;
+    -webkit-transition: color .2s linear;
+    &:hover  {
+      color: rgb(217,217,217);
+    }
+  }
+
+  //homepage
+  .orbit-container .orbit-next:hover, .orbit-container .orbit-prev:hover   {
+    content: asset-url("Homepage/Homepage_Banner_Next_Arrow_off_retina.png", image);
+    background-color: transparent;
+  }
+
+  .accordion.nav li a {
+    transition: color .15s linear;
+    -webkit-transition: color .15s linear;
+    &:hover  {
+      color: rgba(255,163,0, 1);
+    }
+  }
+
+  //offerings
+  .training-program  {
+    transition: background-color .2s linear;
+    -webkit-transition: background-color .2s linear;
+    &:hover  {
+      &:after  {
+        opacity: .80;
+      }
+      .hover-border  {
+        background-color: rgba(255,164,0,1);
+      }
+      .offering-button  {
+        background-color: $gymsight-orange;
+        color: black;
+      }
+      .button-triangle  {
+        content: asset-url("site_wide/Triangle_Black.png", image);
+      }
+    }
+  }
+
+  //static pages events
+  ul a  {
+    transition: color .1s linear;
+    -webkit-transition: color .1s linear;
+    &:hover  {
+      color: rgb(217,217,217);
+    }
+  }
+
+  .centeredmenu a  {
+    &:hover {
+        color: white;
+        background-color: transparent;
+        &.active  {
+          color: white;
+        }
+    }
+  }
+
+  .offering-button  {
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    &:hover  {
+      background-color: $gymsight-orange;
+      color: black;
+      .button-triangle  {
+        content: asset-url("site_wide/Triangle_Black.png", image);
+      }
+    }
+  }
 }
+
