@@ -3,8 +3,8 @@
 .no-touch {
   //about page
   .about dd > a {
-    transition: color .2s linear;
-    -webkit-transition: color .2s linear; /* For Safari 3.1 to 6.0 */
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear; /* For Safari 3.1 to 6.0 */
     &:hover  {
       color: rgb(51,51,51);
     }
