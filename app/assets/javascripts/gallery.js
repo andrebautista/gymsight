@@ -58,14 +58,18 @@ $( document ).ready(function() {
     $('.tags').find(".active").removeClass('active');
     $(this).addClass('active');
     var tag_text = $(this).text();
-    $(".tag-type").replaceWith("<span class='tag-type'>" + tag_text + " </span>");
+    console.log(tag_text);
+    if (tag_text == "All content")
+      $(".tag-type").replaceWith("<span class='tag-type'> " + tag_text + " </span>");
+    else
+    $(".tag-type").replaceWith("<span class='tag-type'>Filter: " + tag_text + " </span>");
   });
-  $(".media").on("click", function() {
-    $('.media-type').find(".active").removeClass('active');
-    $(this).addClass('active');
-    var media_text = $(this).text();
-    $(".media-nav-text").replaceWith("<span class='media-nav-text'>" + media_text + " </span>");
-  });
+  // $(".media").on("click", function() {
+  //   $('.media-type').find(".active").removeClass('active');
+  //   $(this).addClass('active');
+  //   var media_text = $(this).text();
+  //   $(".media-nav-text").replaceWith("<span class='media-nav-text'>" + media_text + " </span>");
+  // });
 
   //gallery dropdown
   $(".gallery-nav-button").on("click", function(){
