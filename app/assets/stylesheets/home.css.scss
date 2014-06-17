@@ -46,23 +46,22 @@ li.orbit-image-2  {
   }
 
   .orbit-container .orbit-next, .orbit-container .orbit-prev  {
-    content: asset-url("Homepage/Homepage_Banner_Next_Arrow_on_retina.png", image);
+    content: asset-url("Homepage/Homepage_Banner_Next_Arrow_off_retina.png", image);
     width: 12px !important;
     height: 40px !important;
     top: 50%;
   }
+
   .orbit-next  {
     margin-right: 40px;
   }
-  .orbit-prev  {
-    margin-left: 20px;
-    display: none !important;
-  }
 
   .orbit-prev  {
-    transform:rotate(180deg);
-    -ms-transform:rotate(180deg); /* IE 9 */
-    -webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+   // margin-left: 20px;
+    display: none !important;
+   // transform:rotate(180deg);
+   // -ms-transform:rotate(180deg); /* IE 9 */
+   // -webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
   }
 
   ul.orbit-ul, li.orbit-item {
