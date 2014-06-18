@@ -2,13 +2,25 @@
 
 /* Orbit Styles */
 li.orbit-image-1 {
-  background-image: asset-url("Homepage/homepage_banner_1.jpg", image);
+  background-image: asset-url("Homepage/homepage_banner_image_1.jpg", image);
   background-size: cover;
+  .slider-hl  {
+    color: rgb(51,51,51);
+  }
 }
 li.orbit-image-2  {
-  background-image: asset-url("Homepage/homepage_banner_2.jpg", image);
+  background-image: asset-url("Homepage/homepage_banner_image_2.jpg", image);
   background-size: cover;
 }
+li.orbit-image-3 {
+  background-image: asset-url("Homepage/homepage_banner_image_3.jpg", image);
+  background-size: cover;
+}
+li.orbit-image-4  {
+  background-image: asset-url("Homepage/homepage_banner_image_4.jpg", image);
+  background-size: cover;
+}
+
 
 .orbit-container:hover .orbit-timer > span {
   display: none;
@@ -19,11 +31,11 @@ li.orbit-image-2  {
 }
 
 .what-we-offer-home  {
-  background-image: asset-url("Homepage/homepage_what_we_offer.jpg", image);
+  background-image: asset-url("Homepage/homepage_section_what_we_offer.jpg", image);
 }
 
 .get-started-home  {
-  background-image: asset-url("Homepage/homepage_about_us.jpg", image);
+  background-image: asset-url("Homepage/homepage_section_get_started.jpg", image);
 }
 
 .orbit-container .orbit-timer  {
@@ -46,7 +58,7 @@ li.orbit-image-2  {
   }
 
   .orbit-container .orbit-next, .orbit-container .orbit-prev  {
-    content: asset-url("Homepage/Homepage_Banner_Next_Arrow_off_retina.png", image);
+    content: asset-url("site_wide/homepage_banner_next_arrow_off.png", image);
     width: 12px !important;
     height: 40px !important;
     top: 50%;

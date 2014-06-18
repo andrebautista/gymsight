@@ -44,7 +44,7 @@
   //gallery page
   .next-img  {
     &:hover  {
-      background-image: asset-url("Homepage/Homepage_Banner_Next_Arrow_off_retina.png", image);
+      background-image: asset-url("site_wide/homepage_banner_next_arrow_off.png", image);
     }
   }
   .prev-img  {
@@ -78,7 +78,7 @@
 
   //homepage
   .orbit-container .orbit-next:hover, .orbit-container .orbit-prev:hover   {
-    content: asset-url("Homepage/Homepage_Banner_Next_Arrow_on_retina.png", image);
+    content: asset-url("site_wide/homepage_banner_next_arrow_on.png", image);
     background-color: transparent;
   }
 
