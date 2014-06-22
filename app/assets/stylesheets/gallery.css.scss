@@ -94,11 +94,14 @@
     font-size: 18px;
     line-height: 28px;
     cursor: pointer;
-    margin-bottom: 10px;
-    &:before  {
+    .triangle-filter  {
+      height: 11px;
+      width: 8px;
+      background-size: 100%;
+      top: 10px;
       position: absolute;
       left: 10px;
-      content: asset-url("site_wide/Triangle_Black.png", image);
+      background-image: asset-url("site_wide/Triangle_Black.png", image);
       -webkit-transition: 0.4s all;
       -moz-transition: 0.4s all;
       -o-transition: 0.4s all;
@@ -108,7 +111,7 @@
 
   .gallery-nav-button.active  {
     background-color: rgb(255,164,0);
-    &:before  {
+    .triangle-filter  {
       position: absolute;
       left: 10px;
       -webkit-transform:rotate(90deg);
