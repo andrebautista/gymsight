@@ -3,6 +3,7 @@ $( document ).ready(function() {
   var $container = $('#isotope-container').imagesLoaded( function() {
     $container.isotope({
       itemSelector: '.item',
+      $container.isotope('layout');
     });
   });
   $("#gallery").on('click', function() {
