@@ -30,6 +30,10 @@
     background-repeat: no-repeat;
   }
 
+  #contact-number  {
+    color: $gymsight-orange;
+  }
+
   form  {
     margin-top: 10px;
     [class*="column"] + [class*="column"]:last-child  {
