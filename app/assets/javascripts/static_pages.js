@@ -1,3 +1,13 @@
+$(document).foundation({
+    orbit: {
+      next_on_click: false,
+      pause_on_hover: false,
+      bullets: false,
+      slide_number: false
+    }
+  });
+
+//foundation JS
 $( document ).ready(function() {
   //About photo slider
   var num_photos = $(".gym-photos figure").length;
@@ -23,16 +33,6 @@ $( document ).ready(function() {
       var prev_image = $('[data-attr-about=' + prev_image + ']');
       $(this).closest('figure').hide();
       $(prev_image).show();
-    }
-  });
-
-  //foundation JS
-  $(document).foundation({
-    orbit: {
-      next_on_click: false,
-      pause_on_hover: false,
-      bullets: false,
-      slide_number: false
     }
   });
 
