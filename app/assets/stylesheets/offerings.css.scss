@@ -3,11 +3,16 @@
 // Small screens
 @media only screen {
  .what-we-offer-banner  {
-    background-image: asset-url("Interior_Banner_Images/wwo_banner.jpg", image);
+    background-image: asset-url("What_We_Offer/wwo_banner.jpg", image);
+    background-size: 100%;
   }
 
   .offerings-banner  {
     height: 115px;
+  }
+
+  .breakout-link  {
+    color: $gymsight-orange;
   }
 
   .program-details  {
@@ -107,7 +112,7 @@
   }
 
   .offering-button {
-      display: none;
+      display: inline;
   }
 
   #last-nav-group  {
@@ -190,10 +195,10 @@
     top: 210px*3/4;
     nav  {
       padding: 19px 19px 38px 19px;
-      background: -webkit-linear-gradient(top, rgba(0, 0, 0,1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
-      background: -moz-linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
-      background: -o-linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
-      background: linear-gradient(top, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 61%, rgba(0, 0, 0, .05) 100%);
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0,1) 60%, rgba(0, 0, 0, .7) 75%, rgba(0, 0, 0, .05) 100%);
+      background: -moz-linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 75%, rgba(0, 0, 0, .05) 100%);
+      background: -o-linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 75%, rgba(0, 0, 0, .05) 100%);
+      background: linear-gradient(top, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, .7) 75%, rgba(0, 0, 0, .05) 100%);
     }
   }
   .offering-button {
@@ -259,7 +264,7 @@
       line-height: 30px;
     }
     p  {
-      width: 60%;
+      width: 85%;
       margin-bottom: 6px;
       line-height: 24px;
     }

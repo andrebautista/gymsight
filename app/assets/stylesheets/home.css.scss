@@ -2,22 +2,22 @@
 
 /* Orbit Styles */
 li.orbit-image-1 {
-  background-image: asset-url("Homepage/homepage_banner_image_1.jpg", image);
+  background-image: url("http://d1glu0vbbg0go6.cloudfront.net/Homepage/homepage_banner_image_1.jpg");
   background-size: cover;
   .slider-hl  {
     color: rgb(51,51,51);
   }
 }
 li.orbit-image-2  {
-  background-image: asset-url("Homepage/homepage_banner_image_2.jpg", image);
+  background-image: url("http://d1glu0vbbg0go6.cloudfront.net/Homepage/homepage_banner_image_2.jpg");
   background-size: cover;
 }
 li.orbit-image-3 {
-  background-image: asset-url("Homepage/homepage_banner_image_3.jpg", image);
+  background-image: url("http://d1glu0vbbg0go6.cloudfront.net/Homepage/homepage_banner_image_3.jpg");
   background-size: cover;
 }
 li.orbit-image-4  {
-  background-image: asset-url("Homepage/homepage_banner_image_4.jpg", image);
+  background-image: url("http://d1glu0vbbg0go6.cloudfront.net/Homepage/homepage_banner_image_4.jpg");
   background-size: cover;
 }
 
@@ -27,15 +27,15 @@ li.orbit-image-4  {
 }
 
 .who-we-are-home  {
-  background-image: asset-url("Homepage/homepage_who_we_are.jpg", image);
+  background-image: url("http://d1glu0vbbg0go6.cloudfront.net/Homepage/Homepage_section_who_we_are.jpg");
 }
 
 .what-we-offer-home  {
-  background-image: asset-url("Homepage/homepage_section_what_we_offer.jpg", image);
+  background-image: url("http://d1glu0vbbg0go6.cloudfront.net/Homepage/homepage_what_we_offer.jpg");
 }
 
 .get-started-home  {
-  background-image: asset-url("Homepage/homepage_section_get_started.jpg", image);
+  background-image: url("http://d1glu0vbbg0go6.cloudfront.net/Homepage/homepage_section_get_started.jpg");
 }
 
 .orbit-container .orbit-timer  {
@@ -58,7 +58,7 @@ li.orbit-image-4  {
   }
 
   .orbit-container .orbit-next, .orbit-container .orbit-prev  {
-    content: asset-url("site_wide/homepage_banner_next_arrow_off.png", image);
+    content: asset-url("Homepage/homepage_banner_next_arrow_off.png", image);
     width: 12px !important;
     height: 40px !important;
     top: 50%;
@@ -90,8 +90,9 @@ li.orbit-image-4  {
     background-repeat: no-repeat;
     display: inline-block;
     overflow:hidden;
-    width: 10px;
+    width: 8px;
     height: 11px;
+    background-size: 100%;
   }
 
   .triangle-orange  {
@@ -99,7 +100,7 @@ li.orbit-image-4  {
     background-repeat: no-repeat;
     display: inline-block;
     overflow:hidden;
-    width: 10px;
+    width: 8px;
     height: 11px;
   }
 
@@ -174,7 +175,7 @@ li.orbit-image-4  {
     margin-left: 15px;
     margin-top: 90px;
     .offering-button  {
-      background-color: rgba(255,255,255,.1);
+      background-color: rgba(0,0,0,1);
     }
   }
   .slider-hl  {

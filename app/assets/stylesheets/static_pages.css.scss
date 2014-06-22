@@ -19,14 +19,40 @@ a:focus  {
 
 // Small screens
 @media only screen {
-  body  {
+  body.homepage  {
     background-color: black;
-    background: asset-url("Homepage/homepage_background.png", image), asset-url("site_wide/black_twill/black_twill.png", image);
+    background: url("http://d1glu0vbbg0go6.cloudfront.net/Homepage/homepage_background.png"), asset-url("site_wide/black_twill/black_twill.png", image);
     /*background: -webkit-linear-gradient(top, rgba(51, 51, 51,.00) 35%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
     background: -moz-linear-gradient(rgba(51, 51, 51, .05) 35%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
     background: -o-linear-gradient(rgba(51, 51, 51, .05) 35%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
     background: linear-gradient(top, rgba(51, 51, 51, .05) 35%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);*/
     background-attachment: fixed;
+  }
+
+  body  {
+    background: url("http://d1glu0vbbg0go6.cloudfront.net/site_wide/background_bottom_gym_texture.png"), asset-url("site_wide/black_twill/black_twill.png", image);
+    background-attachment: fixed;
+  }
+
+  .offering-button  {
+    text-transform: uppercase;
+    font-family: stratum2-regular;
+    font-size: 18px * .85;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    height: 25px;
+    line-height: 25px;
+    width: 100%;
+    padding: 2px 20px 2px 0px;
+    margin-top: 5px;
+    .button-triangle {
+      margin-left: 10px;
+      width: 8px;
+      height: 11px;
+      margin-right: 10px;
+      display:inline;
+      content: asset-url("site_wide/Triangle_Orange.png", image);
+    }
   }
 
   .credits  {
@@ -114,7 +140,7 @@ a:focus  {
   .interior-footer  {
     padding: 19px 0;
     width: 100%;
-    background-image: asset-url("site_wide/global_footer.jpg", image);
+    background-image: url("http://d1glu0vbbg0go6.cloudfront.net/site_wide/global_footer.jpg");
     background-size: cover;
     border-top: solid 2px $gymsight-orange;
     .social-container  {
@@ -249,7 +275,7 @@ a:focus  {
   }
 
   .header-image  {
-     background-image: image_url('Homepage/Homepage_Header_Image.jpg');
+     background-image: url('http://d1glu0vbbg0go6.cloudfront.net/Homepage/Homepage_Header_Image.jpg');
      background-size: cover;
   }
 
@@ -305,17 +331,14 @@ a:focus  {
   }
 
   .offering-button  {
-    font-family: stratum2-regular;
     font-size: 18px * .85;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    height: 25px;
-    line-height: 25px;
     position: absolute;
     width: 180px;
+    margin-top: 0px;
+    padding: 0px;
     .button-triangle {
       margin-left: 10px;
-      width: 10px;
+      width: 8px;
       height: 11px;
       margin-right: 10px;
       display:inline;
@@ -329,7 +352,7 @@ a:focus  {
 // Large screens
 @media only screen and (min-width: 64.063em) {
   li  {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
   .banner-container  {
     height: 210px;

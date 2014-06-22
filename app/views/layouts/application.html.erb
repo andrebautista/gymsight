@@ -9,7 +9,7 @@
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
+  <body class="<%= 'homepage' if current_page?(root_path) %>">
     <div class="row">
       <div class="small-12 large-12 medium-12 large-centered columns">
         <%= render 'layouts/header' %>

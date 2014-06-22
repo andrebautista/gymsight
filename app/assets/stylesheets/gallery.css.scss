@@ -1,18 +1,16 @@
 // Small screens
 @media only screen {
   .next-img  {
-    background-image: asset-url("site_wide/homepage_banner_next_arrow_off.png", image);
-    width: 7.5px;
-    height: 24px;
+    background-image: asset-url("site_wide/image_arrow_forward_on.png", image);
+    width: 12.5px;
+    height: 30.5px;
     background-size: 100%;
     background-repeat: no-repeat;
   }
 
   .prev-img  {
     @extend .next-img;
-    transform:rotate(180deg);
-    -ms-transform:rotate(180deg); /* IE 9 */
-    -webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+    background-image: asset-url("site_wide/image_arrow_back_on.png", image);
   }
 
   .media.active, .tag.active  {

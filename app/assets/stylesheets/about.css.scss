@@ -4,7 +4,27 @@ $headshot-height-lg:  382px;
 //small screens
 @media only screen {
   .who-we-are-banner  {
-    background-image: asset-url("Interior_Banner_Images/wwa_banner.jpg", image);
+    background-image: url("http://d1glu0vbbg0go6.cloudfront.net/Who_We_Are/wwa_banner.jpg");
+  }
+
+  .gymowner-header  {
+    margin-bottom: 0;
+  }
+
+  h3.header-description  {
+    font-family:  'stratum2-regular';
+    color: $gymsight-orange;
+    font-size: 20px;
+  }
+
+  #trainer_bio .program-details  {
+    margin-top: 15px;
+  }
+
+  #certifications  {
+    span  {
+      display: block;
+    }
   }
 
   .about  {
@@ -40,7 +60,6 @@ $headshot-height-lg:  382px;
     }
     h3  {
       font-size: 20px;
-      line-height: 36px;
     }
   }
 
@@ -79,21 +98,6 @@ $headshot-height-lg:  382px;
   .center-image  {
     text-align: center;
   }
-/*  .age  {
-    float: left;
-  }
-  .hometown  {
-    float: right;
-  }
-  .hobbies  {
-    display: block;
-    clear: both;
-  }
-  .image-caption  {
-    span  {
-      color: $gymsight-orange;
-    }
-  }*/
 }
 
 /* M Screens: min-width 641px */
@@ -106,6 +110,11 @@ $headshot-height-lg:  382px;
     }
     h3  {
       font-size: 24px;
+    }
+    h4  {
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
     }
   }
 
@@ -148,12 +157,13 @@ $headshot-height-lg:  382px;
     }
   }
 
-  #gymowner-bio  {
-    height: $headshot-height-lg;
-    h3  {
+  h3.gymowner-header  {
       font-size: 28px;
       line-height: 33.6px;
-    }
+  }
+
+  #trainer_bio .program-details  {
+    margin-top: 20px;
   }
 
   #about-us  {
@@ -163,7 +173,6 @@ $headshot-height-lg:  382px;
   .text-content  {
     padding: 20px 25px 20px 25px;
     margin-bottom: 100px;
-    height: 471px;
   }
 
   .about dd > a  {

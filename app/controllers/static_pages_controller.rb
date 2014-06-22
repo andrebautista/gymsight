@@ -20,7 +20,7 @@ class StaticPagesController < ApplicationController
   def gap
     @banner_text_l1 = "General"
     @banner_text_l2 = "Athletic Program"
-    @banner_image = "what-we-offer-banner"
+    @banner_image = "who-we-are-banner"
     @link_class = "back-to-offerings"
     @banner_id = "offerings";
     @program_active = "active"
@@ -38,9 +38,9 @@ class StaticPagesController < ApplicationController
     @offerings_header_active = "active"
   end
 
-  def rip
-    @banner_text_l1 = "Rock & Ice"
-    @banner_text_l2 = "Program"
+  def rss
+    @banner_text_l1 = "Run Strong"
+    @banner_text_l2 = "Strength Program"
     @banner_image = "what-we-offer-banner"
     @link_class = "back-to-offerings"
     @program_active = "active"
