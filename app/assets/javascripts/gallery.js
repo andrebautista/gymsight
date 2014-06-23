@@ -65,7 +65,6 @@ $( document ).ready(function() {
     $('.tags').find(".active").removeClass('active');
     $(this).addClass('active');
     var tag_text = $(this).text();
-    console.log(tag_text);
     if (tag_text == "All content")
       $(".tag-type").replaceWith("<span class='tag-type'> " + tag_text + " </span>");
     else
