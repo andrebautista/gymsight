@@ -30,7 +30,7 @@ a:focus  {
   }
 
   body  {
-    background: url("http://d1glu0vbbg0go6.cloudfront.net/site_wide/background_bottom_gym_texture.png"), asset-url("site_wide/black_twill/black_twill.png", image);
+    background: url("http://d1glu0vbbg0go6.cloudfront.net/site_wide/background_gym_texture.png"), asset-url("site_wide/black_twill/black_twill.png", image);
     background-attachment: fixed;
   }
 
@@ -140,7 +140,7 @@ a:focus  {
   .interior-footer  {
     padding: 19px 0;
     width: 100%;
-    background-image: url("http://d1glu0vbbg0go6.cloudfront.net/site_wide/global_footer.jpg");
+    background-image: url("http://d1glu0vbbg0go6.cloudfront.net/site_wide/footer.jpg");
     background-size: cover;
     border-top: solid 2px $gymsight-orange;
     .social-container  {
