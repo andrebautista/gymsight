@@ -7,8 +7,13 @@
     background-size: 100%;
   }
 
+  .essentials-pipeline-banner  {
+    background-image: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/ep/wwo_breakout_banner_ep_a.jpg");
+  }
+
   .offerings-banner  {
     height: 115px;
+    background-size: cover;
   }
 
   .breakout-link  {
@@ -115,8 +120,16 @@
       display: inline;
   }
 
+  #offerings-nav-back-button  {
+    display: none;
+  }
+
   #last-nav-group  {
     margin-bottom: 15px;
+  }
+
+  .program-breakout-photo  {
+    margin-bottom: 20px;
   }
 
 } /* Define mobile styles */
@@ -160,6 +173,11 @@
       margin-bottom: 0;
     }
   }
+
+  #offerings-nav-back-button  {
+    display: inline;
+  }
+
   .index-wrapper  {
     min-height: 308px;
     margin-bottom: 19px;
@@ -223,6 +241,14 @@
       margin-bottom: 10px;
     }
   }
+  .program-text  {
+      margin-bottom: 20px;
+  }
+
+  .program-breakout-photo  {
+    margin-bottom: 20px;
+  }
+
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
@@ -270,7 +296,7 @@
     }
   }
 
-  #program-text  {
+  .program-text  {
     min-height: 350px;
   }
 } /* min-width 1025px, large screens */

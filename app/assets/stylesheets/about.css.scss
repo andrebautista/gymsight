@@ -80,6 +80,7 @@ $headshot-height-lg:  382px;
     figcaption {
       margin: 15px 0;
       font-size: 18px;
+      width: 90%
     }
     .next-img  {
       position: absolute;
@@ -141,6 +142,10 @@ $headshot-height-lg:  382px;
   #gymowner-headshot  {
     width: 100%;
     margin-top: 0;
+  }
+
+  .program-breakout-photo  {
+    margin-bottom: 80px;
   }
 
 }

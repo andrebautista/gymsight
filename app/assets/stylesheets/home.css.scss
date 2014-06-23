@@ -1,24 +1,27 @@
 @import "variables";
 
 /* Orbit Styles */
+.orbit-item  {
+  background-size: cover;
+}
+
 li.orbit-image-1 {
   background-image: url("http://d1glu0vbbg0go6.cloudfront.net/Homepage/homepage_banner_image_1.jpg");
-  background-size: cover;
   .slider-hl  {
     color: rgb(51,51,51);
   }
 }
+
 li.orbit-image-2  {
   background-image: url("http://d1glu0vbbg0go6.cloudfront.net/Homepage/homepage_banner_image_2.jpg");
-  background-size: cover;
 }
+
 li.orbit-image-3 {
   background-image: url("http://d1glu0vbbg0go6.cloudfront.net/Homepage/homepage_banner_image_3.jpg");
-  background-size: cover;
 }
+
 li.orbit-image-4  {
   background-image: url("http://d1glu0vbbg0go6.cloudfront.net/Homepage/homepage_banner_image_4.jpg");
-  background-size: cover;
 }
 
 
@@ -108,20 +111,15 @@ li.orbit-image-4  {
     height: 11px;
   }
 
-  #footer-row  {
-
-
-  }
-
   .footer-header  {
     text-transform: uppercase;
     color: $gymsight-orange;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 10px;
     font-family: stratum2-regular;
   }
   .footer-text  {
-    font-size: 12px;
+    font-size: 10px;
     font-family: stratum2-regular;
     line-height: 16px;
     text-transform: uppercase;
@@ -131,14 +129,21 @@ li.orbit-image-4  {
     color: $gymsight-orange;
     font-family: stratum2-regular;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 10px;
   }
 
   #other-inquiries  {
-    font-size: 14px;
+    font-size: 12px;
     font-family: stratum2-regular;
     text-transform: uppercase;
+  }
+
+  hr  {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    border-top-width: 1px;
+    border-top-color: white;
   }
 
   /* Accordion Mobile Nav  */
@@ -192,13 +197,6 @@ li.orbit-image-4  {
 
   #middle-section  {
     margin-bottom: 10px;
-  }
-
-  hr  {
-    margin-top: 0px;
-    margin-bottom: 30px;
-    border-top-width: 1.5px;
-    border-top-color: white;
   }
 }
 

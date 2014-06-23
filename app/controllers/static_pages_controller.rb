@@ -71,7 +71,7 @@ class StaticPagesController < ApplicationController
   def essentials
     @banner_text_l1 = "Essentials"
     @banner_text_l2 = "Pipeline"
-    @banner_image = "what-we-offer-banner"
+    @banner_image = "essentials-pipeline-banner"
     @link_class = "back-to-offerings"
     @essentials_active = "active"
     @offerings_active = "header-active"
