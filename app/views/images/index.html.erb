@@ -8,8 +8,7 @@
 
 <div class="row">
   <div class="medium-12 large-12 columns">
-    <div class="js-isotope grid effect-1" id="isotope-container" data-isotope-options='{ "itemSelector": ".item",
-     "masonry": { "columnWidth": 220, "gutter": 20 } }'>
+    <div class="js-isotope grid effect-1" id="isotope-container"'>
       <% @images.each do |image| %>
         <div class="item <%= image.tag_list %>">
           <a class="fancybox" rel="gymsight-gallery" href="<%= image.image_url.to_s %>">

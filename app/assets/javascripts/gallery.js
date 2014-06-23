@@ -3,9 +3,14 @@ $( document ).ready(function() {
   var $container = $('#isotope-container').imagesLoaded( function() {
     $container.isotope({
       itemSelector: '.item',
+      masonry: {
+        columnWidth: 220,
+        gutter: 20
+      }
     });
     $container.isotope('layout');
   });
+
   $("#gallery").on('click', function() {
     var $container = $('#isotope-container').imagesLoaded( function() {
     $container.isotope({
@@ -14,6 +19,7 @@ $( document ).ready(function() {
     $container.isotope('layout');
     });
   });
+
   var filters = {};
   $(".filters").on( 'click', 'li', function() {
     var $this = $(this);
