@@ -57,6 +57,10 @@ li.orbit-image-4  {
     display: none;
   }
 
+  .footer-info  {
+    text-align: right;
+  }
+
   .orbit-container .orbit-next, .orbit-container .orbit-prev  {
     content: asset-url("Homepage/homepage_banner_next_arrow_off.png", image);
     width: 12px !important;
@@ -104,6 +108,39 @@ li.orbit-image-4  {
     height: 11px;
   }
 
+  #footer-row  {
+
+
+  }
+
+  .footer-header  {
+    text-transform: uppercase;
+    color: $gymsight-orange;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: stratum2-regular;
+  }
+  .footer-text  {
+    font-size: 12px;
+    font-family: stratum2-regular;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  .footer-contact-details a {
+    color: $gymsight-orange;
+    font-family: stratum2-regular;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  #other-inquiries  {
+    font-size: 14px;
+    font-family: stratum2-regular;
+    text-transform: uppercase;
+  }
+
   /* Accordion Mobile Nav  */
   .accordion.nav  {
     text-transform: uppercase;
@@ -143,19 +180,23 @@ li.orbit-image-4  {
   .home-footer  {
     margin-top: 20px;
     margin-bottom: 50px;
-    text-align: right;
+    overflow: auto;
     text-transform: uppercase;
     .footer-info  {
+      margin-top: 10px;
       color: rgb(217,217,217);
-      font-family: 'Open Sans';
-      font-weight: 700;
+      font-family: stratum2-regular;
       font-size: 10px;
-      display: inline;
-      height: 29px;
-      line-height: 29px;
-      vertical-align: top;
-      margin-right: 10px;
     }
+  }
+
+  #middle-section  {
+    margin-bottom: 10px;
+  }
+
+  hr  {
+    margin-top: 0px;
+    margin-bottom: 30px;
   }
 }
 
@@ -186,11 +227,25 @@ li.orbit-image-4  {
     font-family: stratum2-medium ;
     color: white;
   }
+
+  .footer-contact-details  {
+     background-image: asset-url('Homepage/homepage_footer_divider.png', image);
+     background-position: right;
+     background-repeat: no-repeat;
+     background-size: contain;
+     padding-right: 25px;
+     min-height:140px;
+  }
+
 }
 
 /* L Screens: min-width 1025px*/
 @media only screen and (min-width: 64.063em) {
   /* Banner Styles */
+  .footer-contact-details  {
+    min-height: initial;
+  }
+
   ul.orbit-ul, li.orbit-item {
     height:350px;
   }

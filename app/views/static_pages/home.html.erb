@@ -79,15 +79,34 @@
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="small-12 large-12 medium-12 large-centered columns">
-    <footer class="home-footer">
-      <div class="footer-info">Gymsight 2014</div>
+<div class="row" id="footer-row">
+  <footer class="home-footer large-12 columns">
+    <hr>
+  <div class="large-6 medium-6 columns">
+    <section class="footer-contact-details">
+      <div class="footer-header">Mission:</div>
+      <p class="footer-text">Gymsight Training is a strength and conditioning facility located in the heart of Ballard, Seattle, WA. We offer group, general athletic, strength and conditioning, private training, and lifestyle/nutritional design. Our goal is to maximize your performance in the gym so that you are better prepared for your sport or work activity outside the gym.</p>
+    </section>
+  </div>
+  <div class="large-4 medium-4 columns">
+    <section class="footer-contact-details" id="middle-section">
+      <div class="footer-header">Contact:</div>
+      <p class="footer-text">
+        (206) 902-6997<br>
+        1107 NW 54th St. Seattle, WA 98107
+      </p>
+      <div id="other-inquiries">For all other Inquiries:</div>
+      <a href="http://gymsight.herokuapp.com/contact#question_request">Ask a question</a>
+    </section>
+  </div>
+  <div class="large-2 medium-2 columns">
       <div class="social-container">
         <%= link_to '', 'javascript:void(0)', class: 'facebook social-link' %>
         <%= link_to '', 'javascript:void(0)', class: 'twitter social-link' %>
       </div>
-    </footer>
   </div>
+  <div class="large-12 columns">
+    <div class="footer-info">All content &copy; Gymsight Training 2014. Website design & coding by shaun johnson & andrebautista All rights reserved</div>
+  </div>
+  </footer>
 </div>
-
