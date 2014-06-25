@@ -35,7 +35,7 @@ deploy:
     - add-to-known_hosts:
         hostname: $gymsight
     - add-ssh-key:
-        keyname: GYMSIGHT_DOKKU
+        keyname: gymsight_dokku
     - script:
         name: Initialize new repository
         code: |
