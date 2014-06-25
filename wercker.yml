@@ -35,7 +35,7 @@ deploy:
     - add-to-known_hosts:
         hostname: $GYMSIGHT
     - add-ssh-key:
-        keyname: DOKKU
+        keyname: dokku_PUBLIC
     - script:
         name: Initialize new repository
         code: |
