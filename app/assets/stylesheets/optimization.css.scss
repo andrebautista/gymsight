@@ -110,6 +110,33 @@
     }
   }
 
+.general-athletic:hover:after  {
+    background: asset-url("WWO_Temp/wwo_offering_gap_on.jpg", image);
+    background-size: 100%;
+  }
+
+  .big-mountain:hover:after  {
+    background: asset-url("WWO_Temp/wwo_offering_bmp_on.jpg", image);
+    background-size: 100%;
+  }
+
+  .run-strong:hover:after  {
+    background: asset-url("WWO_Temp/wwo_offering_rss_on.jpg", image);
+    background-size: 100%;
+  }
+
+  .personal-training:hover:after {
+    background: asset-url("WWO_Temp/wwo_offering_pt_on.jpg", image);
+    background-size: 100%;
+  }
+
+  .semi-private:hover:after {
+    background: asset-url("WWO_Temp/wwo_offering_gap_on.jpg", image);
+    background-size: 100%;
+  }
+
+
+
   .breakout-link  {
     transition: color .1s linear;
     -webkit-transition:color .1s linear;
