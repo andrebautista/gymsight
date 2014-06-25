@@ -32,6 +32,7 @@ build:
         #        code: bundle exec rspec
 deploy:
   steps:
+    - wercker/add-ssh-key@1.0.0
     - add-to-known_hosts:
         hostname: $GYMSIGHT
     - add-ssh-key:
