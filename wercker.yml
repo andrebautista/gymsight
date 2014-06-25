@@ -33,7 +33,7 @@ build:
 deploy:
   steps:
     - add-to-known_hosts:
-        hostname: $GYMSIGHT_HOSTNAME
+        hostname: $gymsight_hostname
     - add-ssh-key:
         keyname: GYMSIGHT_DOKKU
     - script:
