@@ -33,7 +33,7 @@ build:
 deploy:
   steps:
     - add-to-known_hosts:
-        hostname: $GYMSIGHT
+        hostname: $GYMSIGHT_HOSTNAME
     - add-ssh-key:
         keyname: GYMSIGHT_DOKKU
     - script:
@@ -43,7 +43,7 @@ deploy:
           git init
           git config --global user.name "andrebautista"
           git config --global user.email "me@andrebautista.com"
-          git remote add dokku dokku@$GYMSIGHT:gymsight
+          git remote add dokku dokku@GYMSIGHT_HOSTNAME:gymsight
     - script:
         name: Add everything to the repository
         code: |
