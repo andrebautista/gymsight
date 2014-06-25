@@ -97,9 +97,6 @@
     transition: background-color .2s linear;
     -webkit-transition: background-color .2s linear;
     &:hover  {
-      &:after  {
-        opacity: .80;
-      }
       .hover-border  {
         background-color: rgba(255,164,0,1);
       }

@@ -20,7 +20,7 @@ class StaticPagesController < ApplicationController
   def gap
     @banner_text_l1 = "General"
     @banner_text_l2 = "Athletic Program"
-    @banner_image = "who-we-are-banner"
+    @banner_image = "gap-banner"
     @link_class = "back-to-offerings"
     @banner_id = "offerings";
     @program_active = "active"
@@ -31,7 +31,7 @@ class StaticPagesController < ApplicationController
   def bmp
     @banner_text_l1 = "Big Mountain"
     @banner_text_l2 = "Program"
-    @banner_image = "what-we-offer-banner"
+    @banner_image = "bmp-banner"
     @link_class = "back-to-offerings"
     @program_active = "active"
     @offerings_active = "header-active"
@@ -40,8 +40,8 @@ class StaticPagesController < ApplicationController
 
   def rss
     @banner_text_l1 = "Run Strong"
-    @banner_text_l2 = "Strength Program"
-    @banner_image = "what-we-offer-banner"
+    @banner_text_l2 = "Strength"
+    @banner_image = "rss-banner"
     @link_class = "back-to-offerings"
     @program_active = "active"
     @offerings_active = "header-active"
@@ -51,7 +51,7 @@ class StaticPagesController < ApplicationController
   def personalt
     @banner_text_l1 = "Personal"
     @banner_text_l2 = "Training"
-    @banner_image = "what-we-offer-banner"
+    @banner_image = "personalt-banner"
     @link_class = "back-to-offerings"
     @program_active = "active"
     @offerings_active = "header-active"
@@ -61,7 +61,7 @@ class StaticPagesController < ApplicationController
   def semipersonalt
     @banner_text_l1 = "Semi-Private"
     @banner_text_l2 = "Training"
-    @banner_image = "what-we-offer-banner"
+    @banner_image = "semip-banner"
     @link_class = "back-to-offerings"
     @program_active = "active"
     @offerings_active = "header-active"
@@ -71,7 +71,7 @@ class StaticPagesController < ApplicationController
   def essentials
     @banner_text_l1 = "Essentials"
     @banner_text_l2 = "Pipeline"
-    @banner_image = "essentials-pipeline-banner"
+    @banner_image = "essentials-banner"
     @link_class = "back-to-offerings"
     @essentials_active = "active"
     @offerings_active = "header-active"
@@ -82,7 +82,6 @@ class StaticPagesController < ApplicationController
   def faq
     @banner_text_l1 = "Frequently"
     @banner_text_l2 = "Asked Questions"
-    @banner_image = "what-we-offer-banner"
     @faq_active = "active"
     @offerings_active = "active"
     @gs_header_active = "active"
