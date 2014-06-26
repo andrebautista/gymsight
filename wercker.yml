@@ -15,8 +15,7 @@ build:
         - bundle-install
 
         # A step that prepares the database.yml using the database in services
-        # - rails-database-yml
-
+        - rails-database-yml
         # A custom script step, name value is used in the UI
         # and the code value contains the command that get executed
         - script:
@@ -41,9 +40,9 @@ deploy:
         code: |
           rm -rf .git
           git init
-          git config --global user.name "andrebautista"
+          git config --global user.name "Andre Bautista"
           git config --global user.email "me@andrebautista.com"
-          git remote add dokku dokku@$gymsight:gymsight
+          git remote add dokku git@$gymsight:gymsight
     - script:
         name: Add everything to the repository
         code: |
