@@ -127,7 +127,6 @@
     top: 0;
     left: 0;
     position:absolute;
-    transition: opacity .2s linear;
     background-size: 100%;
   }
 
@@ -169,7 +168,7 @@
 @media only screen and (min-width: 40.063em) {
   .general-athletic:after  {
     transition: background .2s linear;
-    background: asset-url("WWO_Temp/wwo_offering_gap_off.jpg", image);
+    background:         asset-url("WWO_Temp/wwo_offering_gap_off.jpg", image);
     background-size: 100%;
   }
 

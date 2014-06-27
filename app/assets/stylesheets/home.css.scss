@@ -323,10 +323,12 @@ li.orbit-image-4  {
       -webkit-transition-duration: 0.4s;
       -moz-transition-duration: 0.4s;
       -o-transition-duration: 0.4s;
+      -ms-transition-duration: .4s;
       transition-duration: 0.4s;
       -webkit-transition-property: -webkit-transform;
       -moz-transition-property: -moz-transform;
       -o-transition-property: -o-transform;
+      -ms-transition-property: -ms-transform;
     }
     &:hover {
       .nav-wrapper {
@@ -343,6 +345,7 @@ li.orbit-image-4  {
         -webkit-transform:rotate(90deg);
         -moz-transform:rotate(90deg);
         -o-transform:rotate(90deg);
+        -ms-transform: rotate(90deg);
       }
     }
   }
