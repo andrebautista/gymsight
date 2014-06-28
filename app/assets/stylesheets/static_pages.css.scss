@@ -333,6 +333,7 @@ a:focus  {
 
   .offering-button  {
     font-size: 18px * .85;
+    line-height: 18px * .85 + 2px;
     position: absolute;
     width: 180px;
     margin-top: 0px;
@@ -367,7 +368,7 @@ a:focus  {
   .offering-button  {
     font-size: 18px;
     height: 30px;
-    line-height: 30px;
+    line-height: 33px;
     width: 230px;
   }
 
