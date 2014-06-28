@@ -14,7 +14,7 @@
           <a class="fancybox" rel="gymsight-gallery" href="<%= image.image_url.to_s %>">
           </a>
           <div class="newTitle" style="display: none;">
-            <%= image.title + "<br/><time class='photo-date' datetime='DD-MM-YYYY'>" %> <%= l image.created_at, format: :number  %> </time>
+            <%= image.title + "<br><p>" + image.description + "</p>" + "<time class='photo-date' datetime='DD-MM-YYYY'>" %> <%= l image.created_at, format: :number  %> </time>
           </div>
           <%= image_tag image.image_url(:thumb).to_s %>
           <div class="overlay">

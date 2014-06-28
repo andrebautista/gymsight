@@ -11,6 +11,12 @@ $headshot-height-lg:  382px;
     margin-bottom: 0;
   }
 
+  #about-us  {
+    a  {
+      color: $gymsight-orange;
+    }
+  }
+
   h3.header-description  {
     font-family:  'stratum2-regular';
     color: $gymsight-orange;
@@ -79,7 +85,7 @@ $headshot-height-lg:  382px;
     }
     figcaption {
       margin: 15px 0;
-      font-size: 18px;
+      font-size: 16px;
       width: 90%
     }
     .next-img  {
@@ -143,11 +149,6 @@ $headshot-height-lg:  382px;
     width: 100%;
     margin-top: 0;
   }
-
-  .program-breakout-photo  {
-    margin-bottom: 80px;
-  }
-
 }
 
 /* L Screens: min-width 1025px*/

@@ -38,21 +38,29 @@ $( document ).ready(function() {
   });
 
   //fancybox implementation (expanded view)
-  $(".fancybox").fancybox({
-    beforeShow: function(){
-     this.title = $(this.element).next('.newTitle').text();
-     this.title += "<a class='prev-img' style='position:absolute;top:25px;right:35px;' href='javascript:void(0)'></a>"
-     this.title += "<a class='next-img' style='position:absolute;top:25px;right:0; href='javascript:void(0)'></a>"
-    },
-    helpers : {
-      overlay : {
-            css : {
-                'background' : 'rgba(0, 0, 0, 0.85)'
-            }
-      }
-    },
-    padding :[10,10,10,10]
-  });
+
+  if (window.innerWidth > 480) {
+    console.log("width greater than 480");
+    $(".fancybox").fancybox({
+      beforeShow: function(){
+       this.title = $(this.element).next('.newTitle').text();
+       this.title += "<a class='prev-img' style='position:absolute;top:25px;right:35px;' href='javascript:void(0)'></a>"
+       this.title += "<a class='next-img' style='position:absolute;top:25px;right:0; href='javascript:void(0)'></a>"
+      },
+      helpers : {
+        overlay : {
+              css : {
+                  'background' : 'rgba(0, 0, 0, 0.85)'
+              }
+        }
+      },
+      padding :[10,10,10,10]
+    });
+  } else  {
+    console.log("width less than 480");
+    $(".fancybox").removeAttr("href");
+  }
+
   $('body').on("click", ".next-img", function() {
     $.fancybox.next();
   });

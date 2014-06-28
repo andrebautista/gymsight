@@ -13,6 +13,14 @@
     background-image: asset-url("site_wide/image_arrow_back_on.png", image);
   }
 
+  .child  {
+    font-size: 14px;
+    p  {
+      margin-bottom: 0px;
+      font-size: 12px;
+    }
+  }
+
   .media.active, .tag.active  {
     color: white;
   }

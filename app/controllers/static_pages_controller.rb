@@ -49,7 +49,7 @@ class StaticPagesController < ApplicationController
   end
 
   def personalt
-    @banner_text_l1 = "Personal"
+    @banner_text_l1 = "Private"
     @banner_text_l2 = "Training"
     @banner_image = "personalt-banner"
     @link_class = "back-to-offerings"
@@ -58,15 +58,15 @@ class StaticPagesController < ApplicationController
     @offerings_header_active = "active"
   end
 
-  def semipersonalt
-    @banner_text_l1 = "Semi-Private"
-    @banner_text_l2 = "Training"
-    @banner_image = "semip-banner"
-    @link_class = "back-to-offerings"
-    @program_active = "active"
-    @offerings_active = "header-active"
-    @offerings_header_active = "active"
-  end
+  # def semipersonalt
+  #   @banner_text_l1 = "Semi-Private"
+  #   @banner_text_l2 = "Training"
+  #   @banner_image = "semip-banner"
+  #   @link_class = "back-to-offerings"
+  #   @program_active = "active"
+  #   @offerings_active = "header-active"
+  #   @offerings_header_active = "active"
+  # end
 
   def essentials
     @banner_text_l1 = "Essentials"
