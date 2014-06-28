@@ -64,7 +64,7 @@
     }
     span  {
       display: inline-block;
-      margin-bottom: 12px;
+      margin-bottom: 17px;
       font-family: 'Open Sans';
       font-weight: 400;
       font-size: 12px;
@@ -188,11 +188,6 @@
     background-size: 100%;
   }
 
-  .semi-private:after  {
-    transition: background .2s linear;
-    background: asset-url("WWO_Temp/wwo_offering_gap_off.jpg", image);
-    background-size: 100%;
-  }
   .nav-group  {
     padding: 0;
     &:last-child {
@@ -220,7 +215,7 @@
       margin-bottom: 6px;
     }
     span  {
-      margin-bottom: 12px;
+      margin-bottom: 17px;
     }
   }
   .offerings-banner  {
@@ -275,6 +270,10 @@
     margin-bottom: 100px;
   }
 
+  .personal-training  {
+    margin-bottom: 80px;
+  }
+
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
@@ -283,6 +282,9 @@
 @media only screen and (min-width: 64.063em) {
   #WWO-text  {
       padding-top: 57px;
+  }
+  .personal-training  {
+    margin-bottom: 100px;
   }
   .offerings-banner  {
     height: 280px;

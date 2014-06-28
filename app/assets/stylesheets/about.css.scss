@@ -111,7 +111,6 @@ $headshot-height-lg:  382px;
 @media only screen and (min-width: 40.063em) {
   .text-content  {
     padding: 15px 25px 20px 25px;
-    margin-bottom: 80px;
     h1  {
       font-size: 24px;
     }
@@ -123,6 +122,10 @@ $headshot-height-lg:  382px;
       margin-bottom: 10px;
       text-transform: uppercase;
     }
+  }
+
+  .tabs-content  {
+    margin-bottom: 80px;
   }
 
   .about dd > a  {
@@ -163,6 +166,10 @@ $headshot-height-lg:  382px;
     }
   }
 
+  .tabs-content  {
+    margin-bottom: 100px;
+  }
+
   h3.gymowner-header  {
       font-size: 28px;
       line-height: 33.6px;
@@ -178,7 +185,6 @@ $headshot-height-lg:  382px;
 
   .text-content  {
     padding: 20px 25px 20px 25px;
-    margin-bottom: 100px;
   }
 
   .about dd > a  {
