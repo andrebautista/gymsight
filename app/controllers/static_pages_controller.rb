@@ -84,7 +84,7 @@ class StaticPagesController < ApplicationController
     @banner_text_l2 = "Asked Questions"
     @faq_active = "active"
     @offerings_active = "active"
-    @gs_header_active = "active"
+    @offerings_header_active = "active"
   end
 
 end
