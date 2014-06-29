@@ -20,7 +20,7 @@ a:focus  {
 // Small screens
 @media only screen {
   body.homepage  {
-    background-image: asset-url("site_wide/black_twill/black_twill_trans_b.png", image), url("Homepage/homepage_background_b.png");
+    background-image: asset-url("site_wide/black_twill/black_twill_trans_b.png", image), url("http://d1glu0vbbg0go6.cloudfront.net/Homepage/homepage_background_b.png");
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
     /*background: -webkit-linear-gradient(top, rgba(51, 51, 51,.00) 35%, rgba(51, 51, 51, 1) 80%), asset-url("site_wide/black_twill/black_twill.png", image);
@@ -31,7 +31,9 @@ a:focus  {
   }
 
   body  {
-    background: url("http://d1glu0vbbg0go6.cloudfront.net/site_wide/background_gym_texture.png"), asset-url("site_wide/black_twill/black_twill.png", image);
+    background: asset-url("site_wide/black_twill/black_twill_trans_b.png", image), url("http://d1glu0vbbg0go6.cloudfront.net/site_wide/gymsight_interior_background_b.jpg");
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
     background-attachment: fixed;
   }
 
