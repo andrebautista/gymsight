@@ -116,22 +116,31 @@
     }
   }
 
-.general-athletic:hover:after  {
-    background: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/gat/wwo_offering_gap_on_b.jpg");
+.preload-images  {
+  background: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/gat/wwo_offering_gap_on_c.jpg"),
+              url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/bmp/wwo_offering_bmp_on.jpg"),
+              url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/rss/wwo_offering_rss_on.jpg"),
+              url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/pt/wwo_offering_pt_on.jpg");
+}
+
+.general-athletic:hover  {
+    background: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/gat/wwo_offering_gap_on_c.jpg");
     background-size: 100%;
+    background-position: center;
   }
 
-  .big-mountain:hover:after  {
+  .big-mountain:hover  {
     background: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/bmp/wwo_offering_bmp_on.jpg");
     background-size: 100%;
+    background-position: center;
   }
 
-  .run-strong:hover:after  {
+  .run-strong:hover  {
     background: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/rss/wwo_offering_rss_on.jpg");
     background-size: 100%;
   }
 
-  .personal-training:hover:after {
+  .personal-training:hover {
     background: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/pt/wwo_offering_pt_on.jpg");
     background-size: 100%;
   }

@@ -7,7 +7,7 @@
   }
 
   .gap-banner  {
-    background-image: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/gat/wwo_offerings_gap_banner_a.jpg");
+    background-image: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/gat/wwo_offerings_gap_banner_b.jpg");
   }
 
   .bmp-banner  {
@@ -73,7 +73,7 @@
   }
 
   .index-wrapper  {
-    min-height: 403px;
+    min-height: 382px;
     position:relative;
   }
 
@@ -108,6 +108,7 @@
     position: relative;
     margin-bottom: 15px;
     padding: 15px 10px 15px 10px;
+    background-size: 100%;
     background-color: rgba(230,230,230,0.0);
     h1  {
       font-size: 18px;
@@ -115,17 +116,6 @@
     .offering-button  {
       background-color: rgba(255,255,255,.1);
     }
-  }
-
-  .training-program:after  {
-    content:"";
-    width: 100%;
-    z-index: -1;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position:absolute;
-    background-size: 100%;
   }
 
   .nav-group  {
@@ -164,25 +154,28 @@
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
-  .general-athletic:after  {
+  .general-athletic  {
     transition: background .2s linear;
-    background: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/gat/wwo_offering_gap_off_b.jpg");
+    background: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/gat/wwo_offering_gap_off_c.jpg");
     background-size: 100%;
+    background-position: center;
   }
 
-  .big-mountain:after  {
+  .big-mountain  {
     transition: background .2s linear;
     background: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/bmp/wwo_offering_bmp_off.jpg");
     background-size: 100%;
+    background-position: center;
+
   }
 
-  .run-strong:after  {
+  .run-strong  {
     transition: background .2s linear;
     background: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/rss/wwo_offering_rss_off.jpg");
     background-size: 100%;
   }
 
-  .personal-training:after  {
+  .personal-training  {
     transition: background .2s linear;
     background: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/pt/wwo_offering_pt_off.jpg");
     background-size: 100%;

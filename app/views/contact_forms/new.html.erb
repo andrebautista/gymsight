@@ -46,7 +46,7 @@
                 <%= form.text_field :email_address, placeholder:"Email" %>
               </div>
               <div class="large-4 medium-4 columns">
-                <%= form.text_field :phone_number, placeholder:"Phone Number" %>
+                <%= form.text_field :phone_number, placeholder:"Phone" %>
               </div>
             </div>
             <div class="row">
@@ -56,7 +56,7 @@
             </div>
             <div class="row">
               <div class="large-5 medium-5 columns">
-                <%= form.select(:training_program, options_for_select([['Personal Training'], ['Group Training'], ['General Athletic Program'], ['Rock & Ice Program'], ['Big Mountain Program']])) %>
+                <%= form.select(:training_program, options_for_select([['Private Training'], ['Group Training'], ['General Athletic Program'], ['Rock & Ice Program'], ['Big Mountain Program']])) %>
               </div>
             </div>
             <div class="row">
@@ -101,7 +101,7 @@
           </div>
           <div class="row">
             <div class="large-5 medium-5 columns">
-              <%= form.select(:training_program, options_for_select([['No Program Selected'],['Personal Training'], ['Group Training'], ['General Athletic Program'], ['Rock & Ice Program'], ['Big Mountain Program']])) %>
+              <%= form.select(:training_program, options_for_select([['Programming'],['Essentials Pipeline'], ['Training Questions'], ['Injuries'], ['Gymsight Billing'], ['Scheduling'], ['Other']])) %>
             </div>
           </div>
           <div class="row">

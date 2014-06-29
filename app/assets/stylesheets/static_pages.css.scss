@@ -58,6 +58,20 @@ a:focus  {
     }
   }
 
+  .text-content  {
+    a:hover  {
+      color: $gymsight-orange;
+    }
+  }
+
+  .body-subhead  {
+    margin-top: 12px;
+  }
+
+  .text-content h3  {
+    text-transform: uppercase;
+  }
+
   .credits  {
     font-family: stratum2-bold;
     font-size: 10px;
@@ -148,6 +162,9 @@ a:focus  {
     border-top: solid 2px $gymsight-orange;
     .social-container  {
       margin-top: 20px;
+    }
+    li  {
+      line-height: 15px;
     }
   }
 
