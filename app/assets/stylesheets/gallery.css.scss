@@ -1,3 +1,4 @@
+@import "variables";
 // Small screens
 @media only screen {
   .next-img  {
@@ -179,6 +180,11 @@
 @media only screen and (min-width: 40.063em) {
   .item  {
     margin-left: 0px;
+  }
+
+  .tag-list  {
+    color: $gymsight-orange;
+    font-size: 10px;
   }
 
   .item:nth-child(even)  {
