@@ -11,6 +11,7 @@
     border-color: rgb(255,164,0);
   }
   .contact-button  {
+    text-transform: uppercase;
     cursor: pointer;
     margin-bottom: 10px;
     width: 100%;
@@ -201,6 +202,9 @@
   .form-headline  {
     margin-top: 15px;
     margin-bottom: 10px;
+  }
+  #map-button  {
+    line-height: 32px;
   }
 } /* Define mobile styles */
 
