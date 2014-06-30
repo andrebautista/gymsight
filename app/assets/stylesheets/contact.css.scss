@@ -26,8 +26,7 @@
     padding-left: 25px;
     background-image: asset-url("site_wide/Triangle_Orange.png", image);
     background-size: 8px 11px;
-    background-position: center;
-    background-position-x: 10px;
+    background-position: 10px 10px;
     background-repeat: no-repeat;
   }
 
@@ -46,8 +45,6 @@
       color: rgb(89,89,89);
     }
     select  {
-      height: 30px;
-      padding: 0 0 0 8px;
       color: rgb(89,89,89);
       margin-bottom: 0;
     }
@@ -267,7 +264,7 @@
   .contact-container  {
     padding: 15px;
     margin-top: 75px;
-    height: 466px;
+    height: 473px;
   }
 
   .form-headline  {

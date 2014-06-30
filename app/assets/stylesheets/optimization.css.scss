@@ -109,10 +109,9 @@
       .offering-button  {
         background-color: $gymsight-orange;
         color: black;
+        background-image: asset-url("site_wide/Triangle_Black.png", image);
       }
-      .button-triangle  {
-        content: asset-url("site_wide/Triangle_Black.png", image);
-      }
+
     }
   }
 
@@ -123,7 +122,8 @@
               url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/pt/wwo_offering_pt_on.jpg");
 }
 
-.general-athletic:hover  {
+  @media only screen and (min-width: 40.063em) {
+    .general-athletic:hover  {
     background: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/gat/wwo_offering_gap_on_c.jpg");
     background-size: 100%;
     background-position: center;
@@ -143,6 +143,7 @@
   .personal-training:hover {
     background: url("http://d1glu0vbbg0go6.cloudfront.net/What_We_Offer/Offerings/pt/wwo_offering_pt_on.jpg");
     background-size: 100%;
+  }
   }
 
   .breakout-link  {
@@ -175,9 +176,7 @@
     &:hover  {
       background-color: $gymsight-orange;
       color: black;
-      .button-triangle  {
-        content: asset-url("site_wide/Triangle_Black.png", image);
-      }
+      background-image: asset-url("site_wide/Triangle_Black.png", image);
     }
   }
 }

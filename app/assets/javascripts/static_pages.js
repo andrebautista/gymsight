@@ -1,4 +1,9 @@
-$(document).foundation({
+
+
+//foundation JS
+$( document ).ready(function() {
+
+  $(document).foundation({
     orbit: {
       next_on_click: false,
       pause_on_hover: false,
@@ -6,9 +11,6 @@ $(document).foundation({
       slide_number: false
     }
   });
-
-//foundation JS
-$( document ).ready(function() {
   //About photo slider
   var num_photos = $(".gym-photos figure").length;
   $('.gym-photos').on('click', 'a', function() {
