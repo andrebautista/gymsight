@@ -65,14 +65,18 @@ li.orbit-image-4  {
   }
 
   .orbit-container .orbit-next, .orbit-container .orbit-prev  {
-    content: asset-url("Homepage/homepage_banner_next_arrow_off.png", image);
-    width: 13.5px !important;
-    height: 41.5px !important;
+    background-image: asset-url("Homepage/homepage_banner_next_arrow_off.png", image);
+    background-size: 13.5px 41.5px;
+    background-repeat: no-repeat;
+    background-position: center;
     top: 50%;
+    span  {
+      display: none;
+    }
   }
 
   .orbit-next  {
-    margin-right: 40px;
+    margin-right: 35px;
   }
 
   .orbit-prev  {

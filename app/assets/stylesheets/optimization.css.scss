@@ -80,7 +80,7 @@
 
   //homepage
   .orbit-container .orbit-next:hover, .orbit-container .orbit-prev:hover   {
-    content: asset-url("Homepage/homepage_banner_next_arrow_black.png", image);
+    background-image: asset-url("Homepage/homepage_banner_next_arrow_black.png", image);
     background-color: transparent;
   }
 
