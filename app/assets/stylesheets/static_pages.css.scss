@@ -35,6 +35,7 @@ a:focus  {
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
     background-attachment: fixed;
+    background-position: center;
   }
 
   .offering-button  {
@@ -254,15 +255,17 @@ a:focus  {
   }
 
   .facebook  {
-    content: asset-url("site_wide/social_facebook_off.png", image);
+    background-image: asset-url("site_wide/social_facebook_off.png", image);
+    background-size: 29px 29px;
     &:hover  {
-      content: asset-url("site_wide/social_facebook_on.png", image);
+      background-image: asset-url("site_wide/social_facebook_on.png", image);
     }
   }
   .twitter  {
-    content: asset-url("site_wide/social_twitter_off.png", image);
+    background-image: asset-url("site_wide/social_twitter_off.png", image);
+    background-size: 29px 29px;
     &:hover  {
-      content: asset-url("site_wide/social_twitter_on.png", image);
+      background-image: asset-url("site_wide/social_twitter_on.png", image);
     }
   }
 } /* Define mobile styles */
