@@ -18,6 +18,11 @@ gem 'rmagick', :require => 'RMagick'
 gem 'thread_safe', '0.2.0'
 gem 'acts-as-taggable-on'
 gem 'fog'
+gem 'capistrano', '~> 3.1.0'
+gem 'capistrano-bundler', '~> 1.1.2'
+gem 'capistrano-rails', '~> 1.1.1'
+gem 'capistrano-rvm', github: "capistrano/rvm"
+
 
 group :development do
   gem 'pry'
