@@ -66,6 +66,7 @@ Gymsight::Application.configure do
   # config.action_mailer.raise_delivery_errors = false
   config.action_mailer.delivery_method = :postmark
   config.action_mailer.postmark_settings = { :api_key => ENV['POSTMARK_API_KEY'] }
+  config.action_mailer.default_url_options = { :host => 'www.gymsight.com' }
 
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
