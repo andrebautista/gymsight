@@ -16,11 +16,11 @@ require 'capistrano/deploy'
 #   require 'capistrano/rbenv'
 #   require 'capistrano/chruby'
 require 'capistrano/rvm'
-require 'capistrano/bundler'
 require 'capistrano/rails'
 
 set :rvm_type, :user
 set :rvm_ruby_version, '2.1.2-p95'
+require 'capistrano/bundler'
 require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 
