@@ -236,6 +236,7 @@
 	//font-weight: bold;
 	line-height: 24px;
 	//white-space: nowrap;
+	width: 100%;
 }
 
 .fancybox-title-outside-wrap {
