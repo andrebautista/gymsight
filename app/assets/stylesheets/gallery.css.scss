@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
   }
 
+  .label-tag-text  {
+      color: white;
+  }
+
   .prev-img  {
     @extend .next-img;
     background-image: asset-url("site_wide/image_arrow_back_on.png", image);
