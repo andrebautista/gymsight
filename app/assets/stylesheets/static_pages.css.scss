@@ -47,11 +47,11 @@ a:focus  {
     height: 25px;
     line-height: 27px;
     width: 100%;
-    padding: 0px 0px 0px 25px;
+    padding: 6px 10px 5px 25px;
     margin-top: 5px;
     background-image: asset-url("site_wide/Triangle_Orange.png", image);
     background-size: 8px 11px;
-    background-position: 10px 7px;
+    background-position: 10px 10px;
     background-repeat: no-repeat;
   }
 
@@ -354,7 +354,7 @@ a:focus  {
     font-size: 18px * .85;
     position: absolute;
     width: auto;
-    padding-right: 20px;
+    padding: 0px 20px 0px 25px;
     margin-top: 0px;
 
   }
@@ -380,7 +380,6 @@ a:focus  {
     font-size: 18px;
     height: 30px;
     line-height: 32px;
-    background-position: 10px 10px;
   }
 
   #header-logo {
