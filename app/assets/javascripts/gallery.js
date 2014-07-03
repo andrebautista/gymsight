@@ -40,7 +40,6 @@ $( document ).ready(function() {
   //fancybox implementation (expanded view)
 
   if (window.innerWidth > 480) {
-    console.log("width greater than 480");
     $(".fancybox").fancybox({
       beforeShow: function(){
        this.title = $(this.element).next('.newTitle').text();
