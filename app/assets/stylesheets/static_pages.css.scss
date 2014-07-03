@@ -356,7 +356,7 @@ a:focus  {
     width: auto;
     padding: 0px 20px 0px 25px;
     margin-top: 0px;
-
+    background-position: 10px 7px;
   }
 } /* min-width 641px, medium screens */
 
@@ -380,6 +380,7 @@ a:focus  {
     font-size: 18px;
     height: 30px;
     line-height: 32px;
+    background-position: 10px 10px;
   }
 
   #header-logo {
