@@ -73,7 +73,7 @@ a:focus  {
     font-family: stratum2-bold;
     font-size: 10px;
     line-height: 12px;
-    margin: 20px 0 0 10px;
+    margin: 10px 0 0 0px;
     text-transform: uppercase;
   }
 
@@ -312,10 +312,6 @@ a:focus  {
     }
   }
 
-  .credits  {
-    margin-left: 46.5px;
-  }
-
   #last-footer-nav  {
     margin-bottom: 0px;
   }
@@ -396,9 +392,6 @@ a:focus  {
     ul  {
       margin-left: 50px;
     }
-  }
-  .credits  {
-    margin-left: 60px;
   }
 } /* min-width 1025px, large screens */
 
