@@ -10,6 +10,7 @@ Gymsight::Application.routes.draw do
   # get '/offerings/semi-private-training', to: 'static_pages#semipersonalt', as: 'spt'
   get '/offerings/essentials-pipeline', to: 'static_pages#essentials', as: 'essentials'
   get '/frequently-asked-questions', to: 'static_pages#faq', as: 'faq'
+  get '/terms-and-conditions', to: 'static_pages#terms_and_conditions', as: 'tac'
   get '/contact', to: 'contact_forms#new', as: 'contact'
   post '/question', to: 'contact_forms#question_request', as: 'question'
   post '/consultation', to: 'contact_forms#consultation_request', as: 'consultation'

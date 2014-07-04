@@ -87,6 +87,11 @@ class StaticPagesController < ApplicationController
     @offerings_header_active = "active"
   end
 
+  def terms_and_conditions
+    @gs_active = "header-active"
+    @gs_header_active = "active"
+  end
+
 end
 
 

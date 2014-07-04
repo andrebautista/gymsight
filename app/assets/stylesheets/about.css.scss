@@ -17,10 +17,10 @@ $headshot-height-lg:  382px;
     }
   }
 
-  h3.header-description  {
+  h2.header-description  {
     font-family:  'stratum2-regular';
     color: $gymsight-orange;
-    font-size: 20px;
+    font-size:22px;
   }
 
   #trainer_bio .program-details  {
@@ -114,8 +114,11 @@ $headshot-height-lg:  382px;
     h1  {
       font-size: 28px;
     }
+    h2  {
+    font-size: 24px;
+    }
     h3  {
-      font-size: 24px;
+      font-size: 21px;
     }
     h4  {
       font-size: 20px;
@@ -170,9 +173,9 @@ $headshot-height-lg:  382px;
     margin-bottom: 100px;
   }
 
-  h3.gymowner-header  {
-      font-size: 28px;
-      line-height: 33.6px;
+  .gymowner-header  {
+    font-size: 28px;
+    line-height: 33.6px;
   }
 
   #trainer_bio .program-details  {

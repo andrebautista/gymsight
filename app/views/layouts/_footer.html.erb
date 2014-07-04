@@ -26,12 +26,13 @@
           <li><%= link_to 'Frequently Asked Questions', faq_path, class:"#{@faq_active}" %></li>
         </ul>
       </div>
-      <div class="large-3 medium-3 columns hide-for-small-only" id="last-footer-nav">
+      <div class="large-4 medium-4 columns hide-for-small-only" id="last-footer-nav">
         <ul>
           <li class="nav-heading"><%= link_to 'Get Started', contact_path, class:"#{@gs_active}" %></li>
           <div class="contact-links">
             <li><%= link_to 'Request a Consultation', "http://gymsight.com/contact#consultation_request", class:"consultation_request" %></li>
             <li><%= link_to 'Ask a Question', "http://gymsight.com/contact#question", class:"question" %></li>
+            <li><%= link_to 'Membership terms & conditions', "http://gymsight.com/terms-and-conditions", class: 'active' if current_page?(tac_path) %> </li>
           </div>
         </ul>
       </div>
