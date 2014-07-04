@@ -1,7 +1,10 @@
 // Small screens
 @media only screen {
   #terms-and-conditions  {
-    margin-top: 20px;
+    margin-top: 15px;
+    h3  {
+      line-height: 1.2;
+    }
     li  {
       color: rgb(255,164,0);
       font-size: 12px;
@@ -9,6 +12,19 @@
       span  {
         color: white;
       }
+    }
+    .text-content  {
+      margin-bottom: 15px;
+    }
+  }
+
+  #tac-aside  {
+    margin-bottom: 15px;
+    span  {
+      line-height: 1.25;
+    }
+    a  {
+      color: rgb(255,164,0);
     }
   }
 
@@ -27,14 +43,24 @@
     margin-top: 20px;
     li  {
       font-size: 14px;
-      }
+    }
+  }
+
+  #terms-and-conditions  {
+    .text-content  {
+      margin-bottom: 80px;
+    }
   }
 } /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
 @media only screen and (min-width: 64.063em) {
-
+  #terms-and-conditions  {
+    .text-content  {
+      margin-bottom: 100px;
+    }
+  }
 } /* min-width 1025px, large screens */
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
