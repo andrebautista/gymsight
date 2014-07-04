@@ -32,7 +32,7 @@
           <div class="contact-links">
             <li><%= link_to 'Request a Consultation', "http://gymsight.com/contact#consultation_request", class:"consultation_request" %></li>
             <li><%= link_to 'Ask a Question', "http://gymsight.com/contact#question", class:"question" %></li>
-            <li><%= link_to 'Membership terms & conditions', "http://gymsight.com/terms-and-conditions", class: 'active' if current_page?(tac_path) %> </li>
+            <li><%= link_to 'Membership terms & conditions', "http://gymsight.com/terms-and-conditions", class: "#{ 'active' if current_page?(tac_path)}" %> </li>
           </div>
         </ul>
       </div>
