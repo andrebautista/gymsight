@@ -49,7 +49,7 @@ class StaticPagesController < ApplicationController
   end
 
   def personalt
-    @banner_text_l1 = "Private"
+    @banner_text_l1 = "Private & Semi-Private"
     @banner_text_l2 = "Training"
     @banner_image = "personalt-banner"
     @link_class = "back-to-offerings"
